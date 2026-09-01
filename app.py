@@ -87,9 +87,11 @@ if repo:
               file_content.decoded_content.decode("utf-8")
           )
           st.session_state["active_title"] = selected_quiz.replace(".json", "")
-          # Limpiar respuestas guardadas al cargar un cuestionario nuevo
+          # Resetear respuestas y tiempo de estudio
           st.session_state["user_answers"] = {}
           st.session_state["checked_questions"] = {}
+          st.session_state["start_time"] = time.time()
+          st.session_state["quiz_completed"] = False
           st.success("Cargado con éxito")
     except Exception:
       st.info("No hay cuestionarios guardados aún en la carpeta /quizzes.")
@@ -175,9 +177,10 @@ if text_content and gemini_key:
             st.session_state["active_title"] = (
                 uploaded_file.name.rsplit(".", 1)[0].capitalize()
             )
-            # Limpiar respuestas previas al generar un nuevo test
             st.session_state["user_answers"] = {}
             st.session_state["checked_questions"] = {}
+            st.session_state["start_time"] = time.time()
+            st.session_state["quiz_completed"] = False
             success = True
             break
           except Exception as e:
@@ -193,11 +196,14 @@ if text_content and gemini_key:
 if "quiz_data" in st.session_state:
   st.divider()
 
-  # Inicializar diccionarios de estado de interacción
   if "user_answers" not in st.session_state:
     st.session_state["user_answers"] = {}
   if "checked_questions" not in st.session_state:
     st.session_state["checked_questions"] = {}
+  if "start_time" not in st.session_state:
+    st.session_state["start_time"] = time.time()
+  if "quiz_completed" not in st.session_state:
+    st.session_state["quiz_completed"] = False
 
   col1, col2 = st.columns([2, 1])
   with col1:
@@ -231,15 +237,19 @@ if "quiz_data" in st.session_state:
   st.divider()
 
   quiz = st.session_state["quiz_data"]
+  total_questions = 0
+  correct_count = 0
+
+  # Renderizar Secciones y Preguntas
   for s_idx, sec in enumerate(quiz.get("sections", [])):
     st.header(f"📌 {sec['sectionTitle']}")
     for q_idx, q in enumerate(sec.get("questions", [])):
-      st.subheader(f"{q_idx + 1}. {q['question']}")
-
+      total_questions += 1
       q_key = f"q_{s_idx}_{q_idx}"
       btn_key = f"btn_{s_idx}_{q_idx}"
 
-      # Recuperar índice seleccionado previamente si existe
+      st.subheader(f"{q_idx + 1}. {q['question']}")
+
       current_answer = st.session_state["user_answers"].get(q_key, None)
       index_val = (
           q["options"].index(current_answer)
@@ -247,29 +257,71 @@ if "quiz_data" in st.session_state:
           else 0
       )
 
-      # Radio de alternativas sin reinicio
       selected = st.radio(
           "Selecciona tu respuesta:",
           q["options"],
           index=index_val,
           key=q_key,
       )
-
-      # Guardar selección actual en el estado global
       st.session_state["user_answers"][q_key] = selected
 
-      # Botón de validación
       if st.button(f"Comprobar respuesta {q_idx + 1}", key=btn_key):
         st.session_state["checked_questions"][q_key] = True
 
-      # Mantener el resultado en pantalla si ya fue comprobada
       if st.session_state["checked_questions"].get(q_key, False):
         correct_option = q["options"][q["correctIndex"]]
         user_choice = st.session_state["user_answers"].get(q_key)
 
         if user_choice == correct_option:
           st.success(f"¡Correcto! {q['explanation']}")
+          correct_count += 1
         else:
           st.error(
               f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {q['explanation']}"
           )
+
+  # --- MODO ESTUDIANTE: EVALUACIÓN Y TIEMPO ---
+  st.divider()
+  st.header("📊 Finalizar Cuestionario")
+
+  if st.button("🏁 Finalizar y Ver Mi Rendimiento"):
+    st.session_state["quiz_completed"] = True
+    st.session_state["end_time"] = time.time()
+
+  if st.session_state["quiz_completed"]:
+    elapsed_seconds = int(
+        st.session_state.get("end_time", time.time())
+        - st.session_state["start_time"]
+    )
+    minutes = elapsed_seconds // 60
+    seconds = elapsed_seconds % 60
+
+    score_percentage = (
+        (correct_count / total_questions) * 100 if total_questions > 0 else 0
+    )
+
+    st.subheader("🎯 Tus Resultados:")
+    st.metric(
+        label="Nota Final",
+        value=f"{correct_count} / {total_questions}",
+        delta=f"{score_percentage:.1f}% de aciertos",
+    )
+    st.info(f"⏱️ **Tiempo total transcurrido:** {minutes} min {seconds} seg")
+
+    # Feedback dinámico
+    if score_percentage >= 80:
+      st.balloons()
+      st.success(
+          "🌟 **¡Rendimiento Excelente!** Tienes un dominio sólido de los"
+          " conceptos clave de este documento."
+      )
+    elif score_percentage >= 50:
+      st.warning(
+          "📈 **¡Buen Trabajo!** Has aprobado, pero te recomendamos revisar las"
+          " preguntas donde tuviste errores para reforzar esos temas."
+      )
+    else:
+      st.error(
+          "📚 **Necesitas Repasar:** Hubo varios conceptos confusos. Vuelve a"
+          " leer las explicaciones detalladas y reintenta la prueba."
+      )
