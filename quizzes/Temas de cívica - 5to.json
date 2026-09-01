@@ -1,0 +1,118 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Ciudadanía y Convivencia",
+      "questions": [
+        {
+          "question": "¿Cuál es el propósito principal de la escala de valores dentro del contexto escolar y comunitario?",
+          "options": [
+            "Orientar y guiar las decisiones y acciones cotidianas",
+            "Establecer castigos estrictos para las faltas menores",
+            "Medir el rendimiento académico de los estudiantes",
+            "Clasificar a los ciudadanos según su nivel socioeconómico"
+          ],
+          "correctIndex": 0,
+          "explanation": "La escala de valores funciona como una guía fundamental para orientar nuestra vida y mejorar la convivencia diaria en la escuela y la comunidad."
+        },
+        {
+          "question": "Qué aspecto fundamental aborda el estudio de la convivencia en la escuela y comunidad según el texto?",
+          "options": [
+            "La aplicación rigurosa de sanciones disciplinarias",
+            "La interacción armoniosa y el respeto a las normas",
+            "La competencia académica entre distintas instituciones",
+            "La selección exclusiva de líderes estudiantiles"
+          ],
+          "correctIndex": 1,
+          "explanation": "La convivencia se centra en la relación armónica entre los miembros de la escuela y la comunidad basándose en el respeto mutuo."
+        },
+        {
+          "question": "Por qué es relevante el respeto a las normas de seguridad vial en la formación ciudadana?",
+          "options": [
+            "Para evitar multas económicas impuestas por la policía",
+            "Para garantizar la integridad física y prevenir accidentes",
+            "Para acelerar el flujo vehicular en las grandes ciudades",
+            "Para cumplir con un requisito administrativo escolar"
+          ],
+          "correctIndex": 1,
+          "explanation": "Respetar las normas de seguridad vial es vital para salvaguardar la vida humana y prevenir accidentes tanto a nivel personal como colectivo."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Democracia y Estado Peruano",
+      "questions": [
+        {
+          "question": "Qué caracteriza principalmente a la democracia dentro de la organización del Estado peruano?",
+          "options": [
+            "La concentración absoluta del poder en una sola persona",
+            "La participación ciudadana y el respeto a los poderes",
+            "La supresión de las elecciones populares periódicas",
+            "La subordinación de las leyes a criterios militares"
+          ],
+          "correctIndex": 1,
+          "explanation": "La democracia se sustenta en la participación activa de los ciudadanos, la elección de representantes y la división de poderes."
+        },
+        {
+          "question": "Cuál es la función del Sistema Electoral en el marco del Estado peruano?",
+          "options": [
+            "Legislar nuevas leyes de presupuesto nacional",
+            "Organizar, garantizar y transparentar los procesos de voto",
+            "Controlar las instituciones financieras privadas del país",
+            "Administrar la justicia en casos de corrupción estatal"
+          ],
+          "correctIndex": 1,
+          "explanation": "El Sistema Electoral tiene la misión de asegurar que las elecciones y el voto se desarrollen con absoluta transparencia y legitimidad."
+        },
+        {
+          "question": "Qué rol desempeñan entidades como la Contraloría General de la República, la SBS y el BCR?",
+          "options": [
+            "Fiscalizar y regular sectores clave de la administración y economía",
+            "Diseñar las políticas educativas a nivel nacional",
+            "Dirigir las fuerzas armadas en situaciones de emergencia",
+            "Representar legalmente al Estado en tribunales internacionales"
+          ],
+          "correctIndex": 0,
+          "explanation": "Estas instituciones cumplen roles fiscalizadores y reguladores para garantizar la estabilidad económica y el uso correcto de los recursos públicos."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Seguridad, Prevención y Patrimonio",
+      "questions": [
+        {
+          "question": "Cómo se deben abordar los desastres naturales y accidentes de tránsito desde la educación cívica?",
+          "options": [
+            "Mediante la asignación de culpas legales a las víctimas",
+            "A través de la prevención, la educación y la gestión de riesgos",
+            "Esperando la intervención exclusiva de organismos internacionales",
+            "Ignorando su impacto si ocurren en zonas alejadas"
+          ],
+          "correctIndex": 1,
+          "explanation": "El estudio de desastres naturales y accidentes busca fomentar una cultura de prevención y respuesta adecuada ante situaciones de riesgo."
+        },
+        {
+          "question": "Qué representa el patrimonio nacional en relación con la identidad de un país?",
+          "options": [
+            "Un conjunto de bienes materiales e inmateriales de valor histórico",
+            "Los recursos financieros disponibles en el Banco Central de Reserva",
+            "La infraestructura vial construida en los últimos diez años",
+            "El total de ingresos generados por las exportaciones mineras"
+          ],
+          "correctIndex": 0,
+          "explanation": "El patrimonio nacional abarca la herencia histórica, cultural y natural que define la identidad y riqueza de la nación."
+        },
+        {
+          "question": "Cuál es la importancia de la Constitución Política del Perú dentro del ordenamiento jurídico?",
+          "options": [
+            "Establecer las reglas para los partidos políticos únicamente",
+            "Servir como la norma fundamental que rige todo el Estado",
+            "Regular exclusivamente el comercio internacional y aduanas",
+            "Sustituir a los códigos penales en casos de delitos graves"
+          ],
+          "correctIndex": 1,
+          "explanation": "La Constitución Política es la ley suprema del Estado peruano, de la cual emanan todas las demás leyes y se organizan los poderes."
+        }
+      ]
+    }
+  ]
+}
