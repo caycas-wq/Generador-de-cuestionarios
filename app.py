@@ -1,6 +1,6 @@
 import json
 import docx
-import google.generativeai as genai
+from google import genai
 import pypdf
 import streamlit as st
 
@@ -37,13 +37,12 @@ if text_content and api_key:
   if st.button("🚀 Generar Cuestionario"):
     with st.spinner("Analizando documento con IA..."):
       try:
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("models/gemini-1.5-pro")
+        client = genai.Client(api_key=api_key)
 
         prompt = f"""
                 Analiza el siguiente texto y organízalo en sus secciones/temas principales.
                 Para cada sección, genera entre 2 y 3 preguntas conceptuales de opción múltiple.
-                Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta (sin markdown ```json ni nada adicional):
+                Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
                 {{
                   "sections": [
                     {{
@@ -64,11 +63,13 @@ if text_content and api_key:
                 {text_content[:15000]}
                 """
 
-        response = model.generate_content(prompt)
-        clean_json = (
-            response.text.replace("```json", "").replace("```", "").strip()
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt,
+            config={"response_mime_type": "application/json"},
         )
-        st.session_state["quiz_data"] = json.loads(clean_json)
+
+        st.session_state["quiz_data"] = json.loads(response.text)
       except Exception as e:
         st.error(f"Error al procesar el archivo: {e}")
 
