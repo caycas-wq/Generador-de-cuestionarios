@@ -1,7 +1,6 @@
 import json
-import os
 import docx
-from github import Github
+from github import Github, BadCredentialsException
 from google import genai
 import pypdf
 import streamlit as st
@@ -10,75 +9,12 @@ st.set_page_config(
     page_title="Generador de Cuestionarios", page_icon="📚", layout="centered"
 )
 
-# --- OBTENER CREDENCIALES DESDE SECRETS O MANUAL ---
+st.title("📚 Generador de Cuestionarios Personalizable")
+
+# --- OBTENER CREDENCIALES ---
 gemini_key = st.secrets.get("GEMINI_API_KEY", "")
 github_token = st.secrets.get("GITHUB_TOKEN", "")
 repo_name = st.secrets.get("REPO_NAME", "caycas-wq/Generador-de-cuestionarios")
-
-st.title("📚 Generador de Cuestionarios Personalizable")
-
-# --- FUNCIONES DE GITHUB ---
-def get_github_repo():
-  if github_token and repo_name:
-    try:
-      g = Github(github_token)
-      return g.get_repo(repo_name)
-    except Exception as e:
-      st.error(f"Error al conectar con GitHub: {e}")
-  return None
-
-
-def list_cloud_quizzes(repo):
-  quizzes = []
-  if repo:
-    try:
-      contents = repo.get_contents("quizzes")
-      for content_file in contents:
-        if content_file.name.endswith(".json"):
-          quizzes.append(content_file.name)
-    except Exception:
-      # Si la carpeta quizzes no existe aún, se creará al guardar el primero
-      pass
-  return quizzes
-
-
-def save_quiz_to_github(repo, file_name, json_data):
-  if repo:
-    path = f"quizzes/{file_name}.json"
-    content = json.dumps(json_data, ensure_ascii=False, indent=2)
-    try:
-      # Intentar actualizar si ya existe
-      existing_file = repo.get_contents(path)
-      repo.update_file(
-          path,
-          f"Actualizar cuestionario: {file_name}",
-          content,
-          existing_file.sha,
-      )
-      return True, "Cuestionario actualizado en GitHub con éxito."
-    except Exception:
-      # Crear nuevo archivo si no existe
-      try:
-        repo.create_file(
-            path, f"Añadir cuestionario: {file_name}", content
-        )
-        return True, "Cuestionario guardado en la nube de GitHub con éxito."
-      except Exception as e:
-        return False, f"Error al guardar en GitHub: {e}"
-  return False, "No hay conexión con el repositorio de GitHub."
-
-
-def load_quiz_from_github(repo, file_name):
-  if repo:
-    try:
-      file_content = repo.get_contents(f"quizzes/{file_name}")
-      return json.loads(file_content.decoded_content.decode("utf-8"))
-    except Exception as e:
-      st.error(f"Error al descargar desde GitHub: {e}")
-  return None
-
-
-repo = get_github_repo()
 
 # --- BARRA LATERAL ---
 with st.sidebar:
@@ -88,7 +24,19 @@ with st.sidebar:
     gemini_key = st.text_input("API Key de Google Gemini:", type="password")
 
   st.divider()
-  st.subheader("🎯 Parámetros de Cuestionario")
+  st.subheader("🔑 Token de GitHub")
+  
+  # Permitir corregir el token si el de Secrets falla
+  custom_token = st.text_input(
+      "Token GitHub (ghp_...):",
+      value=github_token,
+      type="password",
+      help="Si sale error 401, pega aquí tu nuevo token de GitHub.",
+  )
+  active_token = custom_token if custom_token else github_token
+
+  st.divider()
+  st.subheader("🎯 Parámetros")
 
   questions_per_section = st.slider(
       "Preguntas por sección:", min_value=1, max_value=10, value=3
@@ -105,31 +53,39 @@ with st.sidebar:
       ["Opción Múltiple (4 opciones)", "Verdadero / Falso", "Combinado"],
   )
 
-  st.divider()
+# --- CONEXIÓN SEGURA CON GITHUB ---
+repo = None
+if active_token and repo_name:
+  try:
+    g = Github(active_token)
+    repo = g.get_repo(repo_name)
+    # Prueba de autenticación rápida
+    _ = repo.name 
+  except BadCredentialsException:
+    st.error("⚠️ El Token de GitHub es inválido (Error 401). Verifica o pega uno nuevo en la barra lateral.")
+    repo = None
+  except Exception as e:
+    st.warning(f"No se pudo conectar a GitHub: {e}")
 
-  # --- EXPLORADOR DE CUESTIONARIOS EN LA NUBE ---
-  st.header("☁️ Cuestionarios en la Nube")
-  cloud_quizzes = list_cloud_quizzes(repo)
+# --- HISTORIAL EN LA NUBE ---
+if repo:
+  with st.sidebar:
+    st.divider()
+    st.header("☁️ Cuestionarios Guardados")
+    try:
+      contents = repo.get_contents("quizzes")
+      cloud_quizzes = [f.name for f in contents if f.name.endswith(".json")]
+      if cloud_quizzes:
+        selected_quiz = st.selectbox("Selecciona:", ["-- Seleccionar --"] + cloud_quizzes)
+        if selected_quiz != "-- Seleccionar --" and st.button("📖 Cargar"):
+          file_content = repo.get_contents(f"quizzes/{selected_quiz}")
+          st.session_state["quiz_data"] = json.loads(file_content.decoded_content.decode("utf-8"))
+          st.session_state["active_title"] = selected_quiz.replace(".json", "")
+          st.success("Cargado con éxito")
+    except Exception:
+      st.info("No hay cuestionarios guardados aún en la carpeta /quizzes.")
 
-  if cloud_quizzes:
-    selected_cloud_quiz = st.selectbox(
-        "Selecciona un cuestionario:",
-        options=["-- Seleccionar --"] + cloud_quizzes,
-    )
-
-    if selected_cloud_quiz != "-- Seleccionar --":
-      if st.button("📖 Cargar desde Nube"):
-        loaded = load_quiz_from_github(repo, selected_cloud_quiz)
-        if loaded:
-          st.session_state["quiz_data"] = loaded
-          st.session_state["active_title"] = selected_cloud_quiz.replace(
-              ".json", ""
-          )
-          st.success(f"Cargado: {selected_cloud_quiz}")
-  else:
-    st.info("No hay cuestionarios guardados aún en el repositorio.")
-
-# --- ÁREA PRINCIPAL ---
+# --- CARGA DE ARCHIVOS Y GENERACIÓN ---
 uploaded_file = st.file_uploader(
     "Carga un nuevo documento (Word .docx, PDF o TXT)",
     type=["docx", "pdf", "txt"],
@@ -150,7 +106,7 @@ if uploaded_file is not None:
 
 if text_content and gemini_key:
   if st.button("🚀 Generar Nuevo Cuestionario"):
-    with st.spinner("Analizando documento con IA y guardando estructura..."):
+    with st.spinner("Analizando documento con IA..."):
       try:
         client = genai.Client(api_key=gemini_key)
 
@@ -201,17 +157,14 @@ if text_content and gemini_key:
       except Exception as e:
         st.error(f"Error al procesar el archivo: {e}")
 
-elif not gemini_key and uploaded_file:
-  st.warning("⚠️ Por favor ingresa tu API Key en los Secrets o en la barra lateral.")
-
-# --- RENDERIZADO Y GUARDADO EN LA NUBE ---
+# --- MOSTRAR Y GUARDAR CUESTIONARIO ---
 if "quiz_data" in st.session_state:
   st.divider()
 
   col1, col2 = st.columns([2, 1])
   with col1:
     save_title = st.text_input(
-        "Nombre para el archivo en GitHub:",
+        "Nombre del cuestionario:",
         value=st.session_state.get("active_title", "Cuestionario"),
     )
   with col2:
@@ -219,18 +172,19 @@ if "quiz_data" in st.session_state:
     st.write(" ")
     if st.button("☁️ Guardar en GitHub"):
       if repo:
-        success, msg = save_quiz_to_github(
-            repo, save_title, st.session_state["quiz_data"]
-        )
-        if success:
-          st.success(msg)
-          st.rerun()
-        else:
-          st.error(msg)
+        try:
+          path = f"quizzes/{save_title}.json"
+          content = json.dumps(st.session_state["quiz_data"], ensure_ascii=False, indent=2)
+          try:
+            old_file = repo.get_contents(path)
+            repo.update_file(path, f"Update {save_title}", content, old_file.sha)
+          except Exception:
+            repo.create_file(path, f"Add {save_title}", content)
+          st.success("¡Guardado en la nube de GitHub con éxito!")
+        except Exception as e:
+          st.error(f"Error al guardar: {e}")
       else:
-        st.error(
-            "Falta configurar el GITHUB_TOKEN en los Secrets de Streamlit."
-        )
+        st.error("Se requiere un Token de GitHub válido para guardar.")
 
   st.divider()
 
