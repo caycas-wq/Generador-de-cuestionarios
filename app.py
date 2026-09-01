@@ -87,11 +87,14 @@ if repo:
               file_content.decoded_content.decode("utf-8")
           )
           st.session_state["active_title"] = selected_quiz.replace(".json", "")
+          # Limpiar respuestas guardadas al cargar un cuestionario nuevo
+          st.session_state["user_answers"] = {}
+          st.session_state["checked_questions"] = {}
           st.success("Cargado con éxito")
     except Exception:
       st.info("No hay cuestionarios guardados aún en la carpeta /quizzes.")
 
-# --- CARGA DE ARCHIVOS Y GENERACIÓN CON RESPALDO ---
+# --- CARGA DE ARCHIVOS Y GENERACIÓN ---
 uploaded_file = st.file_uploader(
     "Carga un nuevo documento (Word .docx, PDF o TXT)",
     type=["docx", "pdf", "txt"],
@@ -151,7 +154,6 @@ if text_content and gemini_key:
             {text_content[:20000]}
             """
 
-      # Lista de modelos a probar secuencialmente si el servidor está ocupado
       candidate_models = [
           "gemini-3.5-flash-lite",
           "gemini-3.5-flash",
@@ -162,7 +164,7 @@ if text_content and gemini_key:
       last_error = None
 
       for model_name in candidate_models:
-        for attempt in range(2):  # Hasta 2 reintentos por modelo
+        for attempt in range(2):
           try:
             response = client.models.generate_content(
                 model=model_name,
@@ -173,23 +175,29 @@ if text_content and gemini_key:
             st.session_state["active_title"] = (
                 uploaded_file.name.rsplit(".", 1)[0].capitalize()
             )
+            # Limpiar respuestas previas al generar un nuevo test
+            st.session_state["user_answers"] = {}
+            st.session_state["checked_questions"] = {}
             success = True
             break
           except Exception as e:
             last_error = e
-            time.sleep(2)  # Esperar 2 segundos antes de reintentar
+            time.sleep(2)
         if success:
           break
 
       if not success:
-        st.error(
-            f"Los servidores de Gemini se encuentran saturados en este momento."
-            f" Detalles: {last_error}"
-        )
+        st.error(f"Error con el servicio de IA: {last_error}")
 
-# --- MOSTRAR Y GUARDAR CUESTIONARIO ---
+# --- MOSTRAR Y RENDERIZAR CUESTIONARIO ---
 if "quiz_data" in st.session_state:
   st.divider()
+
+  # Inicializar diccionarios de estado de interacción
+  if "user_answers" not in st.session_state:
+    st.session_state["user_answers"] = {}
+  if "checked_questions" not in st.session_state:
+    st.session_state["checked_questions"] = {}
 
   col1, col2 = st.columns([2, 1])
   with col1:
@@ -227,17 +235,41 @@ if "quiz_data" in st.session_state:
     st.header(f"📌 {sec['sectionTitle']}")
     for q_idx, q in enumerate(sec.get("questions", [])):
       st.subheader(f"{q_idx + 1}. {q['question']}")
-      selected = st.radio(
-          "Selecciona tu respuesta:", q["options"], key=f"q_{s_idx}_{q_idx}"
+
+      q_key = f"q_{s_idx}_{q_idx}"
+      btn_key = f"btn_{s_idx}_{q_idx}"
+
+      # Recuperar índice seleccionado previamente si existe
+      current_answer = st.session_state["user_answers"].get(q_key, None)
+      index_val = (
+          q["options"].index(current_answer)
+          if current_answer in q["options"]
+          else 0
       )
-      if st.button(
-          f"Comprobar respuesta {q_idx + 1}", key=f"btn_{s_idx}_{q_idx}"
-      ):
+
+      # Radio de alternativas sin reinicio
+      selected = st.radio(
+          "Selecciona tu respuesta:",
+          q["options"],
+          index=index_val,
+          key=q_key,
+      )
+
+      # Guardar selección actual en el estado global
+      st.session_state["user_answers"][q_key] = selected
+
+      # Botón de validación
+      if st.button(f"Comprobar respuesta {q_idx + 1}", key=btn_key):
+        st.session_state["checked_questions"][q_key] = True
+
+      # Mantener el resultado en pantalla si ya fue comprobada
+      if st.session_state["checked_questions"].get(q_key, False):
         correct_option = q["options"][q["correctIndex"]]
-        if selected == correct_option:
+        user_choice = st.session_state["user_answers"].get(q_key)
+
+        if user_choice == correct_option:
           st.success(f"¡Correcto! {q['explanation']}")
         else:
           st.error(
-              f"Incorrecto. La respuesta correcta era:"
-              f" {correct_option}.\n\nExplicación: {q['explanation']}"
+              f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {q['explanation']}"
           )
