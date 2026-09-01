@@ -1,4 +1,5 @@
 import json
+import time
 import docx
 from github import Github, BadCredentialsException
 from google import genai
@@ -25,8 +26,7 @@ with st.sidebar:
 
   st.divider()
   st.subheader("🔑 Token de GitHub")
-  
-  # Permitir corregir el token si el de Secrets falla
+
   custom_token = st.text_input(
       "Token GitHub (ghp_...):",
       value=github_token,
@@ -59,10 +59,12 @@ if active_token and repo_name:
   try:
     g = Github(active_token)
     repo = g.get_repo(repo_name)
-    # Prueba de autenticación rápida
-    _ = repo.name 
+    _ = repo.name
   except BadCredentialsException:
-    st.error("⚠️ El Token de GitHub es inválido (Error 401). Verifica o pega uno nuevo en la barra lateral.")
+    st.error(
+        "⚠️ El Token de GitHub es inválido (Error 401). Verifica o pega uno"
+        " nuevo en la barra lateral."
+    )
     repo = None
   except Exception as e:
     st.warning(f"No se pudo conectar a GitHub: {e}")
@@ -76,16 +78,20 @@ if repo:
       contents = repo.get_contents("quizzes")
       cloud_quizzes = [f.name for f in contents if f.name.endswith(".json")]
       if cloud_quizzes:
-        selected_quiz = st.selectbox("Selecciona:", ["-- Seleccionar --"] + cloud_quizzes)
+        selected_quiz = st.selectbox(
+            "Selecciona:", ["-- Seleccionar --"] + cloud_quizzes
+        )
         if selected_quiz != "-- Seleccionar --" and st.button("📖 Cargar"):
           file_content = repo.get_contents(f"quizzes/{selected_quiz}")
-          st.session_state["quiz_data"] = json.loads(file_content.decoded_content.decode("utf-8"))
+          st.session_state["quiz_data"] = json.loads(
+              file_content.decoded_content.decode("utf-8")
+          )
           st.session_state["active_title"] = selected_quiz.replace(".json", "")
           st.success("Cargado con éxito")
     except Exception:
       st.info("No hay cuestionarios guardados aún en la carpeta /quizzes.")
 
-# --- CARGA DE ARCHIVOS Y GENERACIÓN ---
+# --- CARGA DE ARCHIVOS Y GENERACIÓN CON RESPALDO ---
 uploaded_file = st.file_uploader(
     "Carga un nuevo documento (Word .docx, PDF o TXT)",
     type=["docx", "pdf", "txt"],
@@ -96,7 +102,9 @@ text_content = ""
 if uploaded_file is not None:
   if uploaded_file.name.endswith(".docx"):
     doc = docx.Document(uploaded_file)
-    text_content = "\n".join([para.text for para in doc.paragraphs if para.text])
+    text_content = "\n".join(
+        [para.text for para in doc.paragraphs if para.text]
+    )
   elif uploaded_file.name.endswith(".pdf"):
     reader = pypdf.PdfReader(uploaded_file)
     for page in reader.pages:
@@ -107,55 +115,77 @@ if uploaded_file is not None:
 if text_content and gemini_key:
   if st.button("🚀 Generar Nuevo Cuestionario"):
     with st.spinner("Analizando documento con IA..."):
-      try:
-        client = genai.Client(api_key=gemini_key)
+      client = genai.Client(api_key=gemini_key)
 
-        prompt = f"""
-                Analiza el siguiente texto y organízalo en sus secciones/temas principales.
-                Para cada sección, genera exactamente {questions_per_section} preguntas.
+      prompt = f"""
+            Analiza el siguiente texto y organízalo en sus secciones/temas principales.
+            Para cada sección, genera exactamente {questions_per_section} preguntas.
 
-                CONFIGURACIÓN PEDAGÓGICA:
-                - Nivel de dificultad: {difficulty}.
-                - Tipo de pregunta deseado: {question_type}.
+            CONFIGURACIÓN PEDAGÓGICA:
+            - Nivel de dificultad: {difficulty}.
+            - Tipo de pregunta deseado: {question_type}.
 
-                REGLAS CRÍTICAS PARA LAS OPCIONES:
-                1. Para Opción Múltiple: Genera 4 alternativas donde TODAS (correctas e incorrectas) tengan una longitud, complejidad y tono similar.
-                2. Para Verdadero/Falso: Genera únicamente 2 opciones: ["Verdadero", "Falso"].
-                3. NUNCA hagas que la opción correcta sea visiblemente más larga o detallada que los distractores.
+            REGLAS CRÍTICAS PARA LAS OPCIONES:
+            1. Para Opción Múltiple: Genera 4 alternativas donde TODAS (correctas e incorrectas) tengan una longitud, complejidad y tono similar.
+            2. Para Verdadero/Falso: Genera únicamente 2 opciones: ["Verdadero", "Falso"].
+            3. NUNCA hagas que la opción correcta sea visiblemente más larga o detallada que los distractores.
 
-                Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
+            Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
+            {{
+              "sections": [
                 {{
-                  "sections": [
+                  "sectionTitle": "Nombre de la Sección",
+                  "questions": [
                     {{
-                      "sectionTitle": "Nombre de la Sección",
-                      "questions": [
-                        {{
-                          "question": "Pregunta...",
-                          "options": ["Opción A", "Opción B", "Opción C", "Opción D"],
-                          "correctIndex": 0,
-                          "explanation": "Explicación detallada..."
-                        }}
-                      ]
+                      "question": "Pregunta...",
+                      "options": ["Opción A", "Opción B", "Opción C", "Opción D"],
+                      "correctIndex": 0,
+                      "explanation": "Explicación detallada..."
                     }}
                   ]
                 }}
+              ]
+            }}
 
-                Texto:
-                {text_content[:20000]}
-                """
+            Texto:
+            {text_content[:20000]}
+            """
 
-        response = client.models.generate_content(
-            model="gemini-3.6-flash",
-            contents=prompt,
-            config={"response_mime_type": "application/json"},
+      # Lista de modelos a probar secuencialmente si el servidor está ocupado
+      candidate_models = [
+          "gemini-2.5-flash",
+          "gemini-2.5-flash-lite",
+          "gemini-1.5-flash",
+      ]
+
+      success = False
+      last_error = None
+
+      for model_name in candidate_models:
+        for attempt in range(2):  # Hasta 2 reintentos por modelo
+          try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config={"response_mime_type": "application/json"},
+            )
+            st.session_state["quiz_data"] = json.loads(response.text)
+            st.session_state["active_title"] = (
+                uploaded_file.name.rsplit(".", 1)[0].capitalize()
+            )
+            success = True
+            break
+          except Exception as e:
+            last_error = e
+            time.sleep(2)  # Esperar 2 segundos antes de reintentar
+        if success:
+          break
+
+      if not success:
+        st.error(
+            f"Los servidores de Gemini se encuentran saturados en este momento."
+            f" Detalles: {last_error}"
         )
-
-        st.session_state["quiz_data"] = json.loads(response.text)
-        st.session_state["active_title"] = (
-            uploaded_file.name.rsplit(".", 1)[0].capitalize()
-        )
-      except Exception as e:
-        st.error(f"Error al procesar el archivo: {e}")
 
 # --- MOSTRAR Y GUARDAR CUESTIONARIO ---
 if "quiz_data" in st.session_state:
@@ -174,10 +204,14 @@ if "quiz_data" in st.session_state:
       if repo:
         try:
           path = f"quizzes/{save_title}.json"
-          content = json.dumps(st.session_state["quiz_data"], ensure_ascii=False, indent=2)
+          content = json.dumps(
+              st.session_state["quiz_data"], ensure_ascii=False, indent=2
+          )
           try:
             old_file = repo.get_contents(path)
-            repo.update_file(path, f"Update {save_title}", content, old_file.sha)
+            repo.update_file(
+                path, f"Update {save_title}", content, old_file.sha
+            )
           except Exception:
             repo.create_file(path, f"Add {save_title}", content)
           st.success("¡Guardado en la nube de GitHub con éxito!")
