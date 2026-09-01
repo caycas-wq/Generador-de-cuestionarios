@@ -1,0 +1,118 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Identificación y delimitación del problema de investigación",
+      "questions": [
+        {
+          "question": "Al delimitar un problema de investigación para una tesis, ¿por qué es fundamental establecer con precisión el alcance geográfico y temporal del estudio?",
+          "options": [
+            "Permite restringir el foco de análisis y evitar desviaciones teóricas o metodológicas que comprometan la viabilidad del estudio.",
+            "Garantiza que los resultados obtenidos sean universalmente aplicables a cualquier contexto o población similar.",
+            "Asegura que el investigador no requiera realizar una revisión de la literatura previa para validar su hipótesis de trabajo.",
+            "Elimina de forma definitiva la necesidad de seleccionar una muestra representativa dentro de la población objeto de estudio."
+          ],
+          "correctIndex": 0,
+          "explanation": "La delimitación temporal y geográfica ayuda a establecer límites claros para que la investigación sea viable y enfocada, previniendo la dispersión de esfuerzos y recursos en aspectos que exceden el alcance del trabajo."
+        },
+        {
+          "question": "Un investigador detecta que la mayoría de los estudios sobre un método pedagógico se realizaron en entornos urbanos y decide aplicarlo en el ámbito rural. ¿Qué representa esta acción en el proceso de investigación?",
+          "options": [
+            "La formulación de un marco de referencia basado exclusivamente en la experiencia laboral previa del investigador.",
+            "La identificación de una brecha en la literatura existente que justifica y da relevancia a un nuevo estudio empírico.",
+            "Una desviación metodológica que invalida la comparación de datos obtenidos mediante herramientas tecnológicas.",
+            "La delimitación automática de la población objetivo sin requerir una justificación del diseño metodológico."
+          ],
+          "correctIndex": 1,
+          "explanation": "Identificar contextos o poblaciones poco estudiadas (como el entorno rural frente al urbano) es una forma clásica de encontrar brechas en la literatura científica que justifican la realización de un nuevo estudio."
+        },
+        {
+          "question": "En el contexto del planteamiento del problema, ¿cuál es la utilidad primordial de realizar búsquedas sistemáticas en bases de datos como Scopus o Web of Science?",
+          "options": [
+            "Reemplazar de forma definitiva la formulación de hipótesis mediante la automatización de referencias bibliográficas de calidad.",
+            "Obtener un panorama completo del estado del arte que permita fundamentar teóricamente la existencia de un vacío de conocimiento.",
+            "Limitar de manera estricta el alcance geográfico del problema sin necesidad de considerar variables de tipo poblacional.",
+            "Diseñar de forma automática los instrumentos de recolección de datos que se aplicarán posteriormente en la muestra."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las bases de datos académicas permiten explorar investigaciones previas para comprender el contexto actual del problema, identificar controversias y justificar teóricamente la relevancia y originalidad del estudio."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Coherencia entre el problema, los objetivos y el título",
+      "questions": [
+        {
+          "question": "Analice el siguiente caso: Un estudiante define como problema 'la deserción escolar en secundaria', pero su objetivo es 'evaluar el impacto de la educación artística en la motivación de los estudiantes'. ¿Qué fallo metodológico se evidencia?",
+          "options": [
+            "Una falta de alineación entre el objetivo propuesto y el problema delimitado, lo que debilita la coherencia lógica de la investigación.",
+            "Una inadecuada selección de las bases de datos académicas para realizar la revisión previa de la literatura pertinente.",
+            "Un exceso de precisión en la delimitación temporal del estudio que impide la generalización de los resultados obtenidos.",
+            "Una formulación incorrecta del título que resulta demasiado específica en comparación con el alcance de las variables."
+          ],
+          "correctIndex": 0,
+          "explanation": "Para que exista coherencia interna, los objetivos deben derivarse directamente del problema planteado. En este caso, el objetivo no aborda de manera directa ni soluciona el problema de la deserción escolar mencionado."
+        },
+        {
+          "question": "De acuerdo con los criterios para la selección de títulos de investigación, ¿cuál de las siguientes opciones representa la formulación más adecuada y equilibrada?",
+          "options": [
+            "Estrategias de enseñanza virtual en el rendimiento de matemáticas de estudiantes de secundaria en Colombia.",
+            "Un estudio detallado acerca de las diversas maneras de enseñar asignaturas complejas en la escuela secundaria actual.",
+            "El impacto de las nuevas herramientas de tecnologías de aprendizaje virtual (TAV) en el rendimiento académico del alumno.",
+            "Análisis integral de las variables pedagógicas aplicadas por los docentes en instituciones educativas de Latinoamérica."
+          ],
+          "correctIndex": 0,
+          "explanation": "La opción A cumple con los criterios de precisión, inclusión de palabras clave, claridad en el enfoque y contextualización geográfica, evitando abreviaturas confusas y vaguedades."
+        },
+        {
+          "question": "Desde una perspectiva metodológica, ¿por qué es fundamental que el título de la investigación refleje de forma explícita el problema y los objetivos del estudio?",
+          "options": [
+            "Porque permite prescindir de la justificación metodológica dentro de la sección introductoria de la tesis.",
+            "Porque facilita que los evaluadores y lectores capten de inmediato la relevancia y el enfoque específico del trabajo.",
+            "Porque define de manera automática las herramientas de software que el investigador empleará para analizar los datos.",
+            "Porque limita la cantidad de variables independientes que el investigador puede incluir durante la fase empírica."
+          ],
+          "correctIndex": 1,
+          "explanation": "El título es la primera carta de presentación del trabajo; al reflejar el problema y los objetivos, comunica eficientemente el alcance del estudio y facilita su indexación y comprensión por parte de la comunidad académica."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Formulación y validación de las preguntas de investigación",
+      "questions": [
+        {
+          "question": "Al aplicar la técnica de descomposición de problemas para estructurar preguntas de investigación, ¿cuál es la principal ventaja que obtiene el investigador?",
+          "options": [
+            "Reducir un problema general complejo en subpreguntas específicas que facilitan el abordaje metodológico detallado de cada fase.",
+            "Convertir de manera automática todas las preguntas abiertas de la investigación en hipótesis de tipo cuantitativo.",
+            "Evitar la revisión de la literatura científica mediante la formulación directa de interrogantes empíricos cerrados.",
+            "Garantizar que los instrumentos de recolección de datos sean validados sin requerir el juicio de expertos externos."
+          ],
+          "correctIndex": 0,
+          "explanation": "Descomponer el problema general en subproblemas permite formular múltiples preguntas más manejables y específicas, lo cual ayuda a estructurar y guiar de forma ordenada el proceso de investigación."
+        },
+        {
+          "question": "Al utilizar una matriz de priorización para evaluar las preguntas de investigación formuladas, ¿qué criterios clave deben considerarse para seleccionar las preguntas definitivas?",
+          "options": [
+            "La extensión gramatical de la pregunta, el número de variables de control y la facilidad para responder de manera dicotómica.",
+            "La relevancia del tema, la factibilidad técnica para realizar el estudio y la disponibilidad real de datos pertinentes.",
+            "La cantidad de fuentes bibliográficas en un solo idioma y la exclusión total de cualquier contexto de carácter geográfico.",
+            "El uso exclusivo de abreviaturas técnicas y la omisión de los sujetos de estudio para mantener la neutralidad científica."
+          ],
+          "correctIndex": 1,
+          "explanation": "Según el texto y las buenas prácticas, la matriz de priorización evalúa las preguntas considerando criterios como la relevancia, la factibilidad y la disponibilidad de datos para asegurar que el estudio sea viable."
+        },
+        {
+          "question": "Si un investigador se da cuenta de que la pregunta '¿cuál es el impacto del cambio climático en la salud pública?' es demasiado amplia para sus recursos, ¿qué acción metodológica es la más recomendable?",
+          "options": [
+            "Abandonar el tema de investigación y buscar un problema que no requiera delimitar variables geográficas ni temporales.",
+            "Reformular la pregunta general dividiéndola en subpreguntas más específicas y acotadas al contexto viable de estudio.",
+            "Aplicar un diseño metodológico puramente experimental sin importar la falta de recursos y de datos históricos fiables.",
+            "Mantener la amplitud de la pregunta original y omitir la delimitación de la población objetivo durante la fase empírica."
+          ],
+          "correctIndex": 1,
+          "explanation": "Ante recursos y tiempo limitados, la reformulación de preguntas amplias en subpreguntas manejables permite al investigador enfocar sus esfuerzos en un área viable sin perder el rigor metodológico."
+        }
+      ]
+    }
+  ]
+}
