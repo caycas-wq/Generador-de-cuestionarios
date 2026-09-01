@@ -38,7 +38,7 @@ if text_content and api_key:
     with st.spinner("Analizando documento con IA..."):
       try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("models/gemini-1.5-flash")
 
         prompt = f"""
                 Analiza el siguiente texto y organízalo en sus secciones/temas principales.
