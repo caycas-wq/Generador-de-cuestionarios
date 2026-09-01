@@ -1,0 +1,5 @@
+Plaintext
+streamlit
+python-docx
+pypdf
+google-genai
