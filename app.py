@@ -8,16 +8,45 @@ st.set_page_config(
     page_title="Generador de Cuestionarios", page_icon="📚", layout="centered"
 )
 
-st.title("📚 Generador de Cuestionarios por Secciones")
-st.write(
-    "Sube tu archivo (Word .docx, PDF o TXT) para generar preguntas"
-    " interactivas."
-)
+# Inicializar almacenamiento local en la sesión
+if "saved_quizzes" not in st.session_state:
+  st.session_state["saved_quizzes"] = {}
 
-api_key = st.text_input("Ingresa tu API Key de Google Gemini:", type="password")
+st.title("📚 Generador de Cuestionarios Personalizable")
 
+# --- BARRA LATERAL ---
+with st.sidebar:
+  st.header("⚙️ Configuración")
+  api_key = st.text_input("API Key de Google Gemini:", type="password")
+  questions_per_section = st.slider(
+      "Preguntas por sección:", min_value=1, max_value=10, value=3
+  )
+
+  st.divider()
+
+  # --- HISTORIAL Y CUESTIONARIOS GUARDADOS ---
+  st.header("📂 Mis Cuestionarios Guardados")
+  if st.session_state["saved_quizzes"]:
+    selected_saved = st.selectbox(
+        "Selecciona un cuestionario guardado:",
+        options=["-- Seleccionar --"]
+        + list(st.session_state["saved_quizzes"].keys()),
+    )
+
+    if selected_saved != "-- Seleccionar --":
+      if st.button("📖 Cargar Cuestionario"):
+        st.session_state["quiz_data"] = st.session_state["saved_quizzes"][
+            selected_saved
+        ]
+        st.session_state["active_title"] = selected_saved
+        st.success(f"Cargado: {selected_saved}")
+  else:
+    st.info("Aún no has guardado ningún cuestionario.")
+
+# --- ÁREA PRINCIPAL ---
 uploaded_file = st.file_uploader(
-    "Carga tu documento aquí", type=["docx", "pdf", "txt"]
+    "Carga un nuevo documento (Word .docx, PDF o TXT)",
+    type=["docx", "pdf", "txt"],
 )
 
 text_content = ""
@@ -34,14 +63,20 @@ if uploaded_file is not None:
     text_content = uploaded_file.read().decode("utf-8")
 
 if text_content and api_key:
-  if st.button("🚀 Generar Cuestionario"):
-    with st.spinner("Analizando documento con IA..."):
+  if st.button("🚀 Generar Nuevo Cuestionario"):
+    with st.spinner("Analizando documento con IA y redactando preguntas..."):
       try:
         client = genai.Client(api_key=api_key)
 
         prompt = f"""
                 Analiza el siguiente texto y organízalo en sus secciones/temas principales.
-                Para cada sección, genera entre 2 y 3 preguntas conceptuales de opción múltiple.
+                Para cada sección, genera exactamente {questions_per_section} preguntas de opción múltiple.
+
+                REGLAS CRÍTICAS PARA LAS OPCIONES:
+                1. TODAS las alternativas (tanto la correcta como las incorrectas) deben tener una longitud, nivel de detalle y estructura gramatical SIMILAR.
+                2. NUNCA hagas que la opción correcta sea la más larga, explicativa o evidente.
+                3. Las opciones incorrectas deben ser distractores plausibles y realistas del mismo tema.
+
                 Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
                 {{
                   "sections": [
@@ -52,7 +87,7 @@ if text_content and api_key:
                           "question": "Pregunta...",
                           "options": ["Opción A", "Opción B", "Opción C"],
                           "correctIndex": 0,
-                          "explanation": "Explicación de la respuesta..."
+                          "explanation": "Explicación detallada de por qué es la correcta..."
                         }}
                       ]
                     }}
@@ -60,7 +95,7 @@ if text_content and api_key:
                 }}
 
                 Texto:
-                {text_content[:15000]}
+                {text_content[:20000]}
                 """
 
         response = client.models.generate_content(
@@ -70,17 +105,53 @@ if text_content and api_key:
         )
 
         st.session_state["quiz_data"] = json.loads(response.text)
+        st.session_state["active_title"] = (
+            uploaded_file.name.rsplit(".", 1)[0].capitalize()
+        )
       except Exception as e:
         st.error(f"Error al procesar el archivo: {e}")
 
+elif not api_key and uploaded_file:
+  st.warning("⚠️ Por favor ingresa tu API Key en la barra lateral izquierda.")
+
+# --- RENDERIZAR CUESTIONARIO Y OPCIÓN DE GUARDAR ---
 if "quiz_data" in st.session_state:
+  st.divider()
+
+  # Zona para guardar el cuestionario activo
+  col1, col2 = st.columns([2, 1])
+  with col1:
+    quiz_name_input = st.text_input(
+        "Nombre para guardar este cuestionario:",
+        value=st.session_state.get("active_title", "Mi Cuestionario"),
+    )
+  with col2:
+    st.write(" ")
+    st.write(" ")
+    if st.button("💾 Guardar en Biblioteca"):
+      st.session_state["saved_quizzes"][quiz_name_input] = st.session_state[
+          "quiz_data"
+      ]
+      st.success(f"¡'{quiz_name_input}' guardado con éxito!")
+
+  # Descarga local en formato JSON
+  st.download_button(
+      label="📥 Descargar copia de respaldo (.json)",
+      data=json.dumps(st.session_state["quiz_data"], ensure_ascii=False, indent=2),
+      file_name=f"{quiz_name_input}.json",
+      mime="application/json",
+  )
+
+  st.divider()
+
+  # Mostrar las secciones y preguntas
   quiz = st.session_state["quiz_data"]
   for s_idx, sec in enumerate(quiz.get("sections", [])):
     st.header(f"📌 {sec['sectionTitle']}")
     for q_idx, q in enumerate(sec.get("questions", [])):
       st.subheader(f"{q_idx + 1}. {q['question']}")
       selected = st.radio(
-          "Selecciona una respuesta:", q["options"], key=f"q_{s_idx}_{q_idx}"
+          "Selecciona tu respuesta:", q["options"], key=f"q_{s_idx}_{q_idx}"
       )
       if st.button(
           f"Comprobar respuesta {q_idx + 1}", key=f"btn_{s_idx}_{q_idx}"
