@@ -1,0 +1,156 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Antecedentes de la investigación y fuentes de información",
+      "questions": [
+        {
+          "question": "¿Cuál es la función principal de los antecedentes de la investigación dentro del marco teórico?",
+          "options": [
+            "Proporcionar el contexto histórico y académico para entender el problema",
+            "Establecer exclusivamente las normas de citación bibliográfica APA",
+            "Definir de manera unívoca los conceptos estadísticos del estudio",
+            "Presentar los resultados definitivos obtenidos por el investigador"
+          ],
+          "correctIndex": 0,
+          "explanation": "Los antecedentes proporcionan el contexto histórico y académico necesario para comprender el problema que se investiga, identificar brechas y justificar la relevancia."
+        },
+        {
+          "question": "¿Qué característica define principalmente a las fuentes primarias en una investigación?",
+          "options": [
+            "Analizan, interpretan y resumen información de otros autores",
+            "Ofrecen definiciones generales y descripciones de diccionarios",
+            "Son documentos o materiales originales que dan información directa",
+            "Presentan ensayos que sintetizan la literatura de un área"
+          ],
+          "correctIndex": 2,
+          "explanation": "Las fuentes primarias son documentos o materiales originales, como artículos de investigación o tesis, que proporcionan información directa sobre el estudio."
+        },
+        {
+          "question": "¿Cuál de las siguientes opciones corresponde a un ejemplo de fuente secundaria?",
+          "options": [
+            "Una entrevista realizada directamente en el campo de estudio",
+            "Un informe de un proyecto elaborado por una institución específica",
+            "Un artículo de revisión que sintetiza la literatura existente",
+            "Una tesis doctoral inédita que presenta resultados originales"
+          ],
+          "correctIndex": 2,
+          "explanation": "Los artículos de revisión son fuentes secundarias porque sintetizan, analizan o interpretan información a partir de diversas fuentes primarias."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Métodos para realizar una revisión exhaustiva de la literatura",
+      "questions": [
+        {
+          "question": "¿Qué paso es fundamental antes de iniciar formalmente la búsqueda de fuentes bibliográficas?",
+          "options": [
+            "Redactar las conclusiones y recomendaciones finales",
+            "Definir claramente el alcance, delimitando el tema y criterios",
+            "Aplicar las normas de formato en el gestor bibliográfico",
+            "Analizar estadísticamente los datos de campo recolectados"
+          ],
+          "correctIndex": 1,
+          "explanation": "Definir el alcance de la revisión, incluyendo la delimitación del tema y los criterios de inclusión y exclusión, es vital antes de buscar fuentes."
+        },
+        {
+          "question": "¿Cuál es la utilidad principal de la técnica conocida como «cita en cadena»?",
+          "options": [
+            "Automatizar el formato de las referencias bibliográficas",
+            "Identificar estudios relevantes rastreando las referencias previas",
+            "Calificar el factor de impacto de las revistas científicas",
+            "Traducir textos complejos de bases de datos extranjeras"
+          ],
+          "correctIndex": 1,
+          "explanation": "La técnica de «cita en cadena» permite revisar las referencias de los artículos encontrados para rastrear estudios previos que influyeron en la investigación."
+        },
+        {
+          "question": "¿Qué enfoque permite organizar la literatura agrupándola por asuntos comunes para hallar patrones?",
+          "options": [
+            "Resúmenes temáticos estructurados por subtemas",
+            "Matrices estrictas de cálculo numérico cuantitativo",
+            "Listados cronológicos sin relación conceptual",
+            "Mapas de ubicación geográfica de las editoriales"
+          ],
+          "correctIndex": 0,
+          "explanation": "Los resúmenes temáticos agrupan la literatura por temas o subtemas, lo que facilita identificar patrones, tendencias y lagunas en la investigación."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Importancia de los antecedentes para la formulación del marco teórico",
+      "questions": [
+        {
+          "question": "Además de contextualizar, ¿qué permiten identificar los antecedentes para justificar la originalidad?",
+          "options": [
+            "Los errores ortográficos en los manuales de redacción",
+            "Las brechas o áreas no exploradas en el conocimiento",
+            "El presupuesto financiero exacto de los proyectos",
+            "La cantidad de páginas requeridas para la tesis"
+          ],
+          "correctIndex": 1,
+          "explanation": "La revisión de antecedentes ayuda a señalar brechas en el conocimiento, es decir, áreas no exploradas que justifican la originalidad del estudio."
+        },
+        {
+          "question": "¿Cómo contribuyen los antecedentes en la elección del enfoque metodológico?",
+          "options": [
+            "Prohibiendo el uso de herramientas digitales de análisis",
+            "Indicando qué métodos fueron efectivos y ayudando a evitar errores",
+            "Obligando al investigador a usar un diseño puramente cualitativo",
+            "Eliminando la necesidad de formular hipótesis complejas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Los antecedentes orientan al seleccionar métodos apropiados basados en el éxito pasado y permiten aprender de las limitaciones de otros para evitar errores."
+        },
+        {
+          "question": "¿Qué herramienta visual ayuda específicamente a interconectar conceptos y teorías de los antecedentes?",
+          "options": [
+            "Los mapas conceptuales y las matrices de revisión",
+            "Las tablas de distribución de frecuencias estadísticas",
+            "Los diagramas de flujo exclusivamente presupuestarios",
+            "Los cronogramas de actividades en formato de barras"
+          ],
+          "correctIndex": 0,
+          "explanation": "Los mapas conceptuales y las matrices de revisión de literatura permiten visualizar y organizar las conexiones entre estudios, teorías y hallazgos."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Definición y propósito del marco conceptual",
+      "questions": [
+        {
+          "question": "¿Cuál es la principal distinción entre el marco teórico y el marco conceptual?",
+          "options": [
+            "El teórico abarca teorías generales y el conceptual se enfoca en las relaciones operativas entre variables",
+            "El conceptual utiliza citas bibliográficas y el teórico se basa en opiniones personales",
+            "El teórico es exclusivo de investigaciones cuantitativas y el conceptual de estudios históricos",
+            "No existe ninguna diferencia conceptual ni práctica entre ambos términos"
+          ],
+          "correctIndex": 0,
+          "explanation": "El marco teórico abarca teorías generales y antecedentes, mientras que el conceptual detalla las relaciones operativas y específicas entre las variables a medir."
+        },
+        {
+          "question": "¿De qué manera actúa el marco conceptual al orientar el diseño metodológico?",
+          "options": [
+            "Determinando qué datos se necesitan recolectar y cómo analizarlos",
+            "Estableciendo las normas editoriales de la institución educativa",
+            "Sustituyendo por completo la revisión de la literatura previa",
+            "Garantizando que no existan variables intervinientes en el estudio"
+          ],
+          "correctIndex": 0,
+          "explanation": "Al establecer claramente las variables y relaciones, el marco conceptual guía al investigador en la determinación de los datos necesarios y su recopilación."
+        },
+        {
+          "question": "Aparte de orientar el estudio, ¿qué otro propósito cumple el marco conceptual según el texto?",
+          "options": [
+            "Facilitar la interpretación de resultados y comunicar la investigación",
+            "Calificar numéricamente la validez de los instrumentos de medición",
+            "Reducir automáticamente el tiempo de redacción del informe final",
+            "Reemplazar la formulación de hipótesis estadísticas complejas"
+          ],
+          "correctIndex": 1,
+          "explanation": "El marco conceptual facilita interpretar los resultados situándolos en un contexto y ayuda a comunicar de manera clara las relaciones a otros lectores."
+        }
+      ]
+    }
+  ]
+}
