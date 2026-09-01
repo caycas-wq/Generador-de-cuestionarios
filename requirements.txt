@@ -2,3 +2,4 @@ streamlit
 python-docx
 pypdf
 google-genai
+PyGithub
