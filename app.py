@@ -151,11 +151,11 @@ if text_content and gemini_key:
             {text_content[:20000]}
             """
 
-     # Lista de modelos válidos y estables en la API de Google GenAI
+      # Lista de modelos a probar secuencialmente si el servidor está ocupado
       candidate_models = [
-          "gemini-2.5-flash",
-          "gemini-2.0-flash",
-          "gemini-2.0-flash-lite",
+          "gemini-3.5-flash-lite",
+          "gemini-3.5-flash",
+          "gemini-3.0-flash",
       ]
 
       success = False
