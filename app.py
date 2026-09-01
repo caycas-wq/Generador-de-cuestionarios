@@ -1,6 +1,6 @@
 import json
 import docx
-from google import genai
+import google.generativeai as genai
 import pypdf
 import streamlit as st
 
@@ -14,7 +14,6 @@ st.write(
     " interactivas."
 )
 
-# Entrada de la API Key
 api_key = st.text_input("Ingresa tu API Key de Google Gemini:", type="password")
 
 uploaded_file = st.file_uploader(
@@ -38,11 +37,13 @@ if text_content and api_key:
   if st.button("🚀 Generar Cuestionario"):
     with st.spinner("Analizando documento con IA..."):
       try:
-        client = genai.Client(api_key=api_key)
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel("gemini-1.5-flash")
+
         prompt = f"""
                 Analiza el siguiente texto y organízalo en sus secciones/temas principales.
                 Para cada sección, genera entre 2 y 3 preguntas conceptuales de opción múltiple.
-                Devuelve EXCLUSIVAMENTE un JSON con esta estructura exacta:
+                Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta (sin markdown ```json ni nada adicional):
                 {{
                   "sections": [
                     {{
@@ -63,17 +64,14 @@ if text_content and api_key:
                 {text_content[:15000]}
                 """
 
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-            config={"response_mime_type": "application/json"},
+        response = model.generate_content(prompt)
+        clean_json = (
+            response.text.replace("```json", "").replace("```", "").strip()
         )
-
-        st.session_state["quiz_data"] = json.loads(response.text)
+        st.session_state["quiz_data"] = json.loads(clean_json)
       except Exception as e:
         st.error(f"Error al procesar el archivo: {e}")
 
-# Renderizar el cuestionario generado
 if "quiz_data" in st.session_state:
   quiz = st.session_state["quiz_data"]
   for s_idx, sec in enumerate(quiz.get("sections", [])):
