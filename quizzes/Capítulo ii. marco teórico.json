@@ -1,0 +1,118 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Antecedentes de la investigación y fuentes de información",
+      "questions": [
+        {
+          "question": "¿Cuál es la función principal de los antecedentes de la investigación dentro del marco teórico?",
+          "options": [
+            "Proporcionar el contexto histórico y académico necesario para entender el problema.",
+            "Establecer exclusivamente los costos financieros y recursos del proyecto en curso.",
+            "Describir de forma detallada la biografía personal de cada uno de los autores citados.",
+            "Definir de manera definitiva las hipótesis estadísticas que se validarán en el estudio."
+          ],
+          "correctIndex": 0,
+          "explanation": "Los antecedentes proporcionan el contexto histórico y académico necesario para entender el problema que se investiga, identificar brechas y justificar la relevancia del estudio."
+        },
+        {
+          "question": "¿Qué tipo de fuentes de información incluyen los artículos de investigación originales y las tesis?",
+          "options": [
+            "Fuentes secundarias porque analizan y resumen los datos recopilados por otros.",
+            "Fuentes terciarias debido a que recopilan información general para el público.",
+            "Fuentes primarias al tratarse de materiales originales que ofrecen información directa.",
+            "Fuentes marginales porque solo se utilizan en etapas muy tempranas del estudio."
+          ],
+          "correctIndex": 2,
+          "explanation": "Las fuentes primarias son documentos o materiales originales que proporcionan información directa sobre el tema de estudio, tales como artículos de investigación, tesis y disertaciones."
+        },
+        {
+          "question": "¿Qué característica define a las fuentes secundarias en el proceso de revisión de literatura?",
+          "options": [
+            "Recogen datos empíricos de campo obtenidos mediante encuestas propias del autor.",
+            "Analizan, interpretan o resumen información a partir de fuentes primarias existentes.",
+            "Consisten estrictamente en entrevistas grabadas a los participantes directos del estudio.",
+            "Presentan los resultados estadísticos sin procesar obtenidos en laboratorios."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las fuentes secundarias son aquellas que analizan, interpretan o resumen información a partir de fuentes primarias, como los artículos de revisión o enciclopedias."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Métodos para realizar una revisión exhaustiva de la literatura",
+      "questions": [
+        {
+          "question": "¿Cuál es el primer paso metodológico antes de iniciar la búsqueda de fuentes bibliográficas?",
+          "options": [
+            "Redactar las conclusiones definitivas del documento final de tesis.",
+            "Definir claramente el alcance del estudio mediante la delimitación del tema.",
+            "Seleccionar de forma aleatoria el gestor bibliográfico sin importar la disciplina.",
+            "Imprimir todos los artículos disponibles en las bases de datos generales."
+          ],
+          "correctIndex": 1,
+          "explanation": "Antes de comenzar la revisión, es vital definir el alcance del estudio delimitando el tema y estableciendo criterios de inclusión y exclusión."
+        },
+        {
+          "question": "¿Para qué disciplina académica resulta especialmente útil el uso de la base de datos PubMed?",
+          "options": [
+            "Investigaciones centradas estrictamente en ciencias de la salud y biomedicina.",
+            "Estudios enfocados en la historia del arte y la arquitectura contemporánea.",
+            "Proyectos dedicados al análisis de normativas legales y derecho mercantil.",
+            "Trabajos académicos orientados exclusivamente a la teoría educativa y pedagogía."
+          ],
+          "correctIndex": 0,
+          "explanation": "PubMed es una base de datos académica especialmente útil y recomendada para investigaciones en el campo de las ciencias de la salud."
+        },
+        {
+          "question": "En qué consiste la técnica de la «cita en cadena» durante la revisión de literatura?",
+          "options": [
+            "En traducir de forma simultánea múltiples artículos a un idioma extranjero.",
+            "En revisar las referencias de los artículos encontrados para identificar nuevos estudios.",
+            "En ordenar alfabéticamente a los autores según el número total de sus publicaciones.",
+            "En descartar automáticamente cualquier fuente que tenga más de cinco años de antigüedad."
+          ],
+          "correctIndex": 1,
+          "explanation": "La técnica de la cita en cadena implica revisar las referencias de los artículos y libros encontrados para identificar estudios relevantes adicionales que quizás no aparecieron en la búsqueda inicial."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Importancia de los antecedentes y del marco conceptual",
+      "questions": [
+        {
+          "question": "De qué manera contribuyen los antecedentes a la orientación del enfoque metodológico?",
+          "options": [
+            "Impidiendo que el investigador utilice herramientas estadísticas complejas.",
+            "Permitiendo seleccionar métodos efectivos usados antes y evitar errores comunes.",
+            "Garantizando que el presupuesto asignado no sufra modificaciones imprevistas.",
+            "Eliminando la necesidad de formular hipótesis formales en el proyecto."
+          ],
+          "correctIndex": 1,
+          "explanation": "Al revisar los métodos utilizados en investigaciones anteriores, el investigador puede seleccionar enfoques apropiados y aprender de las limitaciones de otros para evitar errores."
+        },
+        {
+          "question": "¿Cómo se define el marco conceptual dentro de la investigación científica?",
+          "options": [
+            "Como la representación visual o verbal de las relaciones entre variables y conceptos clave.",
+            "Como el listado numérico de los gastos totales generados por el trabajo de campo.",
+            "Como el cronograma detallado de las actividades realizadas mes a mes en la tesis.",
+            "Como el resumen ejecutivo redactado al final del documento para la divulgación."
+          ],
+          "correctIndex": 0,
+          "explanation": "El marco conceptual se refiere a la representación visual o verbal de las relaciones entre las variables y conceptos clave que sirven como guía para el estudio."
+        },
+        {
+          "question": "Qué elementos fundamentales deben integrarse obligatoriamente al redactar el marco teórico?",
+          "options": [
+            "Opiniones personales sin sustento empírico y datos financieros confidenciales.",
+            "Citas correctas con normas académicas, coherencia y la perspectiva del investigador.",
+            "Solamente resúmenes textuales de leyes gubernamentales vigentes en el país.",
+            "Únicamente gráficos estadísticos sin explicaciones textuales o teóricas."
+          ],
+          "correctIndex": 1,
+          "explanation": "Al redactar el marco teórico es importante citar correctamente según normas académicas, mantener la coherencia y aportar el análisis crítico y la perspectiva del investigador."
+        }
+      ]
+    }
+  ]
+}
