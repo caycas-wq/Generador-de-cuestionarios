@@ -134,7 +134,8 @@ if text_content and gemini_key:
             1. Para Opción Múltiple: Genera 4 alternativas donde TODAS (correctas e incorrectas) tengan una longitud, complejidad y tono similar.
             2. Para Verdadero/Falso: Genera únicamente 2 opciones: ["Verdadero", "Falso"].
             3. NUNCA hagas que la opción correcta sea visiblemente más larga o detallada que los distractores.
-            4. "correctIndex" DEBE ser obligatoriamente un número entero de base 0 correspondiente a la posición exacta de la respuesta correcta en la lista "options" (0 para la primera opción, 1 para la segunda, 2 para la tercera, 3 para la cuarta).
+            4. "correctIndex" DEBE ser obligatoriamente el número entero de base 0 (0, 1, 2 o 3) que apunta A LA OPCIÓN CORRECTA exacta en la lista "options".
+            5. La "explanation" debe coincidir pedagógica y textualmente con la opción marcada en "correctIndex".
 
             Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
             {{
@@ -272,22 +273,22 @@ if "quiz_data" in st.session_state:
       if st.session_state["checked_questions"].get(q_key, False):
         raw_idx = q.get("correctIndex", 0)
         options = q.get("options", [])
+        explanation = q.get("explanation", "")
 
-        # Validación segura del índice
-        if not isinstance(raw_idx, int) or raw_idx < 0 or raw_idx >= len(options):
-          safe_idx = 0
+        # Validación del índice de respuesta correcta
+        if isinstance(raw_idx, int) and 0 <= raw_idx < len(options):
+          correct_option = options[raw_idx]
         else:
-          safe_idx = raw_idx
+          correct_option = options[0] if options else "No disponible"
 
-        correct_option = options[safe_idx] if options else "No disponible"
         user_choice = st.session_state["user_answers"].get(q_key)
 
         if user_choice == correct_option:
-          st.success(f"¡Correcto! {q.get('explanation', '')}")
+          st.success(f"¡Correcto! {explanation}")
           correct_count += 1
         else:
           st.error(
-              f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {q.get('explanation', '')}"
+              f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {explanation}"
           )
 
   # --- MODO ESTUDIANTE: EVALUACIÓN Y TIEMPO ---
