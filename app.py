@@ -130,10 +130,11 @@ if text_content and gemini_key:
             - Nivel de dificultad: {difficulty}.
             - Tipo de pregunta deseado: {question_type}.
 
-            REGLAS CRÍTICAS PARA LAS OPCIONES:
+            REGLAS CRÍTICAS PARA LAS OPCIONES Y EL ÍNDICE:
             1. Para Opción Múltiple: Genera 4 alternativas donde TODAS (correctas e incorrectas) tengan una longitud, complejidad y tono similar.
             2. Para Verdadero/Falso: Genera únicamente 2 opciones: ["Verdadero", "Falso"].
             3. NUNCA hagas que la opción correcta sea visiblemente más larga o detallada que los distractores.
+            4. "correctIndex" DEBE ser obligatoriamente un número entero de base 0 correspondiente a la posición exacta de la respuesta correcta en la lista "options" (0 para la primera opción, 1 para la segunda, 2 para la tercera, 3 para la cuarta).
 
             Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
             {{
@@ -157,9 +158,9 @@ if text_content and gemini_key:
             """
 
       candidate_models = [
-          "gemini-3.5-flash-lite",
-          "gemini-3.5-flash",
-          "gemini-3.0-flash",
+          "gemini-2.5-flash",
+          "gemini-2.0-flash",
+          "gemini-1.5-flash",
       ]
 
       success = False
@@ -265,12 +266,14 @@ if "quiz_data" in st.session_state:
       )
       st.session_state["user_answers"][q_key] = selected
 
-     if st.session_state["checked_questions"].get(q_key, False):
-        # Validación segura del índice de la respuesta correcta
+      if st.button(f"Comprobar respuesta {q_idx + 1}", key=btn_key):
+        st.session_state["checked_questions"][q_key] = True
+
+      if st.session_state["checked_questions"].get(q_key, False):
         raw_idx = q.get("correctIndex", 0)
         options = q.get("options", [])
-        
-        # Ajuste en caso de que la IA devuelva un índice fuera de rango
+
+        # Validación segura del índice
         if not isinstance(raw_idx, int) or raw_idx < 0 or raw_idx >= len(options):
           safe_idx = 0
         else:
