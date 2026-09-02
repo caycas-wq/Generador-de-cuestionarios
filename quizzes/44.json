@@ -1,0 +1,250 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Antecedentes de la Investigación y su Importancia",
+      "questions": [
+        {
+          "question": "¿Cuál es una de las funciones principales de los antecedentes al estructurar el marco teórico?",
+          "options": [
+            "Identificar vacíos en el conocimiento que justifiquen el desarrollo de un nuevo estudio.",
+            "Diseñar de forma definitiva los instrumentos estadísticos para la recolección de datos.",
+            "Determinar con exactitud el presupuesto financiero necesario para ejecutar el proyecto.",
+            "Validar de manera absoluta las hipótesis planteadas antes de iniciar el trabajo de campo."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto explica que los antecedentes de la investigación permiten identificar brechas o áreas que no han sido abordadas adecuadamente, justificando así la relevancia del estudio frente a trabajos anteriores."
+        },
+        {
+          "question": "Al categorizar las fuentes de información, ¿qué elemento caracteriza fundamentalmente a una fuente primaria?",
+          "options": [
+            "Sintetizar las opiniones de diversos autores sobre un tema específico a lo largo del tiempo.",
+            "Ofrecer acceso directo a datos, perspectivas originales o resultados de estudios de primera mano.",
+            "Ofrecer definiciones conceptuales estandarizadas y resúmenes de teorías previamente validadas.",
+            "Analizar críticamente el impacto social de las investigaciones publicadas en revistas científicas."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las fuentes primarias se definen como documentos o materiales originales que proporcionan información directa y de primera mano sobre el tema de estudio, tales como artículos de investigación original, tesis y entrevistas."
+        },
+        {
+          "question": "¿Cuál de las siguientes opciones representa un ejemplo adecuado de fuente secundaria según el texto?",
+          "options": [
+            "Una tesis de doctorado que presenta datos recolectados mediante encuestas estructuradas.",
+            "Un informe técnico original elaborado tras concluir un proyecto de campo específico.",
+            "Un artículo de revisión que sintetiza y analiza de manera integral la literatura existente.",
+            "Una entrevista en profundidad realizada a un especialista destacado en el área de estudio."
+          ],
+          "correctIndex": 2,
+          "explanation": "Las fuentes secundarias son aquellas que analizan, interpretan o resumen información a partir de fuentes primarias. Los artículos de revisión son un ejemplo claro de este tipo de fuentes según el texto."
+        },
+        {
+          "question": "¿De qué manera la revisión de antecedentes ayuda a los investigadores a formular su enfoque metodológico?",
+          "options": [
+            "Permitiendo seleccionar métodos que hayan demostrado ser efectivos y evitar errores comunes previos.",
+            "Garantizando la eliminación total de cualquier variable interviniente en el diseño experimental.",
+            "Sustituyendo la necesidad de recolectar nuevos datos empíricos mediante el uso de bases teóricas.",
+            "Definiendo de manera automática el tamaño óptimo de la población objeto de estudio técnico."
+          ],
+          "correctIndex": 0,
+          "explanation": "La revisión de antecedentes ayuda a comprender qué métodos se han utilizado en investigaciones anteriores, facilitando la elección de enfoques adecuados y la prevención de errores ya cometidos."
+        },
+        {
+          "question": "En la justificación de la investigación, ¿cómo contribuyen los antecedentes a la relevancia práctica del estudio?",
+          "options": [
+            "Demostrando que el proyecto no requerirá de recursos adicionales para su correcta implementación de campo.",
+            "Asegurando que los resultados obtenidos serán aplicables de forma universal en cualquier entorno educativo.",
+            "Validando de antemano el éxito de las intervenciones propuestas sin necesidad de un análisis posterior.",
+            "Explicando cómo el contexto académico e histórico contribuye a resolver problemas concretos de la realidad."
+          ],
+          "correctIndex": 3,
+          "explanation": "Los antecedentes tienen implicaciones prácticas al explicar cómo el contexto histórico o académico ayuda a resolver problemas concretos del mundo real a través de la identificación de lecciones aprendidas y teorías aplicadas."
+        },
+        {
+          "question": "¿Qué utilidad metodológica tienen las matrices de revisión de literatura al estructurar los antecedentes?",
+          "options": [
+            "Reemplazar la redacción formal de los antecedentes mediante cuadros sinópticos de carácter técnico.",
+            "Organizar y comparar de manera visual las conexiones entre estudios, teorías y hallazgos identificados.",
+            "Evaluar automáticamente el índice de impacto de las revistas científicas consultadas por el autor.",
+            "Generar de forma directa las referencias bibliográficas en formatos internacionales estandarizados."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las matrices de revisión son herramientas que permiten organizar visualmente las conexiones entre diferentes estudios, teorías y hallazgos para identificar de forma clara similitudes y diferencias."
+        },
+        {
+          "question": "¿Cuál es un beneficio de analizar la evolución del tema a través de los antecedentes históricos del estudio?",
+          "options": [
+            "Situar el trabajo actual en un contexto amplio, conociendo cómo han cambiado las teorías y enfoques.",
+            "Limitar el alcance de la investigación únicamente a las teorías formuladas en las últimas dos décadas.",
+            "Evitar la inclusión de opiniones críticas que contradigan las suposiciones iniciales del investigador.",
+            "Confirmar que el problema seleccionado ha sido resuelto por completo en investigaciones de carácter previo."
+          ],
+          "correctIndex": 0,
+          "explanation": "Entender la evolución del tema permite al investigador situar su trabajo dentro de un contexto más amplio y fundamentar la investigación sobre bases teóricas y metodológicas sólidas desarrolladas a lo largo del tiempo."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Métodos para la Revisión Exhaustiva de la Literatura",
+      "questions": [
+        {
+          "question": "¿Cuál es el propósito primordial de establecer criterios de inclusión y exclusión al inicio de una revisión de literatura?",
+          "options": [
+            "Delimitar el alcance del estudio para evitar una sobrecarga de información irrelevante durante la búsqueda.",
+            "Validar estadísticamente las hipótesis del trabajo de investigación antes de redactar el marco conceptual.",
+            "Clasificar los documentos seleccionados únicamente según el prestigio institucional de los autores firmantes.",
+            "Asegurar que todos los artículos científicos identificados contengan exactamente el mismo diseño metodológico."
+          ],
+          "correctIndex": 0,
+          "explanation": "Establecer criterios de inclusión y exclusión delimita el alcance de la investigación. Un alcance demasiado amplio puede provocar sobrecarga de información, por lo que es vital definir tipos de estudio, años y enfoques."
+        },
+        {
+          "question": "¿En qué consiste la técnica de 'cita en cadena' durante la fase de búsqueda de fuentes?",
+          "options": [
+            "Vincular de forma obligatoria las palabras clave empleadas en múltiples bases de datos de forma paralela.",
+            "Agrupar secuencialmente a los autores en orden alfabético para agilizar la redacción final del manuscrito.",
+            "Revisar las referencias de los artículos encontrados para rastrear la influencia mutua entre diversos estudios.",
+            "Copiar literalmente los párrafos más importantes de cada fuente consultada sin alterar la estructura original."
+          ],
+          "correctIndex": 2,
+          "explanation": "La técnica de 'cita en cadena' consiste en revisar las referencias de los artículos y libros encontrados para identificar estudios relevantes que no aparecieron en la búsqueda inicial, rastreando su influencia mutua."
+        },
+        {
+          "question": "Al evaluar la calidad de la literatura recopilada, ¿cuál de los siguientes aspectos se considera un criterio fundamental?",
+          "options": [
+            "Analizar la rigurosidad de la metodología empleada y la credibilidad de la trayectoria del autor.",
+            "Verificar que el documento contenga un número mínimo de páginas redactadas según normas internacionales.",
+            "Confirmar que las conclusiones del estudio coincidan exactamente con la hipótesis planteada por el investigador.",
+            "Evaluar si la fuente de información ha sido financiada en su totalidad por instituciones de carácter público."
+          ],
+          "correctIndex": 0,
+          "explanation": "La evaluación de la calidad de las fuentes incluye analizar la credibilidad del autor, la rigurosidad y el carácter apropiado de la metodología utilizada, y la contribución real del estudio al campo científico."
+        },
+        {
+          "question": "¿Cuál es la diferencia clave entre organizar la información mediante resúmenes temáticos y mediante matrices de comparación?",
+          "options": [
+            "Los resúmenes eliminan la necesidad de citar a los autores, mientras que las matrices exigen referencias bibliográficas completas.",
+            "Los resúmenes se enfocan en estudios de carácter cualitativo, mientras que las matrices se aplican únicamente a datos cuantitativos.",
+            "Los resúmenes son exclusivos para la fase inicial de búsqueda, mientras que las matrices se elaboran solo al concluir el reporte.",
+            "Los resúmenes agrupan la literatura por temas para ver patrones, mientras que las matrices facilitan el análisis visual de variables."
+          ],
+          "correctIndex": 3,
+          "explanation": "Los resúmenes temáticos agrupan la literatura por temas para identificar patrones y tendencias, mientras que las matrices facilitan comparar visualmente objetivos, métodos, hallazgos y conclusiones."
+        },
+        {
+          "question": "¿Qué riesgo metodológico se asume al definir un alcance demasiado restrictivo en la revisión de literatura?",
+          "options": [
+            "Omitir estudios clave o perspectivas esenciales que podrían enriquecer significativamente la base teórica del proyecto.",
+            "Generar una sobrecarga de datos bibliográficos imposibles de procesar y sintetizar dentro de los plazos establecidos.",
+            "Dificultar la selección de bases de datos especializadas al no contar con términos de búsqueda lo suficientemente amplios.",
+            "Provocar sesgos de confirmación al integrar únicamente investigaciones publicadas en revistas científicas de bajo impacto."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto advierte que un alcance demasiado amplio genera sobrecarga de información, mientras que un alcance excesivamente restrictivo corre el riesgo de omitir estudios de gran relevancia o investigaciones clave."
+        },
+        {
+          "question": "¿Qué papel fundamental desempeñan los gestores bibliográficos como Mendeley o Zotero en la investigación?",
+          "options": [
+            "Analizar de forma crítica la coherencia lógica interna de los argumentos presentados en el marco conceptual.",
+            "Facilitar la organización de las fuentes encontradas y optimizar la creación de citas y listas bibliográficas.",
+            "Traducir de manera automatizada artículos científicos escritos en lenguas extranjeras al idioma del investigador.",
+            "Corregir los errores de redacción y de estilo gramatical presentes en los borradores preliminares de la tesis."
+          ],
+          "correctIndex": 1,
+          "explanation": "Herramientas como Mendeley o Zotero son gestores bibliográficos diseñados para facilitar la recopilación y organización eficiente de las fuentes encontradas, automatizando la generación de citas y bibliografías."
+        },
+        {
+          "question": "¿Cuál es una de las recomendaciones clave al redactar formalmente el marco teórico tras la revisión bibliográfica?",
+          "options": [
+            "Integrar el análisis crítico del investigador mostrando cómo la literatura existente informa y justifica el estudio.",
+            "Transcribir íntegramente las conclusiones de las investigaciones previas para evitar sesgos personales de interpretación.",
+            "Evitar la discusión de resultados que contradigan las teorías más populares o aceptadas en la comunidad académica.",
+            "Presentar de forma cronológica cada una de las fuentes consultadas sin establecer conexiones temáticas entre ellas."
+          ],
+          "correctIndex": 0,
+          "explanation": "Es fundamental que el investigador aporte su propio análisis crítico de la literatura revisada, articulando cómo cada autor o hallazgo informa, respalda y justifica de forma directa el desarrollo de su investigación."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Definición y Propósito del Marco Conceptual",
+      "questions": [
+        {
+          "question": "Según el texto proporcionado, ¿cómo se define esencialmente el marco conceptual de una investigación?",
+          "options": [
+            "Como la representación visual o verbal de las relaciones existentes entre las variables y los conceptos clave del estudio.",
+            "Como el desglose pormenorizado del presupuesto financiero y el cronograma de actividades de la fase empírica del proyecto.",
+            "Como la recopilación de todos los datos estadísticos históricos relacionados de forma directa con el objeto de estudio.",
+            "Como la descripción detallada de los instrumentos de medición psicológica y social validados para el contexto local investigado."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto define explícitamente el marco conceptual como la representación visual o verbal de las relaciones existentes entre las variables y los conceptos clave que guían el análisis de la investigación."
+        },
+        {
+          "question": "¿Qué elementos fundamentales integran la estructura del marco conceptual?",
+          "options": [
+            "Las hipótesis estadísticas, el tamaño muestral calculado y las técnicas de análisis de datos cuantitativos.",
+            "Las opiniones personales del investigador, el índice tentativo del reporte y la lista de agradecimientos institucionales.",
+            "Los antecedentes históricos generales, el listado de bases de datos consultadas y el formato de citación elegido.",
+            "Los conceptos clave de la investigación, las teorías relevantes y las relaciones propuestas entre las variables."
+          ],
+          "correctIndex": 4,
+          "explanation": "La estructura interna del marco conceptual se constituye por la delimitación de los conceptos clave del tema, la selección de teorías relevantes y la manifestación de las relaciones propuestas entre las variables estudiadas."
+        },
+        {
+          "question": "¿Cuál es la función de los 'conceptos clave' dentro del marco conceptual?",
+          "options": [
+            "Resumir los hallazgos empíricos de las tesis de posgrado desarrolladas previamente en la misma línea de investigación.",
+            "Proporcionar los términos y definiciones fundamentales que permiten delimitar y entender el fenómeno que se está estudiando.",
+            "Establecer las directrices éticas que deben regir el comportamiento de los participantes durante la toma de datos de campo.",
+            "Justificar el uso de un enfoque metodológico cuantitativo por encima de un diseño de carácter puramente cualitativo."
+          ],
+          "correctIndex": 1,
+          "explanation": "Los conceptos clave son aquellos términos técnicos y definiciones precisas que resultan absolutamente fundamentales para delimitar, comprender e interpretar adecuadamente el fenómeno de estudio en cuestión."
+        },
+        {
+          "question": "Al diseñar un marco conceptual, ¿por qué es importante incluir 'teorías relevantes' como la de las inteligencias múltiples mencionada?",
+          "options": [
+            "Porque ofrecen modelos explicativos estructurados para comprender el cómo y el porqué ocurren determinados fenómenos de estudio.",
+            "Porque garantizan que los resultados de la investigación sean idénticos a los obtenidos por los autores originales de la teoría.",
+            "Porque permiten omitir la recolección de nuevos datos de campo al basarse en supuestos explicativos previamente validados.",
+            "Porque aseguran la aprobación del proyecto por parte de los comités evaluadores al emplear nombres de teóricos reconocidos."
+          ],
+          "correctIndex": 0,
+          "explanation": "Las teorías relevantes de soporte, como la teoría de las inteligencias múltiples de Gardner, proporcionan los modelos e hipótesis estructuradas que explican de manera lógica la raíz y el funcionamiento de los fenómenos estudiados."
+        },
+        {
+          "question": "¿De qué manera sirve el marco conceptual como guía práctica durante el desarrollo de la investigación?",
+          "options": [
+            "Determinando de forma unívoca la única técnica de muestreo probabilístico válida para el diseño metodológico del estudio.",
+            "Permitiendo modificar las hipótesis iniciales en función de las opiniones de los sujetos participantes durante las entrevistas.",
+            "Ofreciendo un contexto estructurado y un mapa de relaciones que orienta el análisis e interpretación de los datos recolectados.",
+            "Reduciendo el tiempo requerido para realizar la búsqueda bibliográfica en las bases de datos académicas internacionales."
+          ],
+          "correctIndex": 2,
+          "explanation": "El marco conceptual sirve como directriz principal para la investigación porque proporciona un contexto estructurado que delimita las variables, guiando de forma coherente el posterior análisis de los datos recolectados."
+        },
+        {
+          "question": "¿Qué representa la dimensión de 'relaciones entre variables' en la formulación de un marco conceptual?",
+          "options": [
+            "La descripción de cómo se interconectan e influyen recíprocamente los distintos constructos bajo análisis en la investigación.",
+            "La enumeración de los coeficientes de correlación estadística obtenidos de manera definitiva tras la aplicación del instrumento.",
+            "El análisis de la consistencia interna de los ítems de un cuestionario antes de ser administrado a la población seleccionada.",
+            "La comparación directa entre la cantidad de fuentes primarias y secundarias citadas a lo largo de todo el marco teórico."
+          ],
+          "correctIndex": 0,
+          "explanation": "Las relaciones entre variables expresadas en el marco conceptual muestran conceptual, teórica o visualmente cómo interactúan e influyen mutuamente los diferentes constructos centrales analizados en el estudio."
+        },
+        {
+          "question": "Si un investigador realiza un estudio sobre 'educación emocional', ¿cómo se aplican los conceptos de este marco según el texto?",
+          "options": [
+            "Evaluando de manera cualitativa el estado psicológico de los docentes encargados de aplicar las estrategias en el aula de clase.",
+            "Diseñando un taller formativo estandarizado de libre acceso para mejorar la motivación intrínseca de la población estudiantil.",
+            "Identificando constructos fundamentales como 'habilidades emocionales' y 'rendimiento académico' para analizar su vinculación.",
+            "Comparando el rendimiento promedio de distintas instituciones educativas públicas con base en sus presupuestos administrativos."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto ilustra que en un estudio de educación emocional, definir conceptos interrelacionados como 'habilidades emocionales' y 'rendimiento académico' resulta esencial para estructurar y comprender las dinámicas del fenómeno."
+        }
+      ]
+    }
+  ]
+}
