@@ -265,19 +265,26 @@ if "quiz_data" in st.session_state:
       )
       st.session_state["user_answers"][q_key] = selected
 
-      if st.button(f"Comprobar respuesta {q_idx + 1}", key=btn_key):
-        st.session_state["checked_questions"][q_key] = True
+     if st.session_state["checked_questions"].get(q_key, False):
+        # Validación segura del índice de la respuesta correcta
+        raw_idx = q.get("correctIndex", 0)
+        options = q.get("options", [])
+        
+        # Ajuste en caso de que la IA devuelva un índice fuera de rango
+        if not isinstance(raw_idx, int) or raw_idx < 0 or raw_idx >= len(options):
+          safe_idx = 0
+        else:
+          safe_idx = raw_idx
 
-      if st.session_state["checked_questions"].get(q_key, False):
-        correct_option = q["options"][q["correctIndex"]]
+        correct_option = options[safe_idx] if options else "No disponible"
         user_choice = st.session_state["user_answers"].get(q_key)
 
         if user_choice == correct_option:
-          st.success(f"¡Correcto! {q['explanation']}")
+          st.success(f"¡Correcto! {q.get('explanation', '')}")
           correct_count += 1
         else:
           st.error(
-              f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {q['explanation']}"
+              f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {q.get('explanation', '')}"
           )
 
   # --- MODO ESTUDIANTE: EVALUACIÓN Y TIEMPO ---
