@@ -1,0 +1,190 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Fundamentos y Características del Conocimiento Científico",
+      "questions": [
+        {
+          "question": "¿Cuál es la implicación principal de que el conocimiento científico tenga un origen empírico?",
+          "options": [
+            "Se fundamenta en la recolección y análisis de hechos y datos observados en la realidad.",
+            "Depende únicamente de deducciones teóricas abstractas formuladas sin datos de campo.",
+            "Rechaza la observación directa para enfocarse en la especulación filosófica tradicional.",
+            "Exige que todos los fenómenos estudiados deban replicarse únicamente en laboratorios."
+          ],
+          "correctIndex": 0,
+          "explanation": "Tener un origen empírico significa que la investigación parte de la observación de la realidad para identificar y recolectar datos, hechos y fenómenos."
+        },
+        {
+          "question": "Según Bisquerra (2004), la 'duda metódica' en la ciencia implica que el conocimiento:",
+          "options": [
+            "Es incuestionable y permanece inalterable a lo largo de toda la historia humana.",
+            "Carece de rigor metodológico y no puede ser aplicado a la realidad educativa.",
+            "Se considera válido hasta que surjan nuevas teorías capaces de perfeccionarlo.",
+            "Requiere la aprobación unánime de la sociedad para ser considerado científico."
+          ],
+          "correctIndex": 2,
+          "explanation": "La duda metódica establece que el conocimiento es autocorrectivo y se mantiene válido únicamente hasta que aparezcan nuevas teorías que lo perfeccionen o superen."
+        },
+        {
+          "question": "¿Qué caracteriza al carácter analítico del conocimiento científico en la investigación?",
+          "options": [
+            "Aborda la realidad global sin considerar las partes o variables que la componen.",
+            "Fragmenta el fenómeno en variables para estudiarlo con mayor precisión y rigor.",
+            "Evita dividir la realidad para enfocarse en interpretaciones subjetivas generales.",
+            "Sustituye la recolección de datos por explicaciones intuitivas sobre el entorno."
+          ],
+          "correctIndex": 1,
+          "explanation": "El carácter analítico implica aproximarse a la realidad de la forma más precisa posible, analizando los fenómenos fragmentados en variables de investigación."
+        },
+        {
+          "question": "La propiedad de ser 'hipotético' en el conocimiento científico significa que este:",
+          "options": [
+            "Garantiza la obtención de verdades definitivas e inmodificables sobre el fenómeno.",
+            "Posee un carácter incierto, pues nunca se está seguro de alcanzar la verdad absoluta.",
+            "Se elabora sobre ideas fantásticas que no requieren contraste con la realidad.",
+            "Prescinde de la formulación de hipótesis al iniciar una investigación formal."
+          ],
+          "correctIndex": 1,
+          "explanation": "El conocimiento es hipotético porque es incierto; nunca se está completamente seguro de lograr la verdad y mucho menos de que esta sea definitiva."
+        },
+        {
+          "question": "En el contexto de la investigación científica, la objetividad exige principalmente:",
+          "options": [
+            "La total y absoluta eliminación de la perspectiva del investigador en todo estudio.",
+            "Un compromiso ético de imparcialidad y correspondencia fiel con la realidad estudiada.",
+            "La aplicación exclusiva de herramientas estadísticas en la recolección de datos.",
+            "La validación de opiniones personales respaldadas por la experiencia del docente."
+          ],
+          "correctIndex": 1,
+          "explanation": "La objetividad exige un compromiso con la imparcialidad y la correspondencia fiel a la realidad del fenómeno, reconociendo que la objetividad total es deseable aunque difícil."
+        },
+        {
+          "question": "¿Por qué se afirma que el conocimiento científico es un saber especializado?",
+          "options": [
+            "Porque requiere el uso de un método único y universal para todas las disciplinas.",
+            "Porque aborda los fenómenos desde enfoques específicos o miradas particulares.",
+            "Porque prohíbe la combinación de miradas metodológicas en el ámbito educativo.",
+            "Porque únicamente puede ser producido por investigadores con doctorado académico."
+          ],
+          "correctIndex": 1,
+          "explanation": "Es especializado porque existen diferentes enfoques para conocer un mismo fenómeno, lo que origina diversas miradas o énfasis en parcelas específicas de la realidad."
+        },
+        {
+          "question": "La precisión como característica del conocimiento científico se alcanza cuando se:",
+          "options": [
+            "Emplea un lenguaje específico y riguroso que al mismo tiempo resulte comprensible.",
+            "Utiliza un vocabulario extremadamente ambiguo para permitir múltiples interpretaciones.",
+            "Acumulan grandes cantidades de datos sin realizar un análisis riguroso posterior.",
+            "Evitan los términos científicos estandarizados para simplificar la información."
+          ],
+          "correctIndex": 0,
+          "explanation": "La precisión aspira a la mayor exactitud posible, lo cual exige el uso de un lenguaje específico y técnico que sea comprensible para los demás."
+        },
+        {
+          "question": "El carácter práctico del conocimiento científico se demuestra al:",
+          "options": [
+            "Permanecer exclusivamente en el plano teórico dentro del ámbito académico.",
+            "Ser útil para responder a necesidades sociales y mejorar la calidad de vida.",
+            "Buscar exclusivamente beneficios económicos para las instituciones educativas.",
+            "Reemplazar completamente las consideraciones éticas por normas metodológicas."
+          ],
+          "correctIndex": 1,
+          "explanation": "El conocimiento científico es práctico porque debe ser útil para satisfacer las necesidades de la sociedad y contribuir a la mejora de sus condiciones de vida."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Enfoques de Investigación Educativa y Ética",
+      "questions": [
+        {
+          "question": "¿Cuál es la finalidad principal del enfoque cuantitativo en la investigación educativa?",
+          "options": [
+            "Profundizar en los significados individuales de la experiencia de los participantes.",
+            "Buscar la generalización de los resultados obtenidos a la población objeto de estudio.",
+            "Evaluar únicamente los códigos morales que rigen la práctica pedagógica en el aula.",
+            "Construir teorías abstractas sin necesidad de realizar recolección de datos de campo."
+          ],
+          "correctIndex": 1,
+          "explanation": "El enfoque cuantitativo en la investigación educativa se caracteriza fundamentalmente por buscar la generalización de sus resultados a la población."
+        },
+        {
+          "question": "El enfoque cualitativo en la investigación educativa se distingue principalmente por:",
+          "options": [
+            "Medir variables numéricas para extrapolar patrones estadísticos a gran escala.",
+            "Buscar una comprensión profunda y detallada del fenómeno social o educativo.",
+            "Garantizar la objetividad matemática mediante experimentos de laboratorio rigurosos.",
+            "Desestimar el contexto natural donde se desarrollan los hechos investigados."
+          ],
+          "correctIndex": 1,
+          "explanation": "A diferencia del cuantitativo, el enfoque cualitativo busca alcanzar una profundización detallada del fenómeno de estudio en su contexto."
+        },
+        {
+          "question": "Un investigador que pretende extrapolar sus resultados a toda la red escolar regional debe optar por:",
+          "options": [
+            "El enfoque cualitativo, por centrarse en las vivencias particulares de los sujetos.",
+            "El enfoque cuantitativo, ya que su objetivo primordial es la generalización.",
+            "Un análisis filosófico pura y exclusivamente conceptual sobre el sistema escolar.",
+            "El estudio normativo ético, dado que establece directrices de conducta general."
+          ],
+          "correctIndex": 1,
+          "explanation": "Cuando se requiere trasladar o generalizar los hallazgos a una población mayor, el enfoque metodológico adecuado es el cuantitativo."
+        },
+        {
+          "question": "¿Cómo se define la ética según el texto analizado?",
+          "options": [
+            "Un método de investigación cualitativo centrado en la observación de aulas.",
+            "Un conjunto de leyes estatales sancionatorias que regulan el ejercicio profesional.",
+            "Un conjunto de valores y principios que guían y estudian el comportamiento humano.",
+            "Una técnica estadística que asegura la validez empírica de los instrumentos."
+          ],
+          "correctIndex": 2,
+          "explanation": "Según la definición explícita del texto, la ética es un conjunto de valores y principios que guían el comportamiento humano y estudian dicho comportamiento."
+        },
+        {
+          "question": "¿Cuál es la diferencia fundamental entre el enfoque cuantitativo y el cualitativo según el texto?",
+          "options": [
+            "El cuantitativo busca la generalización y el cualitativo la profundización del fenómeno.",
+            "El cuantitativo es empírico mientras que el cualitativo carece de rigurosidad científica.",
+            "El cuantitativo no sigue el método científico y el cualitativo es puramente deductivo.",
+            "El cuantitativo se limita a la educación y el cualitativo a las ciencias naturales."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto explicita que el enfoque cuantitativo busca la generalización de resultados a la población, mientras que el cualitativo busca profundizar en el fenómeno."
+        },
+        {
+          "question": "Si una investigación busca comprender detalladamente las vivencias de tres docentes, esta aplica un enfoque:",
+          "options": [
+            "Cuantitativo, porque intenta extrapolar las vivencias a todos los docentes.",
+            "Cualitativo, puesto que su objetivo es profundizar en el fenómeno estudiado.",
+            "Estadístico, ya que requiere procesar numéricamente las percepciones individuales.",
+            "Normativo, porque evalúa si la conducta docente cumple con principios éticos."
+          ],
+          "correctIndex": 1,
+          "explanation": "El enfoque cualitativo se orienta a profundizar en el fenómeno y sus particularidades, idóneo para analizar detalladamente las experiencias de un grupo específico."
+        },
+        {
+          "question": "La investigación científica contribuye al desarrollo de la ciencia porque permite:",
+          "options": [
+            "Generar conocimiento científico mediante la aplicación rigurosa del método científico.",
+            "Demostrar que las teorías existentes son verdades absolutas e inmodificables.",
+            "Prescindir del trabajo empírico mediante el uso exclusivo de la intuición humana.",
+            "Sustituir las consideraciones éticas por procedimientos meramente mecánicos."
+          ],
+          "correctIndex": 0,
+          "explanation": "Al investigar científicamente aplicamos el método científico y, mediante ese proceso riguroso, contribuimos al desarrollo de la ciencia generando conocimiento."
+        },
+        {
+          "question": "¿Por qué la ética es relevante dentro del proceso de investigación educativa?",
+          "options": [
+            "Porque garantiza de forma directa la validez estadística de los hallazgos empíricos.",
+            "Porque provee los valores y principios necesarios para guiar la conducta humana.",
+            "Porque sustituye las fases del método científico por principios morales formales.",
+            "Porque permite generalizar de manera inmediata los resultados cualitativos obtenidos."
+          ],
+          "correctIndex": 1,
+          "explanation": "La ética orienta el actuar del ser humano en cualquier ámbito, incluido el investigativo, mediante principios y valores que guían la conducta recta."
+        }
+      ]
+    }
+  ]
+}
