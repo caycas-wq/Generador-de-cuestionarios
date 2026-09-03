@@ -159,8 +159,8 @@ if text_content and gemini_key:
             """
 
       candidate_models = [
+          "gemini-3.6-flash",
           "gemini-2.5-flash",
-          "gemini-2.0-flash",
       ]
 
       success = False
