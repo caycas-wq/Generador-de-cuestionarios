@@ -184,17 +184,17 @@ if text_content and gemini_key:
             {text_content[:20000]}
             """
 
-      # Lista de respaldo de modelos para evitar caídas por error 503
+      # Modelos vigentes recomendados por la API
       candidate_models = [
-          "gemini-2.5-flash",
-          "gemini-2.5-pro",
+          "gemini-3.6-flash",
+          "gemini-3.1-pro-preview",
       ]
 
       success = False
       last_error = None
 
       for model_name in candidate_models:
-        # 3 intentos por modelo con tiempo creciente de espera
+        # Reintentos con espera progresiva por si la API está ocupada (503)
         for attempt in range(3):
           try:
             response = client.models.generate_content(
@@ -216,15 +216,14 @@ if text_content and gemini_key:
             break
           except Exception as e:
             last_error = e
-            # Aumentar tiempo de espera si los servidores están ocupados (2s, 4s, 8s)
-            time.sleep(2 ** (attempt + 1))
+            time.sleep(3 * (attempt + 1))  # Espera 3s, 6s...
         if success:
           break
 
       if not success:
         st.error(
-            f"Servidores saturados temporalmente. Por favor, intenta de nuevo"
-            f" en 10 segundos. Detalle: {last_error}"
+            "El servicio de Google está sobrecargado temporalmente. Por favor,"
+            f" espera unos segundos e inténtalo de nuevo.\n\nDetalle: {last_error}"
         )
 
 # --- MOSTRAR Y RENDERIZAR CUESTIONARIO ---
@@ -286,7 +285,7 @@ if "quiz_data" in st.session_state:
       correct_text = q.get("correct_text", "")
       explanation = q.get("explanation", "")
 
-      # index=None asegura que ninguna opción esté preseleccionada por defecto
+      # index=None para no tener nada preseleccionado
       selected = st.radio(
           "Selecciona tu respuesta:",
           options,
@@ -294,7 +293,7 @@ if "quiz_data" in st.session_state:
           key=q_key,
       )
 
-      # Evaluación instantánea tan pronto como se hace clic
+      # Evaluación instantánea
       if selected is not None:
         st.session_state["user_answers"][q_key] = selected
 
