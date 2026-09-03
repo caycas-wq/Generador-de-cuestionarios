@@ -1,0 +1,86 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Características del Conocimiento Científico",
+      "questions": [
+        {
+          "question": "¿Cómo se interrelacionan las características de 'duda metódica' y 'carácter hipotético' en el desarrollo del conocimiento científico según el texto?",
+          "options": [
+            "Garantizan que los hallazgos científicos alcancen una verdad absoluta e inmutable mediante la observación.",
+            "Establecen que el estudio de la realidad se realice únicamente desde una perspectiva totalmente cuantitativa.",
+            "Ambas aseguran que el conocimiento es provisional, autocorrectivo y sujeto a ser superado por nuevas teorías.",
+            "Exigen que el investigador elimine el método científico para permitir explicaciones no especializadas."
+          ],
+          "correctIndex": 0,
+          "explanation": "La duda metódica plantea que el conocimiento es válido hasta que aparezcan teorías que lo perfeccionen (autocorrectivo), mientras que el carácter hipotético reconoce que la verdad científica es incierta y nunca definitiva.",
+          "correct_text": "Ambas aseguran que el conocimiento es provisional, autocorrectivo y sujeto a ser superado por nuevas teorías."
+        },
+        {
+          "question": "Un investigador decide fragmentar un problema complejo de aula en variables específicas para medir su impacto. ¿Qué característica del conocimiento científico está aplicando principalmente?",
+          "options": [
+            "Origen empírico, porque está recolectando datos directamente de la realidad sin modificar el entorno.",
+            "Carácter práctico, pues busca solucionar un problema social inmediato de manera imparcial.",
+            "Carácter analítico, debido a que aborda la realidad dividiéndola en fragmentos o variables precisas.",
+            "Duda metódica, ya que cuestiona las teorías previas para encontrar una solución definitiva y final."
+          ],
+          "correctIndex": 1,
+          "explanation": "El carácter analítico implica aproximarse a la realidad de la forma más precisa posible, analizándola explícitamente en fragmentos o variables de investigación.",
+          "correct_text": "Carácter analítico, debido a que aborda la realidad dividiéndola en fragmentos o variables precisas."
+        },
+        {
+          "question": "¿Por qué se afirma que la objetividad total en la investigación científica es un ideal deseable pero difícil de alcanzar plenamente?",
+          "options": [
+            "Porque el conocimiento científico no requiere fundamentarse en la observación empírica de los hechos.",
+            "Porque estudiar la realidad exige una imparcialidad compleja frente a los fenómenos y enfoques parciales.",
+            "Porque el carácter práctico de la ciencia impide que se realicen análisis sistemáticos de las variables.",
+            "Porque los datos recolectados mediante el método científico carecen de rigor y de lenguaje comprensible."
+          ],
+          "correctIndex": 2,
+          "explanation": "La objetividad exige un compromiso riguroso con la imparcialidad y la correspondencia fiel a la realidad; sin embargo, debido a la diversidad de enfoques y la complejidad de lo estudiado, la objetividad plena resulta difícil de lograr.",
+          "correct_text": "Porque estudiar la realidad exige una imparcialidad compleja frente a los fenómenos y enfoques parciales."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Enfoques de Investigación y Ética Educativa",
+      "questions": [
+        {
+          "question": "Un equipo pedagógico busca comprender en profundidad el significado de la inclusión desde la vivencia de los docentes. ¿Qué enfoque metodológico debe elegir y por qué?",
+          "options": [
+            "Cualitativo, dado que su propósito principal es alcanzar una profundización del fenómeno de estudio.",
+            "Cuantitativo, ya que garantiza la aplicación de la duda metódica de forma rigurosa y matemática.",
+            "Cuantitativo, porque le permite generalizar las conclusiones obtenidas a toda la población nacional.",
+            "Cualitativo, debido a que busca medir de forma precisa y exacta las variables aisladas de la realidad."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto especifica que el enfoque cualitativo es aquel con el que se busca alcanzar una profundización del fenómeno de estudio, a diferencia del cuantitativo que busca la generalización.",
+          "correct_text": "Cualitativo, dado que su propósito principal es alcanzar una profundización del fenómeno de estudio."
+        },
+        {
+          "question": "Cuando una investigación educativa se diseña con la intención de responder a necesidades sociales y mejorar las condiciones de vida, ¿qué característica se destaca?",
+          "options": [
+            "El carácter práctico del conocimiento, orientado a la utilidad social y a la transformación de la realidad.",
+            "El carácter especializado, enfocado exclusivamente en ofrecer visiones parciales del fenómeno estudiado.",
+            "El origen hipotético, centrado en asegurar verdades definitivas e incuestionables para la ciencia.",
+            "El rigor analítico, diseñado para evitar el uso de teorías complejas en los entornos escolares."
+          ],
+          "correctIndex": 0,
+          "explanation": "El conocimiento científico es práctico porque debe ser útil para satisfacer las necesidades de la sociedad y mejorar sus condiciones de vida de manera concreta.",
+          "correct_text": "El carácter práctico del conocimiento, orientado a la utilidad social y a la transformación de la realidad."
+        },
+        {
+          "question": "De acuerdo con el texto, ¿cuál es la función central de la ética en el contexto de la conducta humana y la investigación?",
+          "options": [
+            "Proporcionar respuestas definitivas que eliminen la incertidumbre del conocimiento hipotético.",
+            "Sustituir el uso del método científico mediante la medición cuantitativa de las variables sociales.",
+            "Garantizar de forma automática la validez empírica y la generalización de los resultados.",
+            "Servir como el conjunto de valores y principios que guían y estudian el comportamiento humano."
+          ],
+          "correctIndex": 1,
+          "explanation": "La ética se define textualmente como el conjunto de valores y principios que guían el comportamiento humano y es la disciplina que se encarga de estudiarlo.",
+          "correct_text": "Servir como el conjunto de valores y principios que guían y estudian el comportamiento humano."
+        }
+      ]
+    }
+  ]
+}
