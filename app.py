@@ -184,14 +184,18 @@ if text_content and gemini_key:
             {text_content[:20000]}
             """
 
-      # Usar exclusivamente el modelo activo oficial
-      candidate_models = ["gemini-3.6-flash"]
+      # Lista de respaldo de modelos para evitar caídas por error 503
+      candidate_models = [
+          "gemini-2.5-flash",
+          "gemini-2.5-pro",
+      ]
 
       success = False
       last_error = None
 
       for model_name in candidate_models:
-        for attempt in range(3):  # Reintentos con espera en caso de error 503
+        # 3 intentos por modelo con tiempo creciente de espera
+        for attempt in range(3):
           try:
             response = client.models.generate_content(
                 model=model_name,
@@ -212,12 +216,16 @@ if text_content and gemini_key:
             break
           except Exception as e:
             last_error = e
-            time.sleep(3)  # Esperar 3 segundos entre intentos
+            # Aumentar tiempo de espera si los servidores están ocupados (2s, 4s, 8s)
+            time.sleep(2 ** (attempt + 1))
         if success:
           break
 
       if not success:
-        st.error(f"Error al conectar con el servicio de IA: {last_error}")
+        st.error(
+            f"Servidores saturados temporalmente. Por favor, intenta de nuevo"
+            f" en 10 segundos. Detalle: {last_error}"
+        )
 
 # --- MOSTRAR Y RENDERIZAR CUESTIONARIO ---
 if "quiz_data" in st.session_state:
