@@ -69,7 +69,7 @@ def process_and_shuffle_quiz(quiz_data):
       else:
         q["correct_text"] = options[0] if options else ""
 
-      # Mezclar el orden de las alternativas si hay más de 2 (o para Opción Múltiple)
+      # Mezclar el orden de las alternativas si hay más de 2
       if len(options) > 2:
         shuffled = options.copy()
         random.shuffle(shuffled)
@@ -114,7 +114,7 @@ if repo:
           st.session_state["quiz_data"] = process_and_shuffle_quiz(loaded_data)
           st.session_state["active_title"] = selected_quiz.replace(".json", "")
 
-          # Resetear completamente respuestas para que aparezca en blanco
+          # Resetear respuestas para que aparezca en blanco
           st.session_state["user_answers"] = {}
           st.session_state["start_time"] = time.time()
           st.session_state["quiz_completed"] = False
@@ -184,15 +184,18 @@ if text_content and gemini_key:
             {text_content[:20000]}
             """
 
+      # Lista de modelos compatibles para alternar si hay saturación en los servidores
       candidate_models = [
           "gemini-3.6-flash",
+          "gemini-2.5-flash",
+          "gemini-2.0-flash",
       ]
 
       success = False
       last_error = None
 
       for model_name in candidate_models:
-        for attempt in range(2):
+        for attempt in range(3):  # 3 reintentos por modelo
           try:
             response = client.models.generate_content(
                 model=model_name,
@@ -213,12 +216,15 @@ if text_content and gemini_key:
             break
           except Exception as e:
             last_error = e
-            time.sleep(2)
+            time.sleep(2)  # Pausa de 2 segundos antes de reintentar
         if success:
           break
 
       if not success:
-        st.error(f"Error con el servicio de IA: {last_error}")
+        st.error(
+            f"El servicio está congestionado temporalmente. Inténtalo de nuevo"
+            f" en unos segundos. Detalles: {last_error}"
+        )
 
 # --- MOSTRAR Y RENDERIZAR CUESTIONARIO ---
 if "quiz_data" in st.session_state:
@@ -279,7 +285,7 @@ if "quiz_data" in st.session_state:
       correct_text = q.get("correct_text", "")
       explanation = q.get("explanation", "")
 
-      # `index=None` asegura que ninguna opción esté preseleccionada
+      # index=None asegura que ninguna opción esté preseleccionada
       selected = st.radio(
           "Selecciona tu respuesta:",
           options,
@@ -287,7 +293,7 @@ if "quiz_data" in st.session_state:
           key=q_key,
       )
 
-      # Evaluación instantánea tan pronto como el usuario hace clic
+      # Evaluación instantánea
       if selected is not None:
         st.session_state["user_answers"][q_key] = selected
 
