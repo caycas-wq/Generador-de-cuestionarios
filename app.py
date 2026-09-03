@@ -2,8 +2,9 @@ import json
 import random
 import time
 import docx
-from github import Github, BadCredentialsException
+from github import BadCredentialsException, Github
 from google import genai
+from google.genai.errors import APIError
 import pypdf
 import streamlit as st
 
@@ -63,13 +64,11 @@ def process_and_shuffle_quiz(quiz_data):
       raw_idx = q.get("correctIndex", 0)
       options = q.get("options", [])
 
-      # Identificar el texto de la opción correcta
       if isinstance(raw_idx, int) and 0 <= raw_idx < len(options):
         q["correct_text"] = options[raw_idx]
       else:
         q["correct_text"] = options[0] if options else ""
 
-      # Mezclar el orden de las alternativas si hay más de 2
       if len(options) > 2:
         shuffled = options.copy()
         random.shuffle(shuffled)
@@ -86,10 +85,7 @@ if active_token and repo_name:
     repo = g.get_repo(repo_name)
     _ = repo.name
   except BadCredentialsException:
-    st.error(
-        "⚠️ El Token de GitHub es inválido (Error 401). Verifica o pega uno"
-        " nuevo en la barra lateral."
-    )
+    st.error("⚠️ El Token de GitHub es inválido (Error 401).")
     repo = None
   except Exception as e:
     st.warning(f"No se pudo conectar a GitHub: {e}")
@@ -110,17 +106,14 @@ if repo:
           file_content = repo.get_contents(f"quizzes/{selected_quiz}")
           loaded_data = json.loads(file_content.decoded_content.decode("utf-8"))
 
-          # Cargar y mezclar opciones de las alternativas
           st.session_state["quiz_data"] = process_and_shuffle_quiz(loaded_data)
           st.session_state["active_title"] = selected_quiz.replace(".json", "")
-
-          # Resetear respuestas para que aparezca en blanco
           st.session_state["user_answers"] = {}
           st.session_state["start_time"] = time.time()
           st.session_state["quiz_completed"] = False
           st.success("Cargado con éxito")
     except Exception:
-      st.info("No hay cuestionarios guardados aún en la carpeta /quizzes.")
+      st.info("No hay cuestionarios guardados aún.")
 
 # --- CARGA DE ARCHIVOS Y GENERACIÓN ---
 uploaded_file = st.file_uploader(
@@ -157,13 +150,12 @@ if text_content and gemini_key:
             - Tipo de pregunta deseado: {question_type}.
 
             REGLAS CRÍTICAS PARA LAS OPCIONES Y EL ÍNDICE:
-            1. Para Opción Múltiple: Genera 4 alternativas donde TODAS (correctas e incorrectas) tengan una longitud, complejidad y tono similar.
+            1. Para Opción Múltiple: Genera 4 alternativas donde TODAS tengan longitud y complejidad similar.
             2. Para Verdadero/Falso: Genera únicamente 2 opciones: ["Verdadero", "Falso"].
-            3. NUNCA hagas que la opción correcta sea visiblemente más larga o detallada que los distractores.
-            4. "correctIndex" DEBE ser obligatoriamente el número entero de base 0 (0, 1, 2 o 3) que apunta A LA OPCIÓN CORRECTA exacta en la lista "options".
-            5. La "explanation" debe coincidir pedagógica y textualmente con la opción marcada en "correctIndex".
+            3. "correctIndex" DEBE ser obligatoriamente el número entero (0..3) de la opción correcta.
+            4. La "explanation" debe coincidir con la opción marcada en "correctIndex".
 
-            Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura exacta:
+            Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura:
             {{
               "sections": [
                 {{
@@ -184,18 +176,17 @@ if text_content and gemini_key:
             {text_content[:20000]}
             """
 
-      # Modelos vigentes recomendados por la API
+      # Modelos optimizados para el plan gratuito
       candidate_models = [
           "gemini-3.6-flash",
-          "gemini-3.1-pro-preview",
+          "gemini-3.5-flash-lite",
       ]
 
       success = False
       last_error = None
 
       for model_name in candidate_models:
-        # Reintentos con espera progresiva por si la API está ocupada (503)
-        for attempt in range(3):
+        for attempt in range(2):
           try:
             response = client.models.generate_content(
                 model=model_name,
@@ -204,7 +195,6 @@ if text_content and gemini_key:
             )
             raw_quiz = json.loads(response.text)
 
-            # Procesar para aleatorizar y establecer estado limpio
             st.session_state["quiz_data"] = process_and_shuffle_quiz(raw_quiz)
             st.session_state["active_title"] = (
                 uploaded_file.name.rsplit(".", 1)[0].capitalize()
@@ -214,19 +204,26 @@ if text_content and gemini_key:
             st.session_state["quiz_completed"] = False
             success = True
             break
+          except APIError as e:
+            last_error = f"Error de API en {model_name}: {e.message}"
+            if "RESOURCE_EXHAUSTED" in str(e) or e.code == 429:
+              time.sleep(2)  # Pausa breve antes de intentar con el siguiente modelo
+              break
           except Exception as e:
             last_error = e
-            time.sleep(3 * (attempt + 1))  # Espera 3s, 6s...
+            time.sleep(2)
         if success:
           break
 
       if not success:
         st.error(
-            "El servicio de Google está sobrecargado temporalmente. Por favor,"
-            f" espera unos segundos e inténtalo de nuevo.\n\nDetalle: {last_error}"
+            "⚠️ Has alcanzado el límite de cuota gratuita en tu cuenta de Gemini"
+            f" API.\n\nDetalle: {last_error}\n\n**Sugerencia:** Espera unos"
+            " minutos antes de realizar otra consulta o verifica tu plan en"
+            " [Google AI Studio](https://aistudio.google.com/)."
         )
 
-# --- MOSTRAR Y RENDERIZAR CUESTIONARIO ---
+# --- MOSTRAR CUESTIONARIO Y RESULTADOS ---
 if "quiz_data" in st.session_state:
   st.divider()
 
@@ -272,7 +269,6 @@ if "quiz_data" in st.session_state:
   total_questions = 0
   correct_count = 0
 
-  # Renderizar Secciones y Preguntas
   for s_idx, sec in enumerate(quiz.get("sections", [])):
     st.header(f"📌 {sec['sectionTitle']}")
     for q_idx, q in enumerate(sec.get("questions", [])):
@@ -285,7 +281,6 @@ if "quiz_data" in st.session_state:
       correct_text = q.get("correct_text", "")
       explanation = q.get("explanation", "")
 
-      # index=None para no tener nada preseleccionado
       selected = st.radio(
           "Selecciona tu respuesta:",
           options,
@@ -293,7 +288,6 @@ if "quiz_data" in st.session_state:
           key=q_key,
       )
 
-      # Evaluación instantánea
       if selected is not None:
         st.session_state["user_answers"][q_key] = selected
 
@@ -306,7 +300,6 @@ if "quiz_data" in st.session_state:
               f" {explanation}"
           )
 
-  # --- MODO ESTUDIANTE: EVALUACIÓN Y TIEMPO ---
   st.divider()
   st.header("📊 Finalizar Cuestionario")
 
@@ -336,17 +329,8 @@ if "quiz_data" in st.session_state:
 
     if score_percentage >= 80:
       st.balloons()
-      st.success(
-          "🌟 **¡Rendimiento Excelente!** Tienes un dominio sólido de los"
-          " conceptos clave de este documento."
-      )
+      st.success("🌟 **¡Rendimiento Excelente!**")
     elif score_percentage >= 50:
-      st.warning(
-          "📈 **¡Buen Trabajo!** Has aprobado, pero te recomendamos revisar las"
-          " preguntas donde tuviste errores para reforzar esos temas."
-      )
+      st.warning("📈 **¡Buen Trabajo!** Has aprobado.")
     else:
-      st.error(
-          "📚 **Necesitas Repasar:** Hubo varios conceptos confusos. Vuelve a"
-          " leer las explicaciones detalladas y reintenta la prueba."
-      )
+      st.error("📚 **Necesitas Repasar:** Revisa los temas fallados.")
