@@ -1,4 +1,5 @@
 import json
+import random
 import time
 import docx
 from github import Github, BadCredentialsException
@@ -53,6 +54,30 @@ with st.sidebar:
       ["Opción Múltiple (4 opciones)", "Verdadero / Falso", "Combinado"],
   )
 
+
+# --- FUNCIÓN PARA PROCESAR Y MEZCLAR EL CUESTIONARIO ---
+def process_and_shuffle_quiz(quiz_data):
+  """Estructura las opciones, guarda cuál es la correcta de forma textual y mezcla las alternativas."""
+  for sec in quiz_data.get("sections", []):
+    for q in sec.get("questions", []):
+      raw_idx = q.get("correctIndex", 0)
+      options = q.get("options", [])
+
+      # Identificar el texto de la opción correcta
+      if isinstance(raw_idx, int) and 0 <= raw_idx < len(options):
+        q["correct_text"] = options[raw_idx]
+      else:
+        q["correct_text"] = options[0] if options else ""
+
+      # Mezclar el orden de las alternativas si hay más de 2 (o para Opción Múltiple)
+      if len(options) > 2:
+        shuffled = options.copy()
+        random.shuffle(shuffled)
+        q["options"] = shuffled
+
+  return quiz_data
+
+
 # --- CONEXIÓN SEGURA CON GITHUB ---
 repo = None
 if active_token and repo_name:
@@ -83,13 +108,14 @@ if repo:
         )
         if selected_quiz != "-- Seleccionar --" and st.button("📖 Cargar"):
           file_content = repo.get_contents(f"quizzes/{selected_quiz}")
-          st.session_state["quiz_data"] = json.loads(
-              file_content.decoded_content.decode("utf-8")
-          )
+          loaded_data = json.loads(file_content.decoded_content.decode("utf-8"))
+
+          # Cargar y mezclar opciones de las alternativas
+          st.session_state["quiz_data"] = process_and_shuffle_quiz(loaded_data)
           st.session_state["active_title"] = selected_quiz.replace(".json", "")
-          # Resetear respuestas y tiempo de estudio
+
+          # Resetear completamente respuestas para que aparezca en blanco
           st.session_state["user_answers"] = {}
-          st.session_state["checked_questions"] = {}
           st.session_state["start_time"] = time.time()
           st.session_state["quiz_completed"] = False
           st.success("Cargado con éxito")
@@ -160,7 +186,6 @@ if text_content and gemini_key:
 
       candidate_models = [
           "gemini-3.6-flash",
-          "gemini-2.5-flash",
       ]
 
       success = False
@@ -174,12 +199,14 @@ if text_content and gemini_key:
                 contents=prompt,
                 config={"response_mime_type": "application/json"},
             )
-            st.session_state["quiz_data"] = json.loads(response.text)
+            raw_quiz = json.loads(response.text)
+
+            # Procesar para aleatorizar y establecer estado limpio
+            st.session_state["quiz_data"] = process_and_shuffle_quiz(raw_quiz)
             st.session_state["active_title"] = (
                 uploaded_file.name.rsplit(".", 1)[0].capitalize()
             )
             st.session_state["user_answers"] = {}
-            st.session_state["checked_questions"] = {}
             st.session_state["start_time"] = time.time()
             st.session_state["quiz_completed"] = False
             success = True
@@ -199,8 +226,6 @@ if "quiz_data" in st.session_state:
 
   if "user_answers" not in st.session_state:
     st.session_state["user_answers"] = {}
-  if "checked_questions" not in st.session_state:
-    st.session_state["checked_questions"] = {}
   if "start_time" not in st.session_state:
     st.session_state["start_time"] = time.time()
   if "quiz_completed" not in st.session_state:
@@ -229,7 +254,7 @@ if "quiz_data" in st.session_state:
             )
           except Exception:
             repo.create_file(path, f"Add {save_title}", content)
-          st.success("¡Guardado en la nube de GitHub con éxito!")
+          st.success("¡Guardado en la nube con éxito!")
         except Exception as e:
           st.error(f"Error al guardar: {e}")
       else:
@@ -247,47 +272,32 @@ if "quiz_data" in st.session_state:
     for q_idx, q in enumerate(sec.get("questions", [])):
       total_questions += 1
       q_key = f"q_{s_idx}_{q_idx}"
-      btn_key = f"btn_{s_idx}_{q_idx}"
 
       st.subheader(f"{q_idx + 1}. {q['question']}")
 
-      current_answer = st.session_state["user_answers"].get(q_key, None)
-      index_val = (
-          q["options"].index(current_answer)
-          if current_answer in q["options"]
-          else 0
-      )
+      options = q.get("options", [])
+      correct_text = q.get("correct_text", "")
+      explanation = q.get("explanation", "")
 
+      # `index=None` asegura que ninguna opción esté preseleccionada
       selected = st.radio(
           "Selecciona tu respuesta:",
-          q["options"],
-          index=index_val,
+          options,
+          index=None,
           key=q_key,
       )
-      st.session_state["user_answers"][q_key] = selected
 
-      if st.button(f"Comprobar respuesta {q_idx + 1}", key=btn_key):
-        st.session_state["checked_questions"][q_key] = True
+      # Evaluación instantánea tan pronto como el usuario hace clic
+      if selected is not None:
+        st.session_state["user_answers"][q_key] = selected
 
-      if st.session_state["checked_questions"].get(q_key, False):
-        raw_idx = q.get("correctIndex", 0)
-        options = q.get("options", [])
-        explanation = q.get("explanation", "")
-
-        # Validación del índice de respuesta correcta
-        if isinstance(raw_idx, int) and 0 <= raw_idx < len(options):
-          correct_option = options[raw_idx]
-        else:
-          correct_option = options[0] if options else "No disponible"
-
-        user_choice = st.session_state["user_answers"].get(q_key)
-
-        if user_choice == correct_option:
+        if selected == correct_text:
           st.success(f"¡Correcto! {explanation}")
           correct_count += 1
         else:
           st.error(
-              f"Incorrecto. La respuesta correcta era: {correct_option}.\n\nExplicación: {explanation}"
+              f"Incorrecto. La respuesta correcta era: **{correct_text}**.\n\nExplicación:"
+              f" {explanation}"
           )
 
   # --- MODO ESTUDIANTE: EVALUACIÓN Y TIEMPO ---
@@ -318,7 +328,6 @@ if "quiz_data" in st.session_state:
     )
     st.info(f"⏱️ **Tiempo total transcurrido:** {minutes} min {seconds} seg")
 
-    # Feedback dinámico
     if score_percentage >= 80:
       st.balloons()
       st.success(
