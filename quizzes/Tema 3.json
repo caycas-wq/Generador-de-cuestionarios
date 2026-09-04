@@ -1,0 +1,329 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Perspectiva general del proceso de investigación educativa",
+      "questions": [
+        {
+          "question": "Según la secuencia lógica propuesta por Bisquerra (2004), ¿cuál es la etapa que sigue inmediatamente después de la selección del diseño de investigación?",
+          "options": [
+            "La formulación de hipótesis y variables",
+            "La redacción del informe final",
+            "La recolección de datos mediante instrumentos",
+            "La interpretación de los resultados"
+          ],
+          "correctIndex": 1,
+          "explanation": "La secuencia de Bisquerra establece que tras la selección del diseño de investigación se procede a la recolección de datos utilizando los instrumentos correspondientes.",
+          "correct_text": "La recolección de datos mediante instrumentos"
+        },
+        {
+          "question": "¿De qué depende principalmente el grado de planificación en las etapas del proceso de investigación educativa?",
+          "options": [
+            "Del presupuesto financiero disponible",
+            "Del número de investigadores en el equipo",
+            "Del enfoque metodológico utilizado",
+            "De la extensión del informe final"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto señala que el proceso de investigación debe seguir determinadas etapas con mayor o menor grado de planificación dependiendo del enfoque.",
+          "correct_text": "Del enfoque metodológico utilizado"
+        },
+        {
+          "question": "Dentro de la secuencia de etapas de Bisquerra, ¿en qué momento se realiza típicamente la revisión de la literatura?",
+          "options": [
+            "Exclusivamente antes de elegir el tema",
+            "Únicamente al finalizar el estudio",
+            "Solo después de analizar los datos",
+            "Puede realizarse en varios momentos"
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto especifica explícitamente que la revisión de la literatura puede realizarse en varios momentos del proceso de investigación.",
+          "correct_text": "Puede realizarse en varios momentos"
+        },
+        {
+          "question": "Según la secuencia de etapas presentada, ¿qué acción se realiza justo antes de redactar el informe final?",
+          "options": [
+            "La selección del tema principal",
+            "La recolección de datos primarios",
+            "La interpretación de resultados y conclusiones",
+            "La formulación de los objetivos específicos"
+          ],
+          "correctIndex": 2,
+          "explanation": "La etapa previa a la redacción del informe final corresponde a la interpretación de los resultados y la elaboración de las conclusiones.",
+          "correct_text": "La interpretación de resultados y conclusiones"
+        },
+        {
+          "question": "En el contexto del proceso general, ¿para qué sirve principalmente contar con un plan de trabajo?",
+          "options": [
+            "Para definir únicamente el presupuesto económico",
+            "Para eliminar por completo la necesidad de revisar literatura",
+            "Para sustituir el diseño metodológico de la investigación",
+            "Para organizar las acciones a realizar en diferentes momentos"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto indica que se debe tener en cuenta un plan de trabajo que permita organizar las acciones a realizar en diferentes momentos.",
+          "correct_text": "Para organizar las acciones a realizar en diferentes momentos"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "El tema y el problema de investigación",
+      "questions": [
+        {
+          "question": "¿Cuál es la característica fundamental que debe tener el tema seleccionado al iniciar una investigación?",
+          "options": [
+            "Ser un tema exclusivamente social y actual",
+            "Aportar conocimiento al área de estudio",
+            "Surgir únicamente de deducciones teóricas",
+            "Estar enfocado solo en experiencias personales"
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto señala que lo fundamental es que el tema seleccionado aporte conocimiento al tema u área de estudio.",
+          "correct_text": "Aportar conocimiento al área de estudio"
+        },
+        {
+          "question": "De las siguientes opciones, ¿cuál representa una fuente potencial de donde pueden surgir los temas de investigación?",
+          "options": [
+            "Observaciones casuales",
+            "La justificación económica",
+            "La redacción de conclusiones",
+            "El análisis estadístico final"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto enumera las observaciones casuales, deducciones teóricas, revisión bibliográfica, temas sociales, situaciones prácticas y experiencias personales como fuentes de temas.",
+          "correct_text": "Observaciones casuales"
+        },
+        {
+          "question": "¿Cómo se debe redactar correctamente el problema de investigación según las directrices expuestas?",
+          "options": [
+            "Mediante un juicio de valor general",
+            "En forma de una afirmación categórica",
+            "En forma de una pregunta directriz",
+            "Utilizando exclusivamente verbos en infinitivo"
+          ],
+          "correctIndex": 1,
+          "explanation": "El problema de investigación se debe redactar en forma de pregunta, sirviendo como guía para delimitar todo el proceso.",
+          "correct_text": "En forma de una pregunta directriz"
+        },
+        {
+          "question": "¿Cuál es la función principal del problema dentro de un proyecto de investigación?",
+          "options": [
+            "Establecer el costo financiero del estudio",
+            "Actuar como un interrogante que guía y delimita el proceso",
+            "Sustituir por completo al marco teórico",
+            "Definir las fuentes secundarias de información"
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto define al problema como un interrogante que sirve de guía para la investigación, delimitando el proceso al intentar responderlo.",
+          "correct_text": "Actuar como un interrogante que guía y delimita el proceso"
+        },
+        {
+          "question": "Tomando como ejemplo el texto, ¿cuál podría ser un tema adecuado de investigación educativa?",
+          "options": [
+            "Historia de la literatura clásica universal",
+            "Presupuesto anual de instituciones educativas privadas",
+            "Evolución geológica de los suelos urbanos",
+            "Rendimiento académico en matemáticas y motivación"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto presenta explícitamente como ejemplo de tema de investigación el rendimiento académico en matemáticas y la motivación.",
+          "correct_text": "Rendimiento académico en matemáticas y motivación"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Objetivos y justificación de la investigación",
+      "questions": [
+        {
+          "question": "¿Cuál es una regla gramatical obligatoria al momento de redactar los objetivos de investigación?",
+          "options": [
+            "Deben formularse en infinitivo",
+            "Deben presentarse siempre como preguntas",
+            "Deben redactarse en tiempo pasado",
+            "Deben incluir juicios de valor explícitos"
+          ],
+          "correctIndex": 1,
+          "explanation": "Una de las reglas clave indicadas para la redacción de los objetivos es que deben formularse en infinitivo.",
+          "correct_text": "Deben formularse en infinitivo"
+        },
+        {
+          "question": "Al formular los objetivos de una investigación, ¿cuál de las siguientes condiciones se debe evitar obligatoriamente?",
+          "options": [
+            "Claridad y precisión en el propósito",
+            "Diferenciar entre general y específico",
+            "Incluir juicios de valor",
+            "Utilizar verbos de acción"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto establece claramente que los objetivos no pueden ser juicios de valor.",
+          "correct_text": "Incluir juicios de valor"
+        },
+        {
+          "question": "En el ejemplo de objetivos específicos proporcionado, ¿qué aspecto de la relación entre variables se busca analizar?",
+          "options": [
+            "El costo económico de la motivación escolar",
+            "La bibliografía primaria del rendimiento",
+            "La intensidad y direccionalidad de la relación",
+            "La historia y evolución de las matemáticas"
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto muestra como objetivos específicos analizar la intensidad de relación y la direccionalidad de la relación entre ambas variables.",
+          "correct_text": "La intensidad y direccionalidad de la relación"
+        },
+        {
+          "question": "¿Por qué razón es muy importante justificar la realización de un estudio antes de ponerlo en marcha?",
+          "options": [
+            "Porque elimina la etapa de análisis de datos estadísticos",
+            "Porque sustituye la necesidad de plantear un problema",
+            "Porque garantiza que no existan fuentes secundarias",
+            "Porque se utilizarán recursos que a menudo requieren financiación"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto señala que es importante justificar el estudio debido a que se utilizarán recursos humanos, materiales y económicos para los que a menudo se solicita financiación.",
+          "correct_text": "Porque se utilizarán recursos que a menudo requieren financiación"
+        },
+        {
+          "question": "Una vez cumplidos los criterios iniciales, ¿qué concepto permite determinar si efectivamente es posible realizar la investigación?",
+          "options": [
+            "La jerarquización teórica",
+            "La factibilidad o viabilidad",
+            "La suficiencia bibliográfica",
+            "La cita narrativa obligatoria"
+          ],
+          "correctIndex": 1,
+          "explanation": "La factibilidad o viabilidad de la investigación determina si, efectivamente, es posible realizarla tras verificar los criterios previos.",
+          "correct_text": "La factibilidad o viabilidad"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "El marco teórico y fuentes de información",
+      "questions": [
+        {
+          "question": "Según Bassi (2011), ¿cuál es la cualidad de un marco teórico que garantiza que exista coherencia entre los fenómenos de estudio y las teorías?",
+          "options": [
+            "Imparcialidad",
+            "Suficiencia",
+            "Pertinencia",
+            "Jerarquización"
+          ],
+          "correctIndex": 2,
+          "explanation": "La pertinencia se define en el texto como la coherencia que debe existir entre los fenómenos de estudio y las teorías estudiadas.",
+          "correct_text": "Pertinencia"
+        },
+        {
+          "question": "¿Qué cualidad del marco teórico implica que los diferentes fenómenos estudiados posean un adecuado sustento teórico?",
+          "options": [
+            "Jerarquización",
+            "Suficiencia",
+            "Narratividad",
+            "Parentesco"
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto describe la suficiencia como la condición en la cual los diferentes fenómenos de estudio tienen sustento teórico.",
+          "correct_text": "Suficiencia"
+        },
+        {
+          "question": "Cuando un marco teórico presenta la información partiendo de los aspectos más generales para luego concretar, ¿qué cualidad está aplicando?",
+          "options": [
+            "Jerarquización",
+            "Secuenciación práctica",
+            "Pertinencia",
+            "Suficiencia"
+          ],
+          "correctIndex": 2,
+          "explanation": "La jerarquización se refiere a presentar la información partiendo de los aspectos más generales y después ir concretando.",
+          "correct_text": "Jerarquización"
+        },
+        {
+          "question": "¿Cómo se clasifican aquellas publicaciones en las que los autores informan directamente a la comunidad científica sobre los resultados de sus investigaciones (como tesis y artículos)?",
+          "options": [
+            "Fuentes secundarias",
+            "Citas parentéticas",
+            "Fuentes primarias",
+            "Referencias bibliográficas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Las fuentes primarias son publicaciones donde los autores informan directamente de los resultados de sus investigaciones, como artículos, tesis, libros, etc.",
+          "correct_text": "Fuentes primarias"
+        },
+        {
+          "question": "¿Qué tipo de publicaciones corresponden a las fuentes secundarias según el texto?",
+          "options": [
+            "Informes originales de congresos científicos",
+            "Tesis y tesinas de investigación doctoral",
+            "Artículos redactados directamente por los inventores",
+            "Revisiones y reseñas de trabajos llevados a cabo por otros"
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto especifica que en las fuentes secundarias los autores informan de los trabajos llevados a cabo por otros autores, tales como revisiones y reseñas.",
+          "correct_text": "Revisiones y reseñas de trabajos llevados a cabo por otros"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Citación bibliográfica y referencias",
+      "questions": [
+        {
+          "question": "¿Cómo se denomina a la cita dentro del texto en la cual el apellido del autor se incorpora como parte de la frase y el año se coloca entre paréntesis?",
+          "options": [
+            "Cita parentética",
+            "Cita narrativa",
+            "Bibliografía consultada",
+            "Referencia bibliográfica"
+          ],
+          "correctIndex": 0,
+          "explanation": "La cita narrativa es aquella donde el apellido del autor se incorpora al texto como parte de la frase y el año va entre paréntesis.",
+          "correct_text": "Cita narrativa"
+        },
+        {
+          "question": "Si el apellido del autor y la fecha de publicación aparecen ambos encerrados entre paréntesis dentro del texto, ¿qué tipo de cita se está utilizando?",
+          "options": [
+            "Cita narrativa",
+            "Bibliografía final",
+            "Cita parentética",
+            "Referencia secundaria"
+          ],
+          "correctIndex": 1,
+          "explanation": "La cita parentética se caracteriza porque el apellido del autor y la fecha de publicación aparecen juntos entre paréntesis.",
+          "correct_text": "Cita parentética"
+        },
+        {
+          "question": "¿Qué son exactamente las referencias bibliográficas en un trabajo de investigación?",
+          "options": [
+            "Los objetivos específicos redactados en infinitivo",
+            "El conjunto de fuentes que se consultaron pero que jamás se citaron",
+            "El listado de todas las publicaciones citadas o referenciadas a lo largo del texto",
+            "Las fuentes primarias de donde surgen las observaciones casuales"
+          ],
+          "correctIndex": 0,
+          "explanation": "Las referencias bibliográficas son el listado de las publicaciones citadas o referenciadas a lo largo del texto, ubicadas al final y ordenadas alfabéticamente.",
+          "correct_text": "El listado de todas las publicaciones citadas o referenciadas a lo largo del texto"
+        },
+        {
+          "question": "¿Dónde se ubican habitualmente las referencias bibliográficas dentro de un documento de investigación?",
+          "options": [
+            "Dentro del marco teórico exclusivamente",
+            "En la introducción del trabajo",
+            "Al final del trabajo",
+            "En la sección de justificación"
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto indica que las referencias bibliográficas se ubican al final del trabajo y generalmente se ordenan alfabéticamente.",
+          "correct_text": "Al final del trabajo"
+        },
+        {
+          "question": "¿Cómo se define el concepto de 'bibliografía' en contraste con las referencias bibliográficas?",
+          "options": [
+            "Las citas de tipo narrativo utilizadas en el marco teórico",
+            "Listado de fuentes consultadas para realizar el trabajo pero que no se citaron en el documento",
+            "El conjunto de objetivos generales y específicos de la investigación",
+            "Únicamente los artículos científicos primarios analizados"
+          ],
+          "correctIndex": 0,
+          "explanation": "La bibliografía se define específicamente como el listado de las fuentes consultadas para realizar el trabajo pero que no se citaron en el documento.",
+          "correct_text": "Listado de fuentes consultadas para realizar el trabajo pero que no se citaron en el documento"
+        }
+      ]
+    }
+  ]
+}
