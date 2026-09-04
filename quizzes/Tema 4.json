@@ -1,0 +1,199 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Las variables de investigación",
+      "questions": [
+        {
+          "question": "Un investigador evalúa la eficacia de un nuevo método de enseñanza analizando el rendimiento académico de los estudiantes y controlando la edad de los participantes. ¿Qué función cumple el método de enseñanza en este diseño?",
+          "options": [
+            "Variable extraña, puesto que no ha sido incluida dentro del diseño metodológico del estudio.",
+            "Variable independiente, ya que actúa como el estímulo manipulado que causa un efecto.",
+            "Variable dependiente, pues corresponde a la respuesta medida en los sujetos del estudio.",
+            "Variable ordinal, debido a que clasifica a los alumnos según su nivel académico."
+          ],
+          "correctIndex": 1,
+          "explanation": "Según el texto, la variable independiente (VI) funciona como un estímulo para provocar cambios o como la posible causa en un diseño experimental, siendo un método de enseñanza un ejemplo claro.",
+          "correct_text": "Variable independiente, ya que actúa como el estímulo manipulado que causa un efecto."
+        },
+        {
+          "question": "Si se mide el grado de satisfacción de los clientes mediante las categorías 'Bajo', 'Medio' y 'Alto', ¿cómo se clasifica esta variable según la escala de medida y su naturaleza?",
+          "options": [
+            "Cualitativa nominal, dado que los valores asignados no admiten un orden lógico predeterminado.",
+            "Cualitativa ordinal, debido a que expresa modalidades no numéricas que se pueden ordenar.",
+            "Cuantitativa continua, ya que admite infinitos valores intermedios dentro de la medición.",
+            "Cuantitativa discreta, puesto que las opciones se pueden asociar directamente con números enteros."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto indica que las variables cualitativas ordinales corresponden a categorías cuyos valores no son numéricos pero sí admiten una ordenación natural, como ocurre con los niveles 'bajo, medio y alto'.",
+          "correct_text": "Cualitativa ordinal, debido a que expresa modalidades no numéricas que se pueden ordenar."
+        },
+        {
+          "question": "¿Cuál es la diferencia fundamental entre una escala de medida de intervalo y una escala de razón según el texto?",
+          "options": [
+            "La escala de intervalo utiliza datos cualitativos, mientras que la de razón utiliza cuantitativos.",
+            "La escala de razón aplica solo a variables discretas, mientras que la de intervalo aplica a continuas.",
+            "La escala de intervalo permite ordenar los valores, mientras que la de razón no lo permite.",
+            "La escala de razón cuenta con un cero absoluto, a diferencia de la escala de intervalo."
+          ],
+          "correctIndex": 1,
+          "explanation": "La diferencia clave señalada es que la escala de razón cuenta con la presencia de un cero absoluto, mientras que en la escala de intervalo la unidad de medida es constante pero carece de cero absoluto.",
+          "correct_text": "La escala de razón cuenta con un cero absoluto, a diferencia de la escala de intervalo."
+        },
+        {
+          "question": "Un investigador identifica el sexo y la edad de los participantes y decide incluirlos deliberadamente en el estudio para evitar que distorsionen los resultados. ¿Cómo se denominan estas variables?",
+          "options": [
+            "Variables independientes, porque constituyen el objeto central de la investigación.",
+            "Variables dependientes, puesto que representan los cambios observados en la muestra.",
+            "Variables de control, ya que son variables intervinientes incluidas formalmente en el diseño.",
+            "Variables extrañas, debido a que alteran la variable dependiente sin ser consideradas."
+          ],
+          "correctIndex": 2,
+          "explanation": "Las variables intervinientes que pueden alterar la relación de causa y efecto se denominan variables de control si se incluyen explícitamente en el diseño de la investigación.",
+          "correct_text": "Variables de control, ya que son variables intervinientes incluidas formalmente en el diseño."
+        },
+        {
+          "question": "Se registra el número exacto de hijos por familia y el tiempo de espera en una consulta médica. ¿Cómo se clasifican ambas variables según su naturaleza cuantitativa?",
+          "options": [
+            "El número de hijos es cuantitativa continua y el tiempo de espera es cuantitativa discreta.",
+            "El número de hijos es cualitativa ordinal y el tiempo de espera es cualitativa nominal.",
+            "El número de hijos es cuantitativa discreta y el tiempo de espera es cuantitativa continua.",
+            "Ambas variables son cuantitativas discretas por expresarse exclusivamente con números enteros."
+          ],
+          "correctIndex": 2,
+          "explanation": "El número de hijos toma valores enteros (discreta), mientras que el tiempo de espera permite infinitos valores intermedios entre dos puntos (continua).",
+          "correct_text": "El número de hijos es cuantitativa discreta y el tiempo de espera es cuantitativa continua."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Formulación de hipótesis",
+      "questions": [
+        {
+          "question": "Un equipo de investigación desea probar que un nuevo tratamiento reduce la ansiedad en comparación con la terapia habitual. ¿Cómo se formula la hipótesis nula ($H_0$) en este contexto?",
+          "options": [
+            "Establece una explicación definitiva que demuestra la invalidez de la terapia habitual previa.",
+            "Sostiene que el nivel de ansiedad aumentará únicamente debido al uso de variables de control.",
+            "Plantea lo contrario al resultado esperado, sosteniendo que no habrá diferencias entre ambos tratamientos.",
+            "Afirma que el nuevo tratamiento reducirá significativamente los niveles de ansiedad en los pacientes."
+          ],
+          "correctIndex": 1,
+          "explanation": "La hipótesis nula ($H_0$) es la hipótesis que se desea contrastar y generalmente plantea lo contrario a las sospechas del investigador o lo opuesto al resultado esperado (en este caso, que no hay diferencia o efecto).",
+          "correct_text": "Plantea lo contrario al resultado esperado, sosteniendo que no habrá diferencias entre ambos tratamientos."
+        },
+        {
+          "question": "Si tras llevar a cabo el análisis de datos los resultados estadísticos permiten rechazar la hipótesis nula ($H_0$), ¿cuál es la consecuencia respecto a la hipótesis alternativa ($H_1$)?",
+          "options": [
+            "Se concluye que el estudio carece de validez por no haber verificado la hipótesis de partida.",
+            "Se rechaza automáticamente la hipótesis alternativa al haber rechazado la hipótesis nula.",
+            "Se debe reformular el diseño metodológico para volver a plantear una nueva hipótesis nula.",
+            "Se acepta la hipótesis alternativa, la cual refleja habitualmente el resultado esperado."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto especifica que la hipótesis alternativa ($H_1$) es la hipótesis que se acepta en caso de que se rechace la hipótesis nula ($H_0$).",
+          "correct_text": "Se acepta la hipótesis alternativa, la cual refleja habitualmente el resultado esperado."
+        },
+        {
+          "question": "¿Cuál es la función principal de la formulación de hipótesis en el proceso de investigación?",
+          "options": [
+            "Eliminar por completo las variables extrañas que puedan interferir en la investigación.",
+            "Seleccionar la muestra de participantes asegurando la representatividad de la población.",
+            "Ofrecer una explicación provisional y comprobable que sirva como respuesta al problema planteado.",
+            "Garantizar que todas las variables del estudio sean cuantitativas continuas antes de medir."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las hipótesis son proposiciones o afirmaciones comprobables cuya función es ofrecer una explicación posible o provisional a los factores o condiciones del problema planteado.",
+          "correct_text": "Ofrecer una explicación provisional y comprobable que sirva como respuesta al problema planteado."
+        },
+        {
+          "question": "Un investigador presupone que el rendimiento académico depende directamente de las horas de estudio. ¿Cómo se relacionan $H_0$ y $H_1$ con esta sospecha?",
+          "options": [
+            "$H_0$ representa la hipótesis defendida; $H_1$ representa una variable extraña no controlada.",
+            "$H_0$ sostiene que no hay relación entre las horas y el rendimiento; $H_1$ afirma que sí influyen.",
+            "$H_0$ afirma que las horas de estudio influyen; $H_1$ sostiene que no hay relación entre ambas.",
+            "Tanto $H_0$ como $H_1$ afirman la existencia de una relación causal entre ambas variables."
+          ],
+          "correctIndex": 1,
+          "explanation": "$H_0$ plantea lo opuesto a la sospecha del investigador (que no hay relación o efecto), mientras que $H_1$ coincide con la sospecha u objetivo de la investigación (que sí existe un efecto).",
+          "correct_text": "$H_0$ sostiene que no hay relación entre las horas y el rendimiento; $H_1$ afirma que sí influyen."
+        },
+        {
+          "question": "¿Qué relación existe entre la hipótesis defendida por el investigador y la hipótesis alternativa ($H_1$)?",
+          "options": [
+            "Suelen coincidir, ya que la $H_1$ refleja habitualmente el resultado que el investigador espera obtener.",
+            "Son totalmente opuestas, dado que la $H_1$ siempre busca contradecir la postura del investigador.",
+            "No guardan relación, puesto que la $H_1$ solo se aplica en estudios con variables cualitativas.",
+            "La $H_1$ solo se formula si se demuestra previa e invalidablemente que la $H_0$ es totalmente correcta."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto menciona que la hipótesis alternativa ($H_1$) generalmente refleja el resultado esperado por el investigador, por lo que puede coincidir con la hipótesis que se defiende en el estudio.",
+          "correct_text": "Suelen coincidir, ya que la $H_1$ refleja habitualmente el resultado que el investigador espera obtener."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Selección de muestra",
+      "questions": [
+        {
+          "question": "Un investigador posee una lista numerada de 1.000 individuos y selecciona a 1 de cada 10 sujetos mediante una regla constante de salto. ¿Qué técnica de muestreo ha aplicado?",
+          "options": [
+            "Muestreo aleatorio sistemático, porque escogió a los participantes usando un intervalo de selección.",
+            "Muestreo aleatorio estratificado, porque dividió a la población en estratos de diez personas.",
+            "Muestreo aleatorio simple, porque todos los sujetos se eligieron por sorteo individual sin orden.",
+            "Muestreo aleatorio por conglomerados, porque la unidad elegida fue un grupo disjunto de datos."
+          ],
+          "correctIndex": 2,
+          "explanation": "El muestreo aleatorio sistemático es aquel que escoge a los participantes con un intervalo de selección (cada X valor) a partir de una población numerada.",
+          "correct_text": "Muestreo aleatorio sistemático, porque escogió a los participantes usando un intervalo de selección."
+        },
+        {
+          "question": "Si en una población el 70 % son mujeres y el 30 % son hombres, y se busca que la muestra de 100 personas mantenga exactamente esa misma proporción al azar, ¿qué técnica debe aplicarse?",
+          "options": [
+            "Muestreo aleatorio sistemático, aplicando un intervalo regular para extraer hombres y mujeres.",
+            "Muestreo aleatorio estratificado, dividiendo la población en estratos para asegurar la representatividad.",
+            "Muestreo aleatorio simple, realizando un único sorteo general con todos los miembros inscritos.",
+            "Muestreo aleatorio por conglomerados, seleccionando bloques enteros de trabajo sin división previa."
+          ],
+          "correctIndex": 1,
+          "explanation": "El muestreo aleatorio estratificado implica dividir la población en subgrupos o estratos (en este caso, hombres y mujeres) para garantizar que la muestra represente adecuadamente a cada uno.",
+          "correct_text": "Muestreo aleatorio estratificado, dividiendo la población en estratos para asegurar la representatividad."
+        },
+        {
+          "question": "En un estudio sobre hábitos educativos en una ciudad, se seleccionan al azar 15 colegios enteros y se examina a todos los alumnos de las aulas elegidas. ¿Qué técnica de muestreo se utiliza?",
+          "options": [
+            "Muestreo aleatorio estratificado, al dividir la población según la nota media de cada alumno.",
+            "Muestreo aleatorio simple, seleccionando estudiantes individualmente a partir de la lista general.",
+            "Muestreo aleatorio por conglomerados, donde la unidad inicial de análisis son las agrupaciones o aulas.",
+            "Muestreo aleatorio sistemático, aplicando un intervalo fijo sobre el conjunto total de estudiantes."
+          ],
+          "correctIndex": 1,
+          "explanation": "En el muestreo aleatorio por conglomerados la unidad de análisis son agrupaciones naturales (como las aulas de las escuelas) que se seleccionan al azar para estudiar a los sujetos que forman parte de ellas.",
+          "correct_text": "Muestreo aleatorio por conglomerados, donde la unidad inicial de análisis son las agrupaciones o aulas."
+        },
+        {
+          "question": "¿Cuál es la relación de definición entre los conceptos de 'Población' y 'Muestra' según el texto?",
+          "options": [
+            "La población requiere obligatoriamente muestreo probabilístico, mientras que la muestra no lo requiere.",
+            "La población es un subconjunto reducido, mientras que la muestra comprende la totalidad de los datos.",
+            "La población solo analiza variables continuas, mientras que la muestra mide variables discretas.",
+            "La población abarca todos los elementos objeto de estudio, mientras que la muestra es un subconjunto de ella."
+          ],
+          "correctIndex": 1,
+          "explanation": "La población es el conjunto de todos los elementos que cumplen ciertas características (objeto de estudio), y la muestra es un subconjunto de los elementos de dicha población.",
+          "correct_text": "La población abarca todos los elementos objeto de estudio, mientras que la muestra es un subconjunto de ella."
+        },
+        {
+          "question": "Una empresa tiene 120 trabajadores, los enumera del 1 al 120 y extrae 30 números mediante un sorteo transparente. ¿A qué método corresponde este procedimiento?",
+          "options": [
+            "Muestreo aleatorio estratificado, debido a que clasifica a los empleados según su antigüedad.",
+            "Muestreo aleatorio por conglomerados, al ser los trabajadores miembros de una empresa.",
+            "Muestreo aleatorio simple, ya que selecciona la muestra totalmente al azar como en un sorteo.",
+            "Muestreo aleatorio sistemático, puesto que los empleados fueron numerados secuencialmente."
+          ],
+          "correctIndex": 1,
+          "explanation": "El muestreo aleatorio simple selecciona la muestra de manera puramente aleatoria a partir del total de la población, exactamente igual que en un sorteo.",
+          "correct_text": "Muestreo aleatorio simple, ya que selecciona la muestra totalmente al azar como en un sorteo."
+        }
+      ]
+    }
+  ]
+}
