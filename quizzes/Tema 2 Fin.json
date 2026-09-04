@@ -1,0 +1,329 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Concepto de paradigma",
+      "questions": [
+        {
+          "question": "¿Cómo se diferencia la dimensión ontológica de la epistemológica dentro del marco de un paradigma educativo?",
+          "options": [
+            "La ontología indaga sobre la naturaleza de la realidad, mientras que la epistemología analiza la finalidad y la naturaleza del conocimiento.",
+            "La ontología se enfoca en las técnicas dialécticas de recolección, mientras que la epistemología evalúa la validez de los instrumentos.",
+            "La ontología define los métodos cuantitativos a utilizar, mientras que la epistemología se centra en la postura ética del investigador.",
+            "La ontología determina los cambios sociales a generar, mientras que la epistemología estudia la evolución histórica del texto."
+          ],
+          "correctIndex": 0,
+          "explanation": "Según el texto, la ontología se refiere al modo de ver y entender la realidad (naturaleza de la realidad social), mientras que la epistemología concierne a la finalidad de la investigación y la naturaleza del conocimiento.",
+          "correct_text": "La ontología indaga sobre la naturaleza de la realidad, mientras que la epistemología analiza la finalidad y la naturaleza del conocimiento."
+        },
+        {
+          "question": "Analizando la definición de Patton (1980), ¿cuál es la función principal de un paradigma para el investigador?",
+          "options": [
+            "Establecer procedimientos técnicos estandarizados para redactar informes de investigación.",
+            "Ofrecer una perspectiva general o marco conceptual para simplificar e interpretar la realidad.",
+            "Proveer un conjunto rígido de leyes estadísticas para validar hipótesis de tipo experimental.",
+            "Garantizar la neutralidad absoluta del investigador respecto a las decisiones del diseño."
+          ],
+          "correctIndex": 1,
+          "explanation": "Patton define el paradigma como 'una visión del mundo, una perspectiva general, un modo de desmenuzar la complejidad del mundo real', funcionando como un marco para interpretar la realidad.",
+          "correct_text": "Ofrecer una perspectiva general o marco conceptual para simplificar e interpretar la realidad."
+        },
+        {
+          "question": "Si un investigador reflexiona sobre si la realidad educativa es externa al sujeto o construida por este, ¿en qué dimensión axiológica se sitúa?",
+          "options": [
+            "Dimensión ontológica, pues cuestiona la naturaleza fundamental de la realidad social.",
+            "Dimensión pragmática, pues determina la utilidad práctica de los hallazgos obtenidos.",
+            "Dimensión epistemológica, pues evalúa las intenciones y el alcance del conocimiento.",
+            "Dimensión metodológica, pues condiciona el tipo de instrumento que seleccionará."
+          ],
+          "correctIndex": 2,
+          "explanation": "La dimensión ontológica plantea de manera explícita si la realidad educativa es algo externo al sujeto o algo creado desde su punto de vista.",
+          "correct_text": "Dimensión ontológica, pues cuestiona la naturaleza fundamental de la realidad social."
+        },
+        {
+          "question": "Un equipo de investigación intenta determinar si el fin de su proyecto es explicar y predecir o profundizar y comprender. ¿Qué dimensión están configurando?",
+          "options": [
+            "Dimensión axiológica pura.",
+            "Dimensión metodológica.",
+            "Dimensión epistemológica.",
+            "Dimensión ontológica."
+          ],
+          "correctIndex": 3,
+          "explanation": "La epistemología aborda la finalidad de la investigación, cuestionando si el objetivo es explicar, predecir, entender o profundizar en el objeto de estudio.",
+          "correct_text": "Dimensión epistemológica."
+        },
+        {
+          "question": "Al analizar la relación entre las tres dimensiones axiológicas descritas, ¿qué afirmación expresa mejor su coherencia interna?",
+          "options": [
+            "La dimensión metodológica se desarrolla de forma autónoma sin vincularse con las asunciones ontológicas.",
+            "La metodología determina la ontología, imposibilitando que la postura epistemológica influya en el diseño.",
+            "La concepción ontológica de la realidad orienta la finalidad epistemológica y esta fundamenta la elección metodológica.",
+            "La epistemología reemplaza a la ontología cuando la investigación recurre a enfoques de tipo cualitativo."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las premisas ontológicas (cómo es la realidad) condicionan la epistemología (cómo se conoce esa realidad) y ambas guían la metodología (qué procedimientos se usan para investigarla).",
+          "correct_text": "La concepción ontológica de la realidad orienta la finalidad epistemológica y esta fundamenta la elección metodológica."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paradigma empírico-analítico o positivista",
+      "questions": [
+        {
+          "question": "¿Por qué la 'baja validez ecológica' es una crítica constante hacia el paradigma empírico-analítico en educación?",
+          "options": [
+            "Porque sus procedimientos son tan flexibles que impiden la replicación exacta de los datos obtenidos.",
+            "Porque ignora la necesidad de establecer relaciones causales y regularidades entre las variables.",
+            "Porque al priorizar la objetividad y el control, suele estudiar los hechos aislados de su contexto natural.",
+            "Porque exige que el investigador intervenga activamente transformando el entorno de la comunidad."
+          ],
+          "correctIndex": 1,
+          "explanation": "La validez ecológica es baja en el positivismo porque busca estudiar los hechos educativos de forma objetiva y ajena al contexto natural de las personas.",
+          "correct_text": "Porque al priorizar la objetividad y el control, suele estudiar los hechos aislados de su contexto natural."
+        },
+        {
+          "question": "Un estudio positivista pretende establecer leyes universales sobre el aprendizaje. ¿Qué problema analítico se deriva de este planteamiento?",
+          "options": [
+            "La imposibilidad teórica de mantener una distancia entre el investigador y el objeto de estudio.",
+            "La presencia de un sesgo subjetivo al interpretar la interacción entre docentes y alumnos.",
+            "La carencia de herramientas cuantitativas para procesar la información de forma rigurosa.",
+            "El reduccionismo y la dificultad de aplicar leyes fijas a fenómenos educativos cambiantes y complejos."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto señala que el positivismo incurre en reduccionismo al omitir aspectos no observables y que es difícil establecer leyes universales en ciencias sociales porque los fenómenos educativos son dinámicos.",
+          "correct_text": "El reduccionismo y la dificultad de aplicar leyes fijas a fenómenos educativos cambiantes y complejos."
+        },
+        {
+          "question": "Desde la perspectiva ontológica del paradigma positivista, la realidad educativa se concibe como:",
+          "options": [
+            "Mixta, cambiante y dependiente exclusivamente de las necesidades prácticas del entorno.",
+            "Dinámica, evolutiva y orientada al cambio mediante procesos de reflexión colectiva.",
+            "Objetiva, única, estática, independiente del sujeto y dada de antemano.",
+            "Subjetiva, divergente y construida activamente por los significados de los participantes."
+          ],
+          "correctIndex": 2,
+          "explanation": "Ontológicamente, el paradigma positivista considera que la realidad es objetiva, única, estática, independiente de la persona que la conoce y viene dada.",
+          "correct_text": "Objetiva, única, estática, independiente del sujeto y dada de antemano."
+        },
+        {
+          "question": "En el paradigma empírico-analítico, ¿cómo se articula la relación entre la teoría y la práctica?",
+          "options": [
+            "Como una unión dialéctica donde la práctica genera continuamente las teorías en el aula.",
+            "Como un proceso participativo orientativo enfocado a la transformación directa de la sociedad.",
+            "Como una separación de funciones entre quienes producen conocimiento (investigadores) y quienes lo aplican (prácticos).",
+            "Como una combinación técnica que se adapta según la conveniencia inmediata de los prácticos."
+          ],
+          "correctIndex": 1,
+          "explanation": "El enfoque positivista fomenta la separación entre teoría y práctica, considerando que producir conocimiento (investigadores) y aplicarlo (prácticos) son funciones distintas no vinculadas.",
+          "correct_text": "Como una separación de funciones entre quienes producen conocimiento (investigadores) y quienes lo aplican (prácticos)."
+        },
+        {
+          "question": "¿Cuál es la característica metodológica central de la investigación guiada por el paradigma positivista?",
+          "options": [
+            "El empleo de metodologías experimentales y cuantitativas orientadas a la verificación de hipótesis y causa-efecto.",
+            "La selección libre de instrumentos mixtos basada en la utilidad inmediata del problema.",
+            "El diseño de metodologías participativas orientadas al cambio social y la toma de conciencia.",
+            "El uso prioritario de métodos dialécticos y la interpretación hermenéutica del discurso."
+          ],
+          "correctIndex": 1,
+          "explanation": "La metodología positivista es experimental (cuantitativa) y manipulativa, enfocada en evitar la subjetividad y verificar hipótesis o relaciones causa-efecto.",
+          "correct_text": "El empleo de metodologías experimentales y cuantitativas orientadas a la verificación de hipótesis y causa-efecto."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paradigma humanístico-interpretativo",
+      "questions": [
+        {
+          "question": "¿Por qué el paradigma interpretativo encuentra limitaciones para generalizar las explicaciones a otros contextos?",
+          "options": [
+            "Debido al carácter subjetivo de las interpretaciones y a la falta de un método experimental estandarizado.",
+            "Debido a la manipulación excesiva de variables independientes dentro del escenario educativo.",
+            "Debido al uso de muestras cuantitativas muy amplias que distorsionan los entornos locales.",
+            "Debido a la búsqueda estricta de leyes universales que no consideran las excepciones."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto explica que las conclusiones no se pueden generalizar a otros contextos debido a la subjetividad de las interpretaciones contextuales y a la ausencia de un método positivista riguroso.",
+          "correct_text": "Debido al carácter subjetivo de las interpretaciones y a la falta de un método experimental estandarizado."
+        },
+        {
+          "question": "¿Qué rol desempeñan la hermenéutica y las técnicas dialécticas en la metodología de este paradigma?",
+          "options": [
+            "Aíslan al investigador del objeto de estudio para prevenir sesgos de interpretación.",
+            "Facilitan la comprensión e interpretación de las acciones humanas y el debate de argumentos.",
+            "Ayudan a estructurar leyes universales que predicen la conducta de los estudiantes.",
+            "Permiten controlar factores intervinientes para garantizar la objetividad estadística."
+          ],
+          "correctIndex": 1,
+          "explanation": "La metodología cualitativa utiliza técnicas dialécticas para debatir y la hermenéutica para desarrollar procesos de comprensión e interpretación de la información recabada.",
+          "correct_text": "Facilitan la comprensión e interpretación de las acciones humanas y el debate de argumentos."
+        },
+        {
+          "question": "A nivel ontológico, ¿cómo define la realidad social el paradigma humanístico-interpretativo?",
+          "options": [
+            "Como una construcción social dinámica, holística, subjetiva y divergente.",
+            "Como un conjunto de variables observables susceptibles de medición y control.",
+            "Como una entidad estática y preexistente que debe ser descubierta científicamente.",
+            "Como una estructura neutra cuya finalidad es la verificación de hipótesis formales."
+          ],
+          "correctIndex": 1,
+          "explanation": "Para el paradigma interpretativo, la realidad es considerada subjetiva, dinámica, holística, construida socialmente y divergente.",
+          "correct_text": "Como una construcción social dinámica, holística, subjetiva y divergente."
+        },
+        {
+          "question": "Según el análisis de Sánchez Santamaría (2013), ¿cuál es una aportación clave de este enfoque a la educación?",
+          "options": [
+            "La estandarización de pruebas objetivas para medir las conductas de los alumnos.",
+            "La eliminación de la teoría académica para centrarse exclusivamente en la intuición práctica.",
+            "El fomento de prácticas contextualizadas para mejorar la comprensión de la realidad educativa.",
+            "El establecimiento de principios causales aplicables a cualquier sistema educativo."
+          ],
+          "correctIndex": 1,
+          "explanation": "Sánchez Santamaría destaca que este paradigma fomenta la realización de prácticas contextualizadas para comprender la realidad y mejora la conexión entre teoría y práctica.",
+          "correct_text": "El fomento de prácticas contextualizadas para mejorar la comprensión de la realidad educativa."
+        },
+        {
+          "question": "¿Qué crítica suelen realizar los detractores al enfoque interpretativo en relación con la rigurosidad científica?",
+          "options": [
+            "Que al basarse en la subjetividad solo logra aproximaciones exploratorias sin contrastar hipótesis.",
+            "Que impone un control excesivo sobre el entorno natural de la investigación.",
+            "Que separa drásticamente a los investigadores de los sujetos participantes.",
+            "Que fuerza la utilización de leyes universales para justificar hechos particulares."
+          ],
+          "correctIndex": 1,
+          "explanation": "Críticos como Lukas y Santiago (2004) señalan que la alta subjetividad provoca que solo se realicen aproximaciones exploratorias, imposibilitando la contrastación formal de hipótesis.",
+          "correct_text": "Que al basarse en la subjetividad solo logra aproximaciones exploratorias sin contrastar hipótesis."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paradigma crítico o sociocrítico",
+      "questions": [
+        {
+          "question": "¿En qué se diferencia sustancialmente la finalidad epistemológica del paradigma sociocrítico respecto al interpretativo?",
+          "options": [
+            "El interpretativo recurre al método experimental, mientras que el crítico utiliza la estadística descriptiva.",
+            "El interpretativo busca comprender la realidad, mientras que el crítico busca transformarla y provocar mejoras.",
+            "El interpretativo formula leyes universales, mientras que el crítico evita toda postura ideológica.",
+            "El interpretativo busca predecir conductas, mientras que el crítico busca describir patrones."
+          ],
+          "correctIndex": 1,
+          "explanation": "Mientras el paradigma interpretativo busca comprender e interpretar la realidad, la epistemología del sociocrítico tiene como finalidad analizar la realidad para producir cambios y mejoras educativas.",
+          "correct_text": "El interpretativo busca comprender la realidad, mientras que el crítico busca transformarla y provocar mejoras."
+        },
+        {
+          "question": "¿Por qué razón el paradigma sociocrítico puede experimentar un 'efecto paralizador' en la práctica educativa?",
+          "options": [
+            "Por la falta de acuerdos surgida ante la gran diversidad de ideas para transformar la educación.",
+            "Por la rigidez del método científico que impide hacer cambios durante el proceso.",
+            "Por la exigencia implícita de mantener la neutralidad y no tomar postura ideológica.",
+            "Por el rechazo categórico a permitir que los docentes participen en la investigación."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto señala que al existir una gran diversidad de ideas para transformar la realidad, a veces se dificultan los acuerdos, generando un efecto paralizador en los procesos de mejora.",
+          "correct_text": "Por la falta de acuerdos surgida ante la gran diversidad de ideas para transformar la educación."
+        },
+        {
+          "question": "Dentro de la metodología sociocrítica, ¿cuál es el papel asignado al docente en el proceso investigador?",
+          "options": [
+            "Actuar como un observador objetivo que no interactúa con el entorno investigado.",
+            "Ser un agente activo que toma conciencia, analiza críticamente su realidad e introduce cambios.",
+            "Ser un ejecutor pasivo de las recomendaciones dictadas por un experto externo.",
+            "Limitarse a medir el rendimiento de sus alumnos mediante pruebas cuantitativas."
+          ],
+          "correctIndex": 2,
+          "explanation": "El paradigma sociocrítico requiere que el docente sea quien analice e introduzca cambios mediante una toma de conciencia ética para tomar las mejores decisiones.",
+          "correct_text": "Ser un agente activo que toma conciencia, analiza críticamente su realidad e introduce cambios."
+        },
+        {
+          "question": "¿Qué aspecto reprocha el paradigma sociocrítico al paradigma humanístico-interpretativo?",
+          "options": [
+            "Su falta de interés por cuantificar adecuadamente las variables observables.",
+            "La aplicación rigurosa de procedimientos experimentales en el entorno escolar.",
+            "Su postura conservadora al limitarse a interpretar el mundo sin asumir un papel activo para cambiarlo.",
+            "El intento de homologar la investigación social con el método de las ciencias naturales."
+          ],
+          "correctIndex": 1,
+          "explanation": "El paradigma crítico reprocha al interpretativo el considerarlo 'conservador' por no asumir una postura más activa e ideológica para cambiar y transformar el mundo.",
+          "correct_text": "Su postura conservadora al limitarse a interpretar el mundo sin asumir un papel activo para cambiarlo."
+        },
+        {
+          "question": "¿Cómo se define la metodología de investigación dentro del paradigma crítico?",
+          "options": [
+            "Como una metodología experimental y manipulativa orientada a causas y efectos.",
+            "Como un procedimiento de observación pura sin intervención activa en el escenario.",
+            "Como una metodología participativa, sociocrítica y orientada fundamentalmente a la acción.",
+            "Como una técnica neutral basada en la mezcla arbitraria de instrumentos de recogida."
+          ],
+          "correctIndex": 1,
+          "explanation": "La metodología sociocrítica se define expresamente como participativa, sociocrítica y orientada a la acción, recurriendo frecuentemente a técnicas dialécticas.",
+          "correct_text": "Como una metodología participativa, sociocrítica y orientada fundamentalmente a la acción."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paradigma pragmático",
+      "questions": [
+        {
+          "question": "Según el planteamiento de Cook y Reichardt (2005), ¿qué justifica la combinación de métodos cuantitativos y cualitativos?",
+          "options": [
+            "La demostración de que los paradigmas tradicionales han quedado completamente obsoletos.",
+            "La ausencia de criterios metodológicos rigurosos en las ciencias de la educación.",
+            "La imposición de normas institucionales para agilizar la publicación de resultados.",
+            "La necesidad de adaptar la investigación al problema concreto utilizando lo mejor de cada paradigma."
+          ],
+          "correctIndex": 1,
+          "explanation": "Cook y Reichardt afirman que nada impide mezclar atributos de ambos paradigmas si esa combinación resulta la más adecuada para responder al problema de investigación.",
+          "correct_text": "La necesidad de adaptar la investigación al problema concreto utilizando lo mejor de cada paradigma."
+        },
+        {
+          "question": "En el paradigma pragmático, ¿cómo resuelve el investigador su postura epistemológica frente al objeto de estudio?",
+          "options": [
+            "Delegando la decisión en los participantes de la comunidad educativa estudiada.",
+            "Decidiendo si establece una relación objetiva o subjetiva según la forma en que decida conocer.",
+            "Manteniendo una interacción subjetiva permanente con los sujetos investigados.",
+            "Adoptando obligatoriamente una distancia objetiva en todas las fases del trabajo."
+          ],
+          "correctIndex": 2,
+          "explanation": "Mertens (2005) señala que en la epistemología pragmática el propio investigador decide la mejor forma de conocer, pudiendo optar por una investigación objetiva o subjetiva según proceda.",
+          "correct_text": "Decidiendo si establece una relación objetiva o subjetiva según la forma en que decida conocer."
+        },
+        {
+          "question": "Desde la perspectiva ontológica pragmática, ¿qué condición debe cumplir un conocimiento para ser considerado 'verdadero'?",
+          "options": [
+            "Ser útil para explicar un fenómeno a través del conocimiento científico (leyes o teorías).",
+            "Derivar exclusivamente del consenso subjetivo obtenido mediante debate dialéctico.",
+            "Reflejar una realidad estática e inalterable independiente del ser humano.",
+            "Haber sido verificado mediante un diseño experimental riguroso de laboratorio."
+          ],
+          "correctIndex": 1,
+          "explanation": "Para la ontología pragmática, se investiga lo que se considera útil para explicar un fenómeno, concibiendo que lo útil y verdadero es aquello que permite explicar el conocimiento científico.",
+          "correct_text": "Ser útil para explicar un fenómeno a través del conocimiento científico (leyes o teorías)."
+        },
+        {
+          "question": "Si un investigador utiliza encuestas para generalizar datos y entrevistas para profundizar en el significado, ¿qué paradigma sustenta este diseño mixto?",
+          "options": [
+            "Paradigma pragmático.",
+            "Paradigma humanístico-interpretativo.",
+            "Paradigma empírico-analítico.",
+            "Paradigma sociocrítico."
+          ],
+          "correctIndex": 3,
+          "explanation": "El paradigma pragmático admite expresamente el uso de metodología mixta (unión de cuantitativa y cualitativa) según se busque profundizar o generalizar los resultados.",
+          "correct_text": "Paradigma pragmático."
+        },
+        {
+          "question": "¿Cuál es la ventaja metodológica de adoptar el paradigma pragmático frente a las posturas tradicionales?",
+          "options": [
+            "Garantizar que todas las conclusiones puedan transformarse en leyes universales.",
+            "Superar la limitación arbitraria de elegir un solo paradigma al integrar herramientas complementarias.",
+            "Sustituir la revisión teórica por la intuición inmediata del equipo investigador.",
+            "Asegurar la neutralidad ideológica absoluta en el estudio de fenómenos sociales."
+          ],
+          "correctIndex": 1,
+          "explanation": "El paradigma pragmático evita que el investigador se limite de forma rígida o arbitraria a un solo paradigma, permitiendo obtener lo mejor de los enfoques cuantitativo y cualitativo.",
+          "correct_text": "Superar la limitación arbitraria de elegir un solo paradigma al integrar herramientas complementarias."
+        }
+      ]
+    }
+  ]
+}
