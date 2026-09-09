@@ -1,0 +1,389 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Fundamentos Filosóficos y Definición del Aprendizaje",
+      "questions": [
+        {
+          "question": "¿Cómo se diferencia la postura racionalista de la empirista respecto al origen del conocimiento según el texto?",
+          "options": [
+            "El racionalismo rechaza el uso de los procesos mentales internos, mientras que el empirismo considera que el aprendizaje es una reestructuración de esquemas.",
+            "El racionalismo enfatiza la conducta observable como única evidencia, mientras que el empirismo sostiene que el conocimiento requiere categorías a priori.",
+            "El racionalismo afirma que la mente nace como una pizarra en blanco, mientras que el empirismo postula que existen ideas innatas previas a cualquier vivencia física.",
+            "El racionalismo propone que el conocimiento proviene de la razón sin necesidad de la experiencia sensorial, mientras que el empirismo sostiene que proviene de la experiencia ambiental."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto explica que el racionalismo sostiene que el conocimiento se deriva del uso de la razón sin depender de la experiencia sensorial (Shunk, 2012), mientras que el empirismo afirma que todo conocimiento proviene de la experiencia sensorial con el medio.",
+          "correct_text": "El racionalismo propone que el conocimiento proviene de la razón sin necesidad de la experiencia sensorial, mientras que el empirismo sostiene que proviene de la experiencia ambiental."
+        },
+        {
+          "question": "En el contexto histórico de la filosofía del aprendizaje, ¿cuál fue la aportación central de Immanuel Kant para sintetizar racionalismo y empirismo?",
+          "options": [
+            "Sostener que el aprendizaje no es un proceso psicológico verdadero, sino un mero cambio fisiológico coordinado por el sistema nervioso central.",
+            "Afirmar que el conocimiento es puramente innato y que la experiencia sensorial únicamente distorsiona las estructuras mentales de la razón.",
+            "Argumentar que la información proviene de la experiencia, pero requiere de categorías e intuiciones a priori de la mente para ser organizada.",
+            "Proponer que la mente carece de cualquier contenido previo al nacimiento y que se llena exclusivamente a través de los sentidos."
+          ],
+          "correctIndex": 2,
+          "explanation": "Kant intentó sintetizar ambas posturas afirmando que todo conocimiento proviene de la experiencia, pero requiere de categorías e intuiciones 'a priori' de la mente para organizar dichos datos.",
+          "correct_text": "Argumentar que la información proviene de la experiencia, pero requiere de categorías e intuiciones a priori de la mente para ser organizada."
+        },
+        {
+          "question": "Al comparar las perspectivas conductista y cognoscitiva sobre la definición del aprendizaje, ¿qué divergencia principal se observa?",
+          "options": [
+            "El conductismo rechaza la influencia del medio ambiente, mientras que el cognoscitivismo considera que el ambiente determina la respuesta fisiológica.",
+            "El conductismo concibe el aprendizaje como un recuerdo de ideas innatas, mientras que el cognoscitivismo sostiene que la mente es una tabla rasa.",
+            "El conductismo se enfoca en cambios de la conducta observable por la experiencia, mientras que el cognoscitivismo lo define como reestructuración de esquemas mentales.",
+            "El conductismo se centra únicamente en la maduración neurológica, mientras que el cognoscitivismo analiza la transmisión sociocultural mediante símbolos."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto señala que la postura conductista considera que el aprendizaje depende de la experiencia y se evidencia en la conducta observable, mientras que la cognoscitiva lo concibe como un proceso mental de reestructuración de esquemas y conceptos.",
+          "correct_text": "El conductismo se enfoca en cambios de la conducta observable por la experiencia, mientras que el cognoscitivismo lo define como reestructuración de esquemas mentales."
+        },
+        {
+          "question": "Según la definición integrada que se presenta en el texto, ¿cuál es la naturaleza esencial del aprendizaje en el ser humano?",
+          "options": [
+            "Es una modificación relativamente permanente del pensamiento y la conducta debida al procesamiento de la experiencia con el medio.",
+            "Es un proceso puramente biológico que concluye al momento de finalizar el desarrollo de la corteza cerebral durante la adolescencia.",
+            "Es un cambio transitorio de la respuesta motora frente a estímulos del entorno, determinado exclusivamente por factores genéticos.",
+            "Es una acumulación pasiva de datos sensoriales que se almacena intacta en la memoria sin sufrir transformaciones o reinterpretaciones."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto define el aprendizaje como 'un proceso continuo, que consiste en una modificación relativamente permanente del pensamiento y de la conducta, debida a la forma en que procesamos nuestra experiencia con el medio ambiente'.",
+          "correct_text": "Es una modificación relativamente permanente del pensamiento y la conducta debida al procesamiento de la experiencia con el medio."
+        },
+        {
+          "question": "¿Qué función cumplen los procesos sensoriales y perceptuales en la interacción del ser humano con su entorno?",
+          "options": [
+            "Los procesos sensoriales generan categorías a priori, mientras que los perceptuales modifican los esquemas mentales mediante la razón.",
+            "Los procesos sensoriales interpretan la información, mientras que los perceptuales son responsables de coordinar las respuestas motoras finas.",
+            "Los procesos sensoriales captan la información del exterior e interior, mientras que los perceptuales permiten organizarla e interpretarla.",
+            "Los procesos sensoriales eliminan estímulos irrelevantes, mientras que los perceptuales garantizan la formación de sinapsis permanentes."
+          ],
+          "correctIndex": 1,
+          "explanation": "Según la lectura, contamos con el proceso sensorial para captar la información interna y externa, y con el proceso perceptual para organizar e interpretar esa información.",
+          "correct_text": "Los procesos sensoriales captan la información del exterior e interior, mientras que los perceptuales permiten organizarla e interpretarla."
+        },
+        {
+          "question": "Si Platón consideraba que aprender es 'recordar' ideas innatas y Locke sostenía que la mente es una 'tabula rasa', ¿cuál de las siguientes inferencias es correcta?",
+          "options": [
+            "Ambos autores coincidían en que la conducta observable es el único indicador válido para medir el nivel de aprendizaje adquirido.",
+            "Para Platón el aprendizaje prescinde de ideas previas, mientras que para Locke las experiencias sensoriales resultan irrelevantes.",
+            "Platón basaba el conocimiento en estructuras preexistentes en la mente, mientras que Locke lo fundamentaba en la experiencia con el medio.",
+            "Platón proponía un enfoque totalmente empirista mientras que Locke se alineaba con la corriente del racionalismo clásico."
+          ],
+          "correctIndex": 2,
+          "explanation": "Platón postula la existencia de ideas innatas en la mente antes de la experiencia (racionalismo/idealismo), mientras que Locke plantea la 'tabula rasa' donde todo contenido proviene de la interacción con el medio (empirismo).",
+          "correct_text": "Platón basaba el conocimiento en estructuras preexistentes en la mente, mientras que Locke lo fundamentaba en la experiencia con el medio."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Correlatos Etológicos: Aprendizaje Humano vs. Animal",
+      "questions": [
+        {
+          "question": "¿Cómo se explica en el texto la distribución de las capacidades de aprendizaje entre las distintas especies del reino animal?",
+          "options": [
+            "El ser humano es la única especie capaz de desarrollar aprendizaje asociativo y formación de esquemas conceptuales complejos.",
+            "Las capacidades están distribuidas ampliamente y responden a las necesidades adaptativas específicas de cada especie animal.",
+            "Todas las especies animales poseen idéntico potencial de aprendizaje, diferenciándose únicamente por la cantidad de neuronas.",
+            "Las capacidades de aprendizaje están limitadas únicamente a los mamíferos superiores que poseen corteza cerebral madura."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto indica que las capacidades de aprendizaje se distribuyen de forma amplia en el reino animal y responden a habilidades específicas ligadas a las necesidades adaptativas de cada especie.",
+          "correct_text": "Las capacidades están distribuidas ampliamente y responden a las necesidades adaptativas específicas de cada especie animal."
+        },
+        {
+          "question": "¿Cuál es la diferencia clave que otorga al ser humano un potencial de aprendizaje cualitativamente distinto al de otros animales?",
+          "options": [
+            "La velocidad de respuesta ante contingencias del condicionamiento instrumental en entornos naturales cambiantes.",
+            "La posesión de receptores sensoriales con mayor rango de percepción de estímulos ambientales físicos.",
+            "El lenguaje verbal como sistema especializado que permite la abstracción, conceptualización y codificación simbólica.",
+            "La capacidad exclusiva de desarrollar formas de aprendizaje no asociativo como la habituación y la sensibilización."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto enfatiza que la clave reside en el lenguaje humano (especialmente verbal), un sistema especializado y flexible que permite la abstracción y la conceptualización.",
+          "correct_text": "El lenguaje verbal como sistema especializado que permite la abstracción, conceptualización y codificación simbólica."
+        },
+        {
+          "question": "¿Qué ventaja crucial aporta el desarrollo del pensamiento verbal a la transmisión del conocimiento humano según el texto?",
+          "options": [
+            "Elimina completamente la necesidad de usar la memoria episódica y semántica durante el proceso de enseñanza.",
+            "Asegura que el aprendizaje ocurra de forma puramente involuntaria mediante mecanismos de habituación.",
+            "Permite la transmisión de saberes entre generaciones a través de sistemas simbólicos sin necesidad de contacto directo.",
+            "Garantiza que los circuitos neuronales queden prefijados genéticamente antes de la exposición a estímulos ambientales."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto señala que la codificación en sistemas simbólicos permite transmitir el conocimiento de generación en generación sin requerir un contacto directo.",
+          "correct_text": "Permite la transmisión de saberes entre generaciones a través de sistemas simbólicos sin necesidad de contacto directo."
+        },
+        {
+          "question": "Según la clasificación de las formas de aprendizaje en el texto, ¿dónde se ubican la habituación y la sensibilización?",
+          "options": [
+            "En la categoría de aprendizaje no asociativo.",
+            "En la categoría de aprendizaje sociocultural.",
+            "En la categoría de aprendizaje asociativo.",
+            "En la categoría de aprendizaje representacional."
+          ],
+          "correctIndex": 2,
+          "explanation": "En el esquema de 'FORMAS DE APRENDIZAJE' presentado en la lectura, la habituación, la sensibilización y la impronta pertenecen al 'Aprendizaje no asociativo'.",
+          "correct_text": "En la categoría de aprendizaje no asociativo."
+        },
+        {
+          "question": "¿En qué aspecto de la comunicación humana se han apoyado históricamente los sistemas educativos para facilitar el aprendizaje?",
+          "options": [
+            "En la reproducción exacta de conductas motoras mediante imitación de modelos primarios.",
+            "En el aspecto dialógico-conversacional de la comunicación verbal entre los individuos.",
+            "En el acondicionamiento directo de respuestas fisiológicas condicionadas e incondicionadas.",
+            "En la estimulación sensorial pasiva sin intervención del lenguaje abstracto ni de la interacción social."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto indica expresamente que todos los sistemas educativos se han apoyado históricamente en la posibilidad de comunicación verbal, en particular en su aspecto dialógico-conversacional.",
+          "correct_text": "En el aspecto dialógico-conversacional de la comunicación verbal entre los individuos."
+        },
+        {
+          "question": "Al analizar el comportamiento animal según la perspectiva etológica citada en el texto, ¿cómo se conceptualiza la conducta?",
+          "options": [
+            "Como el resultado exclusivo del condicionamiento clásico operado en entornos artificiales de laboratorio.",
+            "Como una serie de actos reflejos determinados de manera estricta por el código genético inmutable.",
+            "Como el conjunto de procesos mentales invisibles que no se manifiestan en respuestas motoras.",
+            "Como la manera en que el organismo se adapta a su medio y ejerce una interacción activa con él."
+          ],
+          "correctIndex": 1,
+          "explanation": "Se menciona la definición de Klopfer (citado en Fernández, 1987), que conceptualiza el comportamiento como 'aquellas maneras en que el organismo se adapta a su medio y ejerce una interacción con él'.",
+          "correct_text": "Como la manera en que el organismo se adapta a su medio y ejerce una interacción activa con él."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "El Aprendizaje como Hecho Neuroplástico",
+      "questions": [
+        {
+          "question": "¿Qué ventaja adaptativa ofrece la inmadurez neurológica del ser humano al momento del nacimiento?",
+          "options": [
+            "Asegura que el individuo nazca con todas las habilidades sociales e idiomáticas preconectadas genéticamente.",
+            "Evita la reducción de la plasticidad cerebral durante la vida adulta al congelar las conexiones sinápticas.",
+            "Permite que el cerebro complete su maduración fuera del vientre materno, adaptándose a diversos entornos.",
+            "Garantiza que todas las conexiones neuronales permanezcan fijas y protegidas contra influencias del medio ambiente."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto expone que la maduración neurológica fuera del vientre materno expone al ser humano a estímulos ambientales, permitiendo un desarrollo único y flexibilizando los repertorios conductuales.",
+          "correct_text": "Permite que el cerebro complete su maduración fuera del vientre materno, adaptándose a diversos entornos."
+        },
+        {
+          "question": "¿Cómo se define el concepto de neuroplasticidad o plasticidad cerebral en el texto?",
+          "options": [
+            "El proceso de destrucción progresiva e irreversible de células gliales debido a la falta de uso cognitivo.",
+            "La fijación genética inalterable de los procesos psicológicos superiores al alcanzar los primeros cinco años de vida.",
+            "La capacidad de las conexiones neuronales para estructurarse y reestructurarse en respuesta a estímulos del medio.",
+            "La rigidez de los circuitos neuronales destinados a funciones motoras biológicamente predeterminadas."
+          ],
+          "correctIndex": 1,
+          "explanation": "La neuroplasticidad se define explícitamente en el texto como 'la capacidad de las conexiones neuronales para estructurarse y reestructurarse en respuesta a los estímulos del medio ambiente'.",
+          "correct_text": "La capacidad de las conexiones neuronales para estructurarse y reestructurarse en respuesta a estímulos del medio."
+        },
+        {
+          "question": "¿En qué momentos del desarrollo humano alcanza la plasticidad cerebral sus niveles de apogeo según el texto?",
+          "options": [
+            "Durante la fase prenatal y la etapa de la tercera edad o adultez mayor.",
+            "Durante los primeros cinco años de vida y al final de la adolescencia.",
+            "Exclusivamente durante la etapa de maduración de los procesos sensoriales en el feto.",
+            "Durante la etapa escolar primaria y el comienzo de la adultez intermedia."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto señala que la capacidad neuroplástica del cerebro está en su apogeo durante los primeros cinco años de vida y al final de la adolescencia (período de maduración de la corteza cerebral).",
+          "correct_text": "Durante los primeros cinco años de vida y al final de la adolescencia."
+        },
+        {
+          "question": "¿Qué papel desempeñan los ambientes enriquecidos y las emociones en el fortalecimiento de la plasticidad cerebral?",
+          "options": [
+            "Unifican el repertorio conductual humano para que todas las personas respondan de la misma forma ante el entorno.",
+            "Reducen la formación de sinapsis para evitar la sobrecarga de información irrelevante en el cerebro.",
+            "Sustituyen la necesidad de estimulación sensorial táctil o auditiva mediante la aceleración del código genético.",
+            "Promueven un aprendizaje más diverso y consolidan las conexiones sinápticas mediante experiencias afectivas."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto indica que ambientes enriquecidos con estímulos diversos promueven aprendizajes significativos y que las experiencias emocionales son fundamentales para consolidar las conexiones sinápticas.",
+          "correct_text": "Promueven un aprendizaje más diverso y consolidan las conexiones sinápticas mediante experiencias afectivas."
+        },
+        {
+          "question": "¿Cuál es el mecanismo neurobiológico celular que sustenta el aprendizaje a largo plazo según la neuropsicología?",
+          "options": [
+            "La formación de sinapsis a través del proceso conocido como potenciación a largo plazo.",
+            "La inactivación permanente de neuronas que carecen de función específica en el nacimiento.",
+            "La sustitución completa de la memoria episódica por circuitos de respuesta fisiológica automática.",
+            "La degeneración deliberada de circuitos preconectados en la corteza cerebral previa."
+          ],
+          "correctIndex": 1,
+          "explanation": "A nivel celular y molecular, el texto afirma que el aprendizaje depende de la formación de sinapsis entre neuronas a través de la 'potenciación a largo plazo'.",
+          "correct_text": "La formación de sinapsis a través del proceso conocido como potenciación a largo plazo."
+        },
+        {
+          "question": "Ante una lesión cerebral, ¿de qué manera evidencia el cerebro humano su capacidad neuroplástica?",
+          "options": [
+            "Bloqueando la transmisión de estímulos del medio ambiente para proteger las estructuras neuronales sanas.",
+            "Reemplazando automáticamente el tejido dañado mediante la regeneración acelerada del código genético original.",
+            "Reorganizando sus conexiones al destinar otras neuronas para asumir las funciones de las células dañadas.",
+            "Deteniendo todo procesamiento cognitivo para reasignar la energía exclusivamente a procesos fisiológicos básicos."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto señala que el cerebro es capaz de recuperar funciones afectadas por lesiones destinando otras neuronas para reemplazar a las células muertas.",
+          "correct_text": "Reorganizando sus conexiones al destinar otras neuronas para asumir las funciones de las células dañadas."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "El Aprendizaje como Hecho Psicológico",
+      "questions": [
+        {
+          "question": "¿Cuál es el papel fundamental de la atención en el proceso de aprendizaje según la perspectiva psicológica expuesta?",
+          "options": [
+            "Guiar la consciencia hacia los estímulos relevantes del entorno para permitir un procesamiento activo.",
+            "Codificar de forma permanente los cambios de conducta sin requerir la intervención de la memoria.",
+            "Generar de manera autónoma las emociones requeridas para la potenciación sináptica a largo plazo.",
+            "Reemplazar las motivaciones fisiológicas primarias por objetivos puramente sociales o abstractos."
+          ],
+          "correctIndex": 1,
+          "explanation": "Se destaca la atención (mencionando el mindfulness) como el proceso psicológico encargado de guiar la consciencia hacia los estímulos relevantes del entorno.",
+          "correct_text": "Guiar la consciencia hacia los estímulos relevantes del entorno para permitir un procesamiento activo."
+        },
+        {
+          "question": "¿De qué depende principalmente que las modificaciones en el pensamiento y la conducta sean relativamente estables en el tiempo?",
+          "options": [
+            "De la repetición mecánica de respuestas motoras sin la mediación de ningún tipo de motivación intrínseca.",
+            "Del aislamiento de los procesos afectivos respecto a la reestructuración de esquemas conceptuales.",
+            "De la capacidad del sistema cognitivo para codificar, almacenar y recuperar la información mediante la memoria.",
+            "De la exposición involuntaria y continua a estímulos ambientales carentes de significado o reto cognitivo."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto indica que la estabilidad de los cambios depende de nuestra capacidad de memoria para codificar, almacenar y recuperar información.",
+          "correct_text": "De la capacidad del sistema cognitivo para codificar, almacenar y recuperar la información mediante la memoria."
+        },
+        {
+          "question": "Al analizar la relación entre procesos afectivos y aprendizaje, ¿qué conclusión se desprende del texto?",
+          "options": [
+            "Las emociones interfieren negativamente en la consolidación de esquemas, por lo que deben neutralizarse.",
+            "Los afectos actúan únicamente en el aprendizaje de conductas observables, pero no en el de conceptos abstractos.",
+            "La respuesta emocional permanece inalterada a lo largo de toda la vida independientemente de lo aprendido.",
+            "Las experiencias emocionales acompañan y consolidan el aprendizaje, al tiempo que este modifica la respuesta emocional."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto menciona que los procesos afectivos consolidan el aprendizaje y que, simultáneamente, el aprendizaje modifica nuestra respuesta emocional ante el medio.",
+          "correct_text": "Las experiencias emocionales acompañan y consolidan el aprendizaje, al tiempo que este modifica la respuesta emocional."
+        },
+        {
+          "question": "Según el texto, ¿qué tipo de contenido de aprendizaje abarca los cambios observables en las respuestas motoras?",
+          "options": [
+            "Los esquemas mentales internos estudiados mediante la práctica de la atención consciente o mindfulness.",
+            "Las conductas simples o complejas (procedimientos), abordadas ampliamente por la perspectiva conductista.",
+            "Las intuiciones a priori encargadas de organizar los estímulos recibidos a través de los sentidos.",
+            "Las reacciones emocionales complejas analizadas principalmente por el enfoque constructivista."
+          ],
+          "correctIndex": 1,
+          "explanation": "En la sección sobre el contenido del aprendizaje, se explica que se aprenden conductas (cambios observables en respuestas motoras), tema abordado principalmente por el conductismo.",
+          "correct_text": "Las conductas simples o complejas (procedimientos), abordadas ampliamente por la perspectiva conductista."
+        },
+        {
+          "question": "¿Qué perspectiva teórica se ha encargado principalmente de estudiar la adquisición de conceptos e información no observable?",
+          "options": [
+            "La perspectiva etológica y la neurobiología celular.",
+            "La perspectiva conductista radical e instrumental.",
+            "La perspectiva cognoscitiva y la perspectiva constructivista.",
+            "La perspectiva racionalista del empirismo clásico."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto especifica que del aprendizaje de conceptos e información (modificación no observable de esquemas mentales) se han ocupado las perspectivas cognoscitiva y constructivista.",
+          "correct_text": "La perspectiva cognoscitiva y la perspectiva constructivista."
+        },
+        {
+          "question": "¿Cómo se manifiestan las 'reacciones emocionales' como contenido del aprendizaje dentro del desarrollo individual?",
+          "options": [
+            "En el reemplazo de los procesos perceptuales por esquemas puramente lógicos y matemáticos.",
+            "En la capacidad de eliminar por completo los sentimientos ante situaciones imprevistas del entorno.",
+            "En la formación de circuitos neuronales rígidos imposibles de modificar ante nuevos estímulos del medio.",
+            "En la adaptación de la experiencia y expresión emocional para anticipar la conducta apropiada ante objetos o personas."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto explica que aprender reacciones emocionales implica adaptar la experiencia y expresión emocional de forma adecuada, desarrollando sentimientos que permiten anticipar la conducta apropiada.",
+          "correct_text": "En la adaptación de la experiencia y expresión emocional para anticipar la conducta apropiada ante objetos o personas."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "El Aprendizaje como Hecho Sociocultural",
+      "questions": [
+        {
+          "question": "De acuerdo con la escuela sociohistórica de Vygotsky, ¿qué elemento marca la diferencia fundamental del ser humano respecto a otras especies?",
+          "options": [
+            "La utilización exclusiva de la habituación para la resolución de retos adaptativos.",
+            "La capacidad de responder únicamente a estímulos ambientales físicos sin mediación social.",
+            "La velocidad de maduración de los receptores sensoriales en la etapa prenatal.",
+            "La aparición del pensamiento verbal simbólico que transforma el potencial de aprendizaje."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto señala que, según Vygotsky, es la aparición del pensamiento verbal simbólico lo que marca la diferencia con otras especies respecto al potencial de aprendizaje.",
+          "correct_text": "La aparición del pensamiento verbal simbólico que transforma el potencial de aprendizaje."
+        },
+        {
+          "question": "Según el historiador Yuval Harari citado en el texto, ¿por qué la aparición del lenguaje verbal representó una gran revolución humana?",
+          "options": [
+            "Porque eliminó las diferencias individuales en las capacidades y repertorios conductuales.",
+            "Porque permitió al ser humano desarrollar fuerza física superior para dominar diversos ecosistemas.",
+            "Porque aceleró la maduración biológica del cerebro antes del nacimiento en el vientre materno.",
+            "Porque facilitó la creación de cultura y la transmisión intergeneracional de conocimientos."
+          ],
+          "correctIndex": 1,
+          "explanation": "Harari sostiene que el lenguaje verbal (hace 70,000 años) fue la primera gran revolución porque permitió al ser humano crear cultura y transmitir conocimientos entre generaciones.",
+          "correct_text": "Porque facilitó la creación de cultura y la transmisión intergeneracional de conocimientos."
+        },
+        {
+          "question": "¿Por qué se afirma que el aprendizaje, desde la perspectiva sociocultural, permite trascender el contacto directo con la experiencia?",
+          "options": [
+            "Porque los individuos nacen sabiendo toda la información de su cultura sin necesidad de educarse.",
+            "Porque las conductas observables se heredan biológicamente a través de sinapsis preconectadas.",
+            "Porque el lenguaje verbal permite transmitir conocimientos y herramientas acumuladas a través de generaciones.",
+            "Porque la estimulación ambiental pierde relevancia una vez que se consolidan los esquemas motores."
+          ],
+          "correctIndex": 1,
+          "explanation": "El lenguaje verbal codifica conocimientos acumulados históricamente en sistemas simbólicos, permitiendo que una persona los aprenda sin tener que vivir la experiencia directamente.",
+          "correct_text": "Porque el lenguaje verbal permite transmitir conocimientos y herramientas acumuladas a través de generaciones."
+        },
+        {
+          "question": "¿Qué demuestra el planteamiento de Howard Gardner sobre las inteligencias múltiples en relación con el contexto cultural?",
+          "options": [
+            "Que los idiomas y las matemáticas son las únicas manifestaciones universales de la inteligencia humana.",
+            "Que el tipo de habilidades que una sociedad enseña y considera 'inteligencia' depende de sus necesidades culturales.",
+            "Que los grupos humanos de entornos selváticos carecen de procesos de aprendizaje representacional o asociativo.",
+            "Que todas las culturas del mundo valoran y priorizan exactamente los mismos tipos de habilidades intelectuales."
+          ],
+          "correctIndex": 1,
+          "explanation": "Gardner destaca el componente cultural de las habilidades que cada grupo humano enseña y valora como señal de inteligencia según las demandas de su propio entorno.",
+          "correct_text": "Que el tipo de habilidades que una sociedad enseña y considera 'inteligencia' depende de sus necesidades culturales."
+        },
+        {
+          "question": "¿Qué diferencia de valoración cultural de habilidades ejemplifica el texto al comparar culturas occidentales con selváticas?",
+          "options": [
+            "Occidente prioriza la imitación de respuestas motoras simples, mientras que las selváticas priorizan el mindfulness.",
+            "Occidente enfatiza idiomas y matemáticas, mientras que las selváticas priorizan conocimientos de flora, fauna y cacería.",
+            "Occidente se enfoca en la adaptación etológica, mientras que las selváticas enfatizan el condicionamiento clásico.",
+            "Occidente valora la memoria episódica, mientras que las culturas selváticas priorizan la neuroplasticidad temprana."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto ejemplifica que las culturas occidentales enfatizan idiomas y matemáticas, mientras que grupos en entornos selváticos priorizan el conocimiento de flora, fauna y habilidades de cacería.",
+          "correct_text": "Occidente enfatiza idiomas y matemáticas, mientras que las selváticas priorizan conocimientos de flora, fauna y cacería."
+        },
+        {
+          "question": "¿Cómo sintetiza el texto la dimensión sociocultural del aprendizaje en el desarrollo del ser humano?",
+          "options": [
+            "Como un proceso mediante el cual el lenguaje verbal y las herramientas culturales transmiten e innovan el conocimiento.",
+            "Como un fenómeno puramente individual determinado por la cantidad de estímulos sensoriales recibidos aisladamente.",
+            "Como la incapacidad de modificar la respuesta emocional frente a las exigencias de un grupo o comunidad.",
+            "Como una consecuencia fisiológica involuntaria que carece de vinculación con la comunicación o la educación formal."
+          ],
+          "correctIndex": 1,
+          "explanation": "El aprendizaje desde esta perspectiva es un hecho sociocultural porque el lenguaje verbal transmite el conocimiento acumulado históricamente y entrega herramientas para generar nuevos saberes.",
+          "correct_text": "Como un proceso mediante el cual el lenguaje verbal y las herramientas culturales transmiten e innovan el conocimiento."
+        }
+      ]
+    }
+  ]
+}
