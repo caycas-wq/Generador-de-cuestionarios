@@ -1,0 +1,168 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Sociedad del conocimiento y sus antecedentes históricos",
+      "questions": [
+        {
+          "question": "¿De qué manera se diferencia la concepción de riqueza en la sociedad del conocimiento respecto a los modelos económicos tradicionales?",
+          "options": [
+            "Se fundamenta en el control monopolizado de las rutas comerciales marítimas y la expansión territorial imperial.",
+            "Radica en la generación de ideas e innovación, donde los recursos intelectuales se multiplicas al ser compartidos.",
+            "Se basa primordialmente en la acumulación de recursos materiales finitos como metales preciosos y tierras agrícolas.",
+            "Depende exclusivamente de la fuerza física de trabajo y la sustitución masiva de obreros por maquinaria pesada."
+          ],
+          "correctIndex": 1,
+          "explanation": "A diferencia de los recursos materiales que disminuyen al compartirse, los recursos intelectuales en la sociedad del conocimiento se multiplican cuando se comunican, haciendo de la innovación la fuente principal de riqueza.",
+          "correct_text": "Radica en la generación de ideas e innovación, donde los recursos intelectuales se multiplicas al ser compartidos."
+        },
+        {
+          "question": "¿Qué impacto tuvo el pensamiento liberal e ilustrado en la evolución del concepto de riqueza según el texto?",
+          "options": [
+            "Restringió el acceso al conocimiento y a la educación únicamente a las instituciones eclesiásticas dominante.",
+            "Desplazó la visión mercantilista al plantear que la riqueza provenía fundamentalmente del trabajo y el comercio.",
+            "Prohibió la incorporación de tecnologías mecánicas para proteger los empleos artesanales tradicionales.",
+            "Consolidó la idea feudal de que la posesión de la tierra era la única fuente de estabilidad social y económica."
+          ],
+          "correctIndex": 2,
+          "explanation": "Adam Smith y las ideas ilustradas cuestionaron la noción de que la riqueza residía en la tierra o en los metales acumulados, argumentando que se basaba en el trabajo y la dinámica del comercio.",
+          "correct_text": "Desplazó la visión mercantilista al plantear que la riqueza provenía fundamentalmente del trabajo y el comercio."
+        },
+        {
+          "question": "¿A qué se refiere el concepto de 'trabajadores del conocimiento' propuesto por Peter Drucker a mediados del siglo XX?",
+          "options": [
+            "A una nueva clase social emergente cuya función central no es el trabajo manual, sino la producción e innovación de ideas.",
+            "A los comerciantes encargados de trasladar bienes físicos a través de nuevas rutas globales de transporte.",
+            "A los obreros industriales encargados exclusivamente del mantenimiento técnico de la maquinaria de producción.",
+            "Al grupo de intelectuales de la Edad Media que concentraba la información dentro de los monasterios."
+          ],
+          "correctIndex": 0,
+          "explanation": "Drucker acuñó el término para describir a una clase social distinta del proletariado y la burguesía industrial, cuya actividad económica principal se centra en el manejo y generación del conocimiento.",
+          "correct_text": "A una nueva clase social emergente cuya función central no es el trabajo manual, sino la producción e innovación de ideas."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Nuevas demandas de formación educativa y laboral",
+      "questions": [
+        {
+          "question": "¿Cómo han cambiado las exigencias del mercado de trabajo actual en comparación con las expectativas laborales de décadas pasadas?",
+          "options": [
+            "Se valora el dinamismo, la flexibilidad y las habilidades blandas junto a la capacidad de emprender proyectos propios.",
+            "Se exige únicamente el dominio de tareas manuales repetitivas sin necesidad de procesos de actualización continua.",
+            "Se prioriza la obediencia estricta a las jerarquías verticales por encima de la capacidad de innovación del trabajador.",
+            "Se mantiene la preferencia absoluta por la disciplina rígida, la especialización estática y la estabilidad de por vida."
+          ],
+          "correctIndex": 2,
+          "explanation": "Frente a la estabilidad del pasado fundada en la especialización técnica y la obediencia, hoy el mercado valora habilidades blandas, adaptabilidad, dinamismo y capacidad emprendedora.",
+          "correct_text": "Se valora el dinamismo, la flexibilidad y las habilidades blandas junto a la capacidad de emprender proyectos propios."
+        },
+        {
+          "question": "¿Qué doble objetivo debe cumplir la educación contemporánea según los requerimientos de la sociedad globalizada?",
+          "options": [
+            "Centrarse exclusivamente en las demandas técnicas de la industria suprimiendo la formación ética y cultural.",
+            "Fortalecer la identidad del sujeto en su entorno local y al mismo tiempo dotarlo de competencias globales.",
+            "Fomentar el aislamiento cultural defensivo para proteger a los estudiantes de los cambios internacionales.",
+            "Homogeneizar las costumbres culturales locales para adoptar una identidad digital estándar en todo el mundo."
+          ],
+          "correctIndex": 1,
+          "explanation": "La educación actual busca equilibrar el arraigo y la consolidación de la identidad local del estudiante con la adquisición de competencias globales para desenvolverse en entornos diversos.",
+          "correct_text": "Fortalecer la identidad del sujeto en su entorno local y al mismo tiempo dotarlo de competencias globales."
+        },
+        {
+          "question": "¿Cuál es la relevancia de incorporar el pensamiento computacional dentro del marco educativo #CoCreaTIC?",
+          "options": [
+            "Asegurar la estabilidad laboral fija dentro de empresas tradicionales de estructuras rígidas e inmutables.",
+            "Garantizar la memorización de lenguajes de programación obsoletos para cubrir puestos técnicos industriales.",
+            "Desarrollar estrategias cognitivas y metacognitivas orientadas a la resolución de problemas mediante la informática.",
+            "Sustituir el juicio crítico del estudiante por la aplicación autómata de programas y algoritmos estándar."
+          ],
+          "correctIndex": 2,
+          "explanation": "El pensamiento computacional dentro de este marco busca equipar al aprendiz con herramientas cognitivas complejas para analizar y resolver problemas variados utilizando técnicas informáticas.",
+          "correct_text": "Desarrollar estrategias cognitivas y metacognitivas orientadas a la resolución de problemas mediante la informática."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Conocimiento múltiple, incierto y aprendizaje continuo",
+      "questions": [
+        {
+          "question": "¿Qué paradoja surge a partir de la democratización en el acceso a la información mediante las tecnologías digitales?",
+          "options": [
+            "La información disponible disminuye drásticamente, pero la certidumbre científica alcanzada es absoluta.",
+            "Las élites intelectuales han recuperado el monopolio exclusivo y la regulación total de las redes sociales.",
+            "El acceso al conocimiento es masivo, pero coexiste con saturación informativa e incertidumbre sobre la veracidad.",
+            "Aumenta la estabilidad de los saberes técnicos, aunque se reduce la capacidad de interacción entre usuarios."
+          ],
+          "correctIndex": 0,
+          "explanation": "Aunque la red democratizó el acceso al conocimiento, también propició la proliferación irrestricta de datos infundados, generando sobreabundancia de información e incertidumbre sobre su veracidad.",
+          "correct_text": "El acceso al conocimiento es masivo, pero coexiste con saturación informativa e incertidumbre sobre la veracidad."
+        },
+        {
+          "question": "¿Cuál debe ser la principal respuesta educativa ante la velocidad de obsolescencia del conocimiento actual?",
+          "options": [
+            "Desarrollar competencias críticas para seleccionar, evaluar y dar sentido a la información disponible.",
+            "Delegar totalmente el análisis crítico del saber en herramientas tecnológicas automatizadas sin filtro humano.",
+            "Restringir los planes de estudio al aprendizaje de textos históricos clásicos que no sufran variaciones.",
+            "Fomentar la memorización pasiva de grandes volúmenes de información técnica para prevenir su pérdida."
+          ],
+          "correctIndex": 1,
+          "explanation": "Frente a datos cambiantes y acelerados, la escuela debe enseñar a evaluar fuentes, discernir el conocimiento confiable de la simple opinión y construir un aprendizaje estratégico e integrado.",
+          "correct_text": "Desarrollar competencias críticas para seleccionar, evaluar y dar sentido a la información disponible."
+        },
+        {
+          "question": "¿Qué implica concebir al ser humano como un 'aprendiz continuo' en el contexto de la sociedad del conocimiento?",
+          "options": [
+            "Que la formación académica recibida en la juventud resulta suficiente para toda la trayectoria profesional.",
+            "Que los conocimientos empíricos del trabajo reemplazan de manera definitiva a la educación estructurada.",
+            "Que la persona debe mantenerse matriculada en programas universitarios formales ininterrumpidamente.",
+            "Que la adaptación al entorno cambiante exige actualizar e integrar nuevos saberes a lo largo de toda la vida."
+          ],
+          "correctIndex": 2,
+          "explanation": "En un entorno dinámico y sujeto a transformaciones aceleradas, el aprendizaje continuo es la condición esencial para adaptarse, actualizar competencias y sostener el desarrollo personal y profesional.",
+          "correct_text": "Que la adaptación al entorno cambiante exige actualizar e integrar nuevos saberes a lo largo de toda la vida."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "El nuevo rol del docente: Diseñador de experiencias de aprendizaje",
+      "questions": [
+        {
+          "question": "¿Qué factor ha cuestionado de forma determinante el rol tradicional del profesor como único transmisor del saber?",
+          "options": [
+            "El acceso directo y masivo a la información que los estudiantes poseen mediante dispositivos digitales.",
+            "La consolidación de un entorno económico estable donde la información no sufre modificaciones.",
+            "La uniformidad de los estilos de aprendizaje observados en los estudiantes de las aulas contemporáneas.",
+            "El rechazo generalizado de las familias hacia la incorporación de herramientas tecnológicas en el aula."
+          ],
+          "correctIndex": 2,
+          "explanation": "Al tener los estudiantes acceso inmediato a amplios volúmenes de datos mediante Internet, el docente pierde el monopolio del saber y su función puramente expositiva queda obsoleta.",
+          "correct_text": "El acceso directo y masivo a la información que los estudiantes poseen mediante dispositivos digitales."
+        },
+        {
+          "question": "¿Qué caracteriza la redefinición del docente como 'diseñador de experiencias de aprendizaje'?",
+          "options": [
+            "Centrar la enseñanza en la lección magistral excluyendo la participación e investigación del alumnado.",
+            "Planificar estratégicamente entornos e itinerarios para que los estudiantes construyan activamente el conocimiento.",
+            "Enfocarse en la producción de hardware educativo para sustituir la interacción pedagógica presencial.",
+            "Transferir la planeación didáctica y las decisiones curriculares a algoritmos de inteligencia artificial."
+          ],
+          "correctIndex": 2,
+          "explanation": "El docente deja de ser un mero intermediario transmisor para convertirse en un organizador estratégico que crea escenarios y actividades situadas que facilitan el aprendizaje activo del alumno.",
+          "correct_text": "Planificar estratégicamente entornos e itinerarios para que los estudiantes construyan activamente el conocimiento."
+        },
+        {
+          "question": "¿Cómo impacta la heterogeneidad del aula moderna en las competencias que debe desplegar el profesor?",
+          "options": [
+            "Obliga a prescindir de las plataformas virtuales para concentrar el proceso educativo en textos impresos.",
+            "Demanda diversificar los recursos y adaptar las estrategias a distintos estilos de aprendizaje y contextos.",
+            "Invalida la necesidad de mediación didáctica al asumir que los alumnos aprenden de forma idéntica.",
+            "Exige la aplicación de un método estandarizado e idéntico para todos los estudiantes por igual."
+          ],
+          "correctIndex": 1,
+          "explanation": "El reconocimiento de la diversidad de estilos cognitivos y contextos socioculturales obliga al docente a adaptar su metodología y apoyarse en variados recursos tecnológicos y pedagógicos.",
+          "correct_text": "Demanda diversificar los recursos y adaptar las estrategias a distintos estilos de aprendizaje y contextos."
+        }
+      ]
+    }
+  ]
+}
