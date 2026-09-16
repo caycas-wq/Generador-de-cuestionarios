@@ -1,0 +1,379 @@
+{
+  "sections": [
+    {
+      "sectionTitle": "Definición y Fundamentos Filosóficos del Aprendizaje",
+      "questions": [
+        {
+          "question": "¿Cuál es la implicación adaptativa del aumento de la flexibilidad conductual a escala filogenética en los seres humanos?",
+          "options": [
+            "Elimina la necesidad de memorizar datos derivados de la experiencia inmediata y continua.",
+            "Reduce la dependencia de factores innatos y permite responder de forma versátil al entorno.",
+            "Aumenta la rigidez genética ante estímulos ambientales desfavorables o cambiantes.",
+            "Restringe el desarrollo de procesos psicológicos superiores como la percepción y la memoria."
+          ],
+          "correctIndex": 0,
+          "explanation": "A escala filogenética, una mayor flexibilidad conductual implica menor dependencia de respuestas innatas y una mejor capacidad de adaptación al entorno dinámico.",
+          "correct_text": "Reduce la dependencia de factores innatos y permite responder de forma versátil al entorno."
+        },
+        {
+          "question": "De acuerdo con el texto, ¿por qué existe una falta de consenso dentro de la psicología para definir el concepto de aprendizaje?",
+          "options": [
+            "Por la falta de estudios neurobiológicos que respalden la observación del comportamiento.",
+            "Debido a las profundas discrepancias entre escuelas psicológicas y sus fundamentos filosóficos.",
+            "Porque la etología niega que los animales tengan capacidades asociativas de aprendizaje.",
+            "A causa de la imposibilidad técnica de medir los cambios en el pensamiento humano."
+          ],
+          "correctIndex": 0,
+          "explanation": "El aprendizaje ha sido objeto de intensa polémica no solo entre corrientes psicológicas, sino también entre las posturas epistemológicas que las sustentan.",
+          "correct_text": "Debido a las profundas discrepancias entre escuelas psicológicas y sus fundamentos filosóficos."
+        },
+        {
+          "question": "Platón sostenía que el verdadero conocimiento radicaba en las ideas innatas. ¿Qué implicación tiene esta postura sobre el aprendizaje?",
+          "options": [
+            "Aprender consiste en un proceso de recordar o tomar conciencia de ideas previas a la experiencia.",
+            "La experiencia sensorial es el único motor para estructurar el pensamiento abstracto.",
+            "El aprendizaje se logra exclusivamente mediante la modificación conductual observable.",
+            "Aprender requiere acumular impresiones sensoriales a partir de una mente en blanco."
+          ],
+          "correctIndex": 0,
+          "explanation": "Para Platón, como el conocimiento es innato, el aprendizaje no es la adquisición de nueva información externa, sino un acto de reminiscencia o recuerdo.",
+          "correct_text": "Aprender consiste en un proceso de recordar o tomar conciencia de ideas previas a la experiencia."
+        },
+        {
+          "question": "¿En qué consiste la premisa fundamental del empirismo filosófico respecto al origen del conocimiento en la mente?",
+          "options": [
+            "Las ideas innatas se activan únicamente durante el primer año de desarrollo del individuo.",
+            "La mente es una pizarra en blanco (tabula rasa) cuyo contenido proviene de la experiencia sensorial.",
+            "El conocimiento es producto directo de categorías sintéticas preconcebidas genéticamente.",
+            "La razón pura es capaz de construir representaciones del mundo sin intervención externa."
+          ],
+          "correctIndex": 0,
+          "explanation": "El empirismo sostiene que todo conocimiento deriva de la experiencia sensorial y que la mente carece de ideas innatas al nacer.",
+          "correct_text": "La mente es una pizarra en blanco (tabula rasa) cuyo contenido proviene de la experiencia sensorial."
+        },
+        {
+          "question": "¿Cuál fue la propuesta integradora de Immanuel Kant frente a la disputa entre racionalismo y empirismo?",
+          "options": [
+            "Argumentó que el conocimiento no requiere ni de la experiencia ni del uso de la razón.",
+            "Negó la existencia de la experiencia y postuló que todo pensamiento es una ilusión idealista.",
+            "Propuso que el empirismo explica el comportamiento animal y el racionalismo el humano.",
+            "Afirmó que los datos de la experiencia son organizados por estructuras y categorías a priori de la mente."
+          ],
+          "correctIndex": 0,
+          "explanation": "Kant sintetizó ambas posturas al sostener que la experiencia provee los datos, pero la mente posee categorías e intuiciones a priori para organizarlos.",
+          "correct_text": "Afirmó que los datos de la experiencia son organizados por estructuras y categorías a priori de la mente."
+        },
+        {
+          "question": "En el marco de la psicología contemporánea, ¿cómo conceptualiza la perspectiva conductista el proceso de aprendizaje?",
+          "options": [
+            "Como un cambio observable en la conducta que depende fundamentalmente de la experiencia.",
+            "Como un evento netamente neuroquímico sin expresión directa en el entorno social.",
+            "Como el recuerdo pasivo de estructuras informáticas preexistentes en el código genético.",
+            "Como la reestructuración interna de esquemas cognitivos mediada por la reflexión pura."
+          ],
+          "correctIndex": 0,
+          "explanation": "La postura empirista/conductista concibe el aprendizaje como una modificación conductual observable generada por la experiencia con el medio.",
+          "correct_text": "Como un cambio observable en la conducta que depende fundamentalmente de la experiencia."
+        },
+        {
+          "question": "¿Qué diferencia fundamental existe entre la perspectiva cognoscitiva y la conductista al definir el aprendizaje?",
+          "options": [
+            "La cognoscitiva se basa en el empirismo radical y la conductista en el racionalismo dogmático.",
+            "La cognoscitiva niega el papel de la memoria y la conductista la considera el elemento central.",
+            "La cognoscitiva lo ve como reestructuración mental de esquemas y la conductista como cambio en la conducta observable.",
+            "La cognoscitiva ignora la experiencia externa y la conductista se enfoca solo en la herencia."
+          ],
+          "correctIndex": 0,
+          "explanation": "La psicología cognoscitiva enfatiza los procesos mentales internos de reestructuración de conceptos, mientras que el conductismo se centra en la conducta manifestada.",
+          "correct_text": "La cognoscitiva lo ve como reestructuración mental de esquemas y la conductista como cambio en la conducta observable."
+        },
+        {
+          "question": "Según la definición integradora propuesta en el texto, ¿cuál es una característica clave del aprendizaje humano?",
+          "options": [
+            "Es un cambio transitorio generado exclusivamente por estados de fatiga o maduración biológica.",
+            "Es una modificación relativamente permanente del pensamiento y de la conducta por la experiencia.",
+            "Es una respuesta innata e inalterable ante los estímulos del medio ambiente externo.",
+            "Es un proceso rígido que concluye al finalizar la etapa de la adolescencia temprana."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto define el aprendizaje como un proceso continuo y relativamente permanente que altera pensamiento y conducta debido al procesamiento de la experiencia.",
+          "correct_text": "Es una modificación relativamente permanente del pensamiento y de la conducta por la experiencia."
+        },
+        {
+          "question": "¿Qué función cumplen la sensopercepción y la memoria en la guía de la conducta adaptativa?",
+          "options": [
+            "Permiten captar, interpretar y almacenar información para tomar decisiones y elaborar planes.",
+            "Determinan de manera fija e inalterable las respuestas reflejas del recién nacido.",
+            "Reemplazan la necesidad de adaptaciones neurobiológicas frente al entorno ambiental.",
+            "Bloquean el procesamiento de nuevos estímulos para evitar la sobrecarga cognitiva."
+          ],
+          "correctIndex": 0,
+          "explanation": "El proceso sensorial capta la información, la percepción la organiza y la memoria la almacena para orientar activamente las decisiones y pensamientos del individuo.",
+          "correct_text": "Permiten captar, interpretar y almacenar información para tomar decisiones y elaborar planes."
+        },
+        {
+          "question": "¿Cuál es uno de los objetivos principales de estudiar el aprendizaje desde los enfoques neurobiológico, psicológico y social?",
+          "options": [
+            "Aislar el aprendizaje escolar de las influencias ambientales y de la plasticidad cerebral.",
+            "Demostrar que la educación debe basarse únicamente en la instrucción memorística tradicional.",
+            "Probar que las capacidades del ser humano son idénticas en complejidad a las de otras especies.",
+            "Comprender su complejidad como proceso continuo para diseñar mejores intervenciones educativas."
+          ],
+          "correctIndex": 0,
+          "explanation": "Analizar la complejidad del aprendizaje en sus múltiples dimensiones permite evaluar su impacto y construir mejores sistemas e intervenciones educativas.",
+          "correct_text": "Comprender su complejidad como proceso continuo para diseñar mejores intervenciones educativas."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Correlatos Etológicos y Perspectiva Evolutiva del Aprendizaje",
+      "questions": [
+        {
+          "question": "De acuerdo con el texto, ¿cómo se define operacionalmente la etología dentro del estudio del aprendizaje?",
+          "options": [
+            "Como el análisis de la anatomía cerebral en condiciones estrictas de laboratorio clínico.",
+            "Como la investigación exclusiva del aprendizaje simbólico verbal en primates superiores.",
+            "Como el estudio de las modificaciones genéticas heredadas mediante selección artificial.",
+            "Como el estudio del comportamiento animal en su ambiente natural y sus formas de adaptación."
+          ],
+          "correctIndex": 0,
+          "explanation": "La etología investiga cómo los animales se comportan e interactúan adaptativamente con su medio ambiente natural.",
+          "correct_text": "Como el estudio del comportamiento animal en su ambiente natural y sus formas de adaptación."
+        },
+        {
+          "question": "¿Qué demuestra la perspectiva filogenética respecto a la evolución del aprendizaje en el reino animal?",
+          "options": [
+            "Que la habituación es una capacidad exclusiva de los seres humanos con desarrollo avanzado.",
+            "Que existió una progresión desde formas sencillas como la habituación hasta representaciones complejas.",
+            "Que las formas complejas de aprendizaje surgieron sin antecedentes en especies inferiores.",
+            "Que los esquemas asociativos han reemplazado totalmente a la memoria semántica en mamíferos."
+          ],
+          "correctIndex": 0,
+          "explanation": "A lo largo de la evolución filogenética se observa el paso de mecanismos simples (habituación, sensibilización) a sistemas asociativos y representacionales complejos.",
+          "correct_text": "Que existió una progresión desde formas sencillas como la habituación hasta representaciones complejas."
+        },
+        {
+          "question": "¿Qué mito sobre la distribución del aprendizaje ha sido desmentido por la investigación etológica moderna?",
+          "options": [
+            "El mito de que la memoria requiere de estructuras corticales en todos los organismos vivos.",
+            "El mito de que las habilidades de aprendizaje complejas existen solo en los humanos o primates.",
+            "El mito de que los animales son incapaces de adaptarse a los estímulos de su propio entorno.",
+            "El mito de que el condicionamiento asociativo se limita a los organismos unicelulares."
+          ],
+          "correctIndex": 0,
+          "explanation": "La etología ha demostrado que las capacidades de aprendizaje y formación de esquemas están ampliamente distribuidas en diversas clases del reino animal.",
+          "correct_text": "El mito de que las habilidades de aprendizaje complejas existen solo en los humanos o primates."
+        },
+        {
+          "question": "¿Cuál es el factor determinante que configura las capacidades específicas de aprendizaje en cada especie animal?",
+          "options": [
+            "La cantidad total de neuronas motoras presentes en la médula espinal del organismo.",
+            "La presencia exclusiva de sistemas simbólicos escritos en su comunicación habitual.",
+            "Las necesidades adaptativas específicas y las características genéticas de cada especie.",
+            "El grado de entrenamiento directo que reciben por parte de seres humanos en su entorno."
+          ],
+          "correctIndex": 0,
+          "explanation": "Cada especie desarrolla habilidades de aprendizaje particulares que responden a las exigencias de supervivencia de su nicho ecológico.",
+          "correct_text": "Las necesidades adaptativas específicas y las características genéticas de cada especie."
+        },
+        {
+          "question": "Aunque muchas especies poseen aprendizaje asociativo, ¿dónde radica la especificidad del aprendizaje humano?",
+          "options": [
+            "En la dependencia de esquemas conductuales rígidos predeterminados genéticamente.",
+            "En la imposibilidad biológica de aprender mediante la interacción directa con el medio.",
+            "En el desarrollo del lenguaje verbal, que posibilita la abstracción y la conceptualización.",
+            "En el uso preferente de la habituación frente a estímulos amenazantes de su ecosistema."
+          ],
+          "correctIndex": 0,
+          "explanation": "El lenguaje verbal humano es un sistema altamente especializado que permite la abstracción, conceptualización y aprendizaje semántico inexistente en otras especies.",
+          "correct_text": "En el desarrollo del lenguaje verbal, que posibilita la abstracción y la conceptualización."
+        },
+        {
+          "question": "¿En qué consiste la memoria semántica y por qué es un rasgo distintivo del ser humano?",
+          "options": [
+            "Permite coordinar de forma innata la marcha y el equilibrio corporal desde el nacimiento.",
+            "Retiene exclusivamente respuestas reflejas e involuntarias ante estímulos físicos simples.",
+            "Almacena imágenes de rutas geográficas sin requerir ningún procesamiento cognitivo.",
+            "Procesa significados de palabras y conceptos transmitiendo información de forma abstracta."
+          ],
+          "correctIndex": 0,
+          "explanation": "La memoria semántica refiere al significado de las palabras y conceptos, permitiendo el aprendizaje simbólico propio del ser humano.",
+          "correct_text": "Procesa significados de palabras y conceptos transmitiendo información de forma abstracta."
+        },
+        {
+          "question": "¿Qué ventaja crucial ofrece la codificación del aprendizaje humano en sistemas simbólicos?",
+          "options": [
+            "Reduce la diversidad cultural para garantizar la conservación de instintos biológicos.",
+            "Permite la transmisión del conocimiento de generación en generación sin contacto directo.",
+            "Acelera automáticamente el proceso biológico de maduración del sistema nervioso.",
+            "Elimina la necesidad de utilizar la memoria a largo plazo mediante registros mecánicos."
+          ],
+          "correctIndex": 0,
+          "explanation": "Al codificar la experiencia en símbolos verbales o escritos, el conocimiento puede preservarse y difundirse a través del tiempo sin requerir vivencia directa.",
+          "correct_text": "Permite la transmisión del conocimiento de generación en generación sin contacto directo."
+        },
+        {
+          "question": "¿Qué hito histórico ejemplifica el desarrollo de la codificación y transmisión del aprendizaje humano?",
+          "options": [
+            "La sustitución del diálogo conversacional por mecanismos de reflejo condicionado.",
+            "El paso de la tradición oral a la invención de la escritura, la imprenta e Internet.",
+            "La transición de la recolección a la agricultura sin modificación del lenguaje.",
+            "El reemplazo progresivo de la comunicación verbal por señales químicas instintivas."
+          ],
+          "correctIndex": 0,
+          "explanation": "La historia de la transmisión cultural abarca desde la tradición oral hasta la escritura cuneiforme, la imprenta y las redes digitales modernas.",
+          "correct_text": "El paso de la tradición oral a la invención de la escritura, la imprenta e Internet."
+        },
+        {
+          "question": "¿Por qué los experimentos donde se enseña lenguaje de señas o símbolos a primates no anulan la especificidad del lenguaje humano?",
+          "options": [
+            "Porque los primates terminan superando la sintaxis y gramática de los niños humanos.",
+            "Porque dichas pruebas provocan que el primate pierda sus capacidades asociativas naturales.",
+            "Porque son experiencias artificiales guiadas por humanos y no surgen espontáneamente en la especie.",
+            "Porque demuestran que el lenguaje verbal completo se manifiesta en todas las clases animales."
+          ],
+          "correctIndex": 0,
+          "explanation": "Estas experiencias son creadas y dirigidas artificialmente por el ser humano; no constituyen un desarrollo natural ni autónomo de la especie animal.",
+          "correct_text": "Porque son experiencias artificiales guiadas por humanos y no surgen espontáneamente en la especie."
+        },
+        {
+          "question": "¿Cuál es la relación entre el aspecto dialógico del lenguaje y el desarrollo de los sistemas educativos?",
+          "options": [
+            "La interacción dialógica impide la estructuración rigurosa del pensamiento crítico.",
+            "El diálogo conversacional es un mecanismo secundario inaplicable al ámbito de la enseñanza.",
+            "La educación formal ha rechazado el diálogo para centrarse únicamente en la memorización.",
+            "El diálogo y la conversación constituyen la base pedagógica histórica de la educación."
+          ],
+          "correctIndex": 0,
+          "explanation": "El aspecto dialógico-conversacional de la comunicación humana ha sido históricamente el pilar central sobre el cual se construyen la enseñanza y los sistemas educativos.",
+          "correct_text": "El diálogo y la conversación constituyen la base pedagógica histórica de la educación."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Bases Neurobiológicas y Plasticidad Cerebral",
+      "questions": [
+        {
+          "question": "¿Qué característica presenta el sistema nervioso del neonato humano en comparación con el de otros mamíferos?",
+          "options": [
+            "Alcanza su maduración completa pocas horas después de nacer, permitiendo la locomoción inmediata.",
+            "Tiene prefijadas genéticamente todas las conexiones sinápticas que utilizará en la adultez.",
+            "Es marcadamente inmaduro y requiere un prolongado período de desarrollo para lograr autonomía.",
+            "Carece por completo de neuronas funcionalmente activas en el tronco encefálico al nacer."
+          ],
+          "correctIndex": 0,
+          "explanation": "El recién nacido humano se caracteriza por una acentuada inmadurez neurológica y una alta dependencia de sus cuidadores durante las primeras etapas de vida.",
+          "correct_text": "Es marcadamente inmaduro y requiere un prolongado período de desarrollo para lograr autonomía."
+        },
+        {
+          "question": "¿Por qué la inmadurez neurológica al nacer se traduce en una ventaja adaptativa fundamental para el ser humano?",
+          "options": [
+            "Garantiza que el individuo no dependa del aprendizaje para responder a los retos del ecosistema.",
+            "Protege al sistema nervioso bloqueando la entrada de estímulos sensoriales complejos.",
+            "Evita la necesidad de entablar vínculos afectivos tempranos con las figuras de cuidado primario.",
+            "Permite que el cerebro complete su maduración expuesto a la rica diversidad del entorno social y natural."
+          ],
+          "correctIndex": 0,
+          "explanation": "Al madurar fuera del vientre materno, el cerebro se moldea en interacción continua con el medio, otorgando una flexibilidad adaptativa única.",
+          "correct_text": "Permite que el cerebro complete su maduración expuesto a la rica diversidad del entorno social y natural."
+        },
+        {
+          "question": "¿Cómo se define el concepto de neuroplasticidad o plasticidad cerebral según la neuropsicología?",
+          "options": [
+            "Es el proceso mediante el cual las neuronas mueren por sobreestimulación ambiental.",
+            "Es la sustitución total del tejido nervioso por estructuras gliales inalterables.",
+            "Es la rigidez biológica que impide cambios funcionales en el cerebro tras la infancia.",
+            "Es la capacidad de las conexiones neuronales para estructurarse y reestructurarse ante la experiencia."
+          ],
+          "correctIndex": 0,
+          "explanation": "La neuroplasticidad es la propiedad de la red neuronal de modificar sus conexiones (sinapsis) en respuesta al aprendizaje y los estímulos del entorno.",
+          "correct_text": "Es la capacidad de las conexiones neuronales para estructurarse y reestructurarse ante la experiencia."
+        },
+        {
+          "question": "¿En qué etapas de la vida alcanza la plasticidad cerebral sus niveles más elevados de desarrollo?",
+          "options": [
+            "Durante los primeros cinco años de vida y hacia el final de la adolescencia.",
+            "Exclusivamente durante la etapa de gestación intrauterina antes del nacimiento.",
+            "A partir de los 40 años, cuando la corteza cerebral detiene su crecimiento metabólico.",
+            "Únicamente durante la vejez, como respuesta compensatoria al desgaste orgánico."
+          ],
+          "correctIndex": 0,
+          "explanation": "El texto resalta que la neuroplasticidad tiene sus picos máximos en los primeros cinco años de vida y al finalizar la adolescencia, con la maduración cortical.",
+          "correct_text": "Durante los primeros cinco años de vida y hacia el final de la adolescencia."
+        },
+        {
+          "question": "¿Qué efecto produce la estimulación en ambientes enriquecidos sobre el desarrollo del cerebro?",
+          "options": [
+            "Sustituye la necesidad del procesamiento afectivo en la memoria a largo plazo.",
+            "Provoca un colapso sensorial que inhibe la reestructuración de esquemas mentales.",
+            "Acelera la pérdida irreversible de plasticidad neuronal en la etapa infantil.",
+            "Favorece la formación de un aprendizaje más diverso, significativo y consolida redes sinápticas."
+          ],
+          "correctIndex": 0,
+          "explanation": "Ambientes estimulantes y retadores promueven la creación y fortalecimiento de conexiones sinápticas, enriqueciendo el potencial de aprendizaje.",
+          "correct_text": "Favorece la formación de un aprendizaje más diverso, significativo y consolida redes sinápticas."
+        },
+        {
+          "question": "¿Cuál es el rol de las emociones y el afecto en el proceso neurobiológico del aprendizaje?",
+          "options": [
+            "Las experiencias emocionales son fundamentales para consolidar y estabilizar las conexiones sinápticas.",
+            "El afecto reemplaza la necesidad de la potenciación a largo plazo en las sinapsis.",
+            "Las respuestas afectivas inhiben la maduración funcional de la corteza cerebral.",
+            "Las emociones actúan como barreras que dificultan la retención de datos en la memoria."
+          ],
+          "correctIndex": 0,
+          "explanation": "Se ha comprobado que el factor emocional y afectivo es determinante en la mediación neurobiológica para fijar y consolidar el aprendizaje.",
+          "correct_text": "Las experiencias emocionales son fundamentales para consolidar y estabilizar las conexiones sinápticas."
+        },
+        {
+          "question": "¿Qué mecanismo celular y molecular sustenta el aprendizaje y la memoria a nivel sináptico?",
+          "options": [
+            "La degeneración axónica retrógrada.",
+            "La apoptosis programada cortical.",
+            "La inhibición refleja incondicionada.",
+            "La potenciación a largo plazo."
+          ],
+          "correctIndex": 0,
+          "explanation": "El aprendizaje a nivel molecular y celular se basa en la formación y fortalecimiento de sinapsis mediante la potenciación a largo plazo.",
+          "correct_text": "La potenciación a largo plazo."
+        },
+        {
+          "question": "¿De qué manera interviene la plasticidad cerebral ante una lesión o daño en el tejido nervioso?",
+          "options": [
+            "El sistema nervioso detiene inmediatamente todo proceso de aprendizaje en el organismo.",
+            "La recuperación solo es posible mediante la sustitución sintética de neurotransmisores.",
+            "El cerebro puede reestructurarse, capacitando a otras neuronas para asumir las funciones afectadas.",
+            "Las funciones perdidas se transfieren automáticamente al sistema nervioso periférico."
+          ],
+          "correctIndex": 0,
+          "explanation": "La neuroplasticidad permite la reorganización funcional del cerebro, posibilitando que neuronas sanas asuman funciones de zonas dañadas.",
+          "correct_text": "El cerebro puede reestructurarse, capacitando a otras neuronas para asumir las funciones afectadas."
+        },
+        {
+          "question": "¿De qué depende el destino funcional de las neuronas que no están preconectadas genéticamente al nacer?",
+          "options": [
+            "De una secuencia rígida e inmodificable impuesta por el código genético individual.",
+            "De la cantidad y calidad de las experiencias de aprendizaje y estimulación que viva el sujeto.",
+            "De la activación exclusiva de respuestas motoras reflejas de carácter involuntario.",
+            "Del aislamiento intencional del entorno durante la infancia temprana."
+          ],
+          "correctIndex": 0,
+          "explanation": "Las neuronas no destinadas genéticamente a una función fija establecen sus conexiones (sinapsis) en función de las vivencias y aprendizajes del sujeto.",
+          "correct_text": "De la cantidad y calidad de las experiencias de aprendizaje y estimulación que viva el sujeto."
+        },
+        {
+          "question": "A nivel neuropsicológico, ¿qué relación existe entre el aprendizaje y otros procesos como la sensopercepción?",
+          "options": [
+            "La sensopercepción bloquea el almacenamiento de información en la memoria a largo plazo.",
+            "La memoria reemplaza por completo la necesidad de percibir estímulos del entorno físico.",
+            "El aprendizaje requiere de la captación sensorial y la interpretación perceptual para integrar la información.",
+            "El aprendizaje opera de manera independiente sin requerir datos de los sistemas sensoriales."
+          ],
+          "correctIndex": 0,
+          "explanation": "El aprendizaje está íntimamente interconectado con los procesos sensoperceptuales, que captan e interpretan la información antes de integrarla cognitivamente.",
+          "correct_text": "El aprendizaje requiere de la captación sensorial y la interpretación perceptual para integrar la información."
+        }
+      ]
+    }
+  ]
+}
